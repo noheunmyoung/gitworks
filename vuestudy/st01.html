@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vue study</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <h1>2020깃헙에서 수정했다~~~야호~~~vscodetest 완료!!!!!!!!!!!!!!!!!!!!</h1>
+
+    <div id="app">
+        {{ message }}
+
+        <my-global-component></my-global-component>
+        <my-local-component></my-local-component>
+    </div>
+    <hr>
+    <script>
+        //데이타
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'hello vue.js'
+            }
+        });
+
+        //전역 콤포넌트
+        Vue.component('my-global-component', {
+            template: '<div>전역 콤포넌트가 등록되었습니다.</div>'
+        });
+        //지역 콤포넌트
+        var cmp = {
+            template: '<div>지역 콤포넌트가 등록되었습니다.</div>'
+        };
+
+        new Vue({
+            el: '#app',
+            components: {
+                'my-local-component': cmp
+            }
+        });
+    </script>
+
+
+    <div id="app2">
+        <h1>첫번째 인스턴스 영역</h1>
+        <my-global-component></my-global-component>
+        <my-local-component></my-local-component>
+    </div>
+    <hr>
+
+    <div id="app3">
+        <h1>두번째 인스턴스 영역</h1>
+        <my-global-component></my-global-component>
+        <my-local-component></my-local-component>
+    </div>
+
+    <script>
+        //전역 콤포넌트
+        Vue.component('my-global-component', {
+            template: '<div> 인스턴스 영역 전역 콤포넌트</div>'
+        });
+
+        var cmps = {
+            template: '<div> 인스턴스 영역 지역 콤포넌트</div>'
+        };
+
+        //지역 콤포넌트
+        new Vue({
+            el: '#app2',
+            components: {
+                'my-local-component': cmps
+            }
+        });
+
+        new Vue({
+            el: '#app3',
+        });
+    </script>
+    <hr>
+
+    <section id="app4">
+        <header>
+            <h1>실습</h1>
+            {{ message }}
+        </header>
+        <todo-footer></todo-footer>
+        <todo-list></todo-list>
+    </section>
+
+    <script>
+        new Vue({
+            el: '#app4',
+            data: {
+                message: 'this is parent component'
+            }
+        });
+
+        Vue.component('todo-footer', {
+            template: 'This is another global child component'
+        });
+
+        var cmp2 = {
+            template: 'This is another local child component'
+        };
+
+        new Vue({
+            el: '#app4',
+            components: {
+                'todo-list': cmp2
+            }
+        });
+    </script>
+</body>
+
+</html>
