@@ -10,19 +10,75 @@
 
 <body>
     <h1>스터디 2일차</h1>
-    <section id="app4">
-        <header>
-            <h2>{{ message }}</h2>
-        </header>
+    <div id="app">
+        {{ message }}
 
-        <article>
-            <todo-footer></todo-footer>
-            <todo-list></todo-list>
-        </article>
-    </section>
+        <my-global-component></my-global-component>
+        <my-local-component></my-local-component>
+    </div>
+    <hr>
+    <script>
+        //데이타
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'hello vue.js'
+            }
+        });
+
+        //전역 콤포넌트
+        Vue.component('my-global-component', {
+            template: '<div>전역 콤포넌트가 등록되었습니다.</div>'
+        });
+        //지역 콤포넌트
+        var cmp = {
+            template: '<div>지역 콤포넌트가 등록되었습니다.</div>'
+        };
+        //뷰 인스턴스
+        new Vue({
+            el: '#app',
+            components: {
+                'my-local-component': cmp
+            }
+        });
+    </script>
+
+
+    <div id="app2">
+        <h1>첫번째 인스턴스 영역</h1>
+        <my-global-component></my-global-component>
+        <my-local-component></my-local-component>
+    </div>
+    <hr>
+
+    <div id="app3">
+        <h1>두번째 인스턴스 영역</h1>
+        <my-global-component></my-global-component>
+        <my-local-component></my-local-component>
+    </div>
+
+    <script>
+        //전역 콤포넌트
+        Vue.component('my-global-component', {
+            template: '<div> 인스턴스 영역 전역 콤포넌트</div>'
+        });
+        //지역 콤포넌트
+        var cmps = {
+            template: '<div> 인스턴스 영역 지역 콤포넌트</div>'
+        }; 
+         
+        //뷰 인스턴스
+        new Vue({
+            el: '#app2',
+            components: {
+                'my-local-component': cmps
+            }
+        });
+        //뷰 인스턴스
+        new Vue({
+            el: '#app3' 
+        });
+    </script> 
 </body>
-
-<script src="app.js"></script>
 
 </html>
-</body>

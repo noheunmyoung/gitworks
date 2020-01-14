@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vue study</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <h1>스터디 3일차</h1>
+    <section id="app">
+        <child-component v-bind:propsdata="message"></child-component>
+    </section>
+
+    <script>
+        //전역 콤포넌트 props 속성
+        Vue.component('child-component', {
+            props: ['propsdata'],
+            template: '<p>{{ propsdata }}</p>'
+
+        });
+        //뷰 인스턴스
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue! passed from Parent component'
+            }
+        });
+    </script>
+ <hr>
+    <section id="app2">
+        <!-- 이벤트 수신 -->
+        <child-component v-on:show-log="printTxt"></child-component>
+    </section>
+
+    <script>
+         //이벤트 발생시키고 수신하기
+         Vue.component('child-component', {
+            template: '<button v-on:click="showLog">show</button>',  
+            methods: {
+                showLog: function() {
+                    this.$emit('show-log'); //이벤트 발생 로직
+                }
+            }
+
+         });
+
+         //뷰 인스턴스
+         var app = new Vue({
+            el: '#app2',
+            data: {
+                message: 'Hello Vue! passed from Parent component'
+            },
+
+            methods: {
+                printTxt: function() {
+                    console.log("received an event");
+                }
+            }
+
+         });
+    </script>
+    <hr>
+    <section id="app3">
+        <!-- 이벤트 수신 -->
+        <child-component></child-component>
+    </section>
+
+    <script>
+        //이벤트 버스 구현하기
+        var eventBus = new Vue();//이벤트 버스로 활용할 새 인스턴스 1개 생성
+        Vue.component('child-component', {
+            template: '<div>하위 컴포넌트 영역입니다.<button v-on:click="showLog">show</button></div>',
+            methods: {
+                showLog: function () {
+                    eventBus.$emit('triggerEventBus', 100);
+                }
+            } 
+        });
+
+        //뷰 인스턴스
+        var app = new Vue({
+            el: '#app3',
+            created: function() {
+                eventBus.$on('triggerEventBus', function(value) { 
+                     console.log("이벤트를 전달받음. 전달받은 값 :", value);
+                });
+            } 
+        });
+    </script> 
+</body>  
+</html> 
