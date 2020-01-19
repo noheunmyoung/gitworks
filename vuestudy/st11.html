@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Vue Template - Directives</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+</head>
+
+<body>
+    <h1>스터디 9일차 :computed 속성과 methods 속성의 차이점 </h1>
+    <!-- computed 속성-->
+    <div id="app">
+        <p>{{ reversedMessage }}</p>
+    </div>
+    <!-- methods 속성-->
+    <div id="app1">
+         <p>{{ message }}</p>
+         <button v-on:click="reverseMsg">a문자열 역순</button>
+    </div> 
+
+     
+    <script>
+        //computed 속성
+        new Vue ({ 
+            el: '#app',
+            data: {
+                message: '문자열 역순1'
+            },
+            computed: {
+                reversedMessage: function () {
+                return this.message.split('').reverse().join('');   
+                }
+            },
+        })
+
+         //methods
+         new Vue ({
+            el: '#app1', 
+             data: {
+                message: '문자열 역순1'
+            },
+            methods: {
+                reverseMsg: function () {
+                this.message = this.message.split('').reverse().join('');
+                return this.message;
+                }
+            }
+         })
+             
+    </script>
+</body>
+
+</html>

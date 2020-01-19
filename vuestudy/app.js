@@ -37,6 +37,49 @@ var app = new Vue({
     }
 });
 
+//실습 3
+var Body = { template: '<div>This is Body</div>' };
+var Header = { template: '<div>This is Header</div>' };
+var Footer = { template: '<div>This is Footer</div>' }; 
+ 
+// <router-view>의 name 속성과 컴포넌트를 연결
+var router = new VueRouter({
+    routes: [{
+            path: '/',
+            components: {
+                default: Body,
+                header: Header,
+                footer: Footer
+            }
+        }, 
+    ]
+});
+
+// 뷰 인스턴스에 라우터 추가
+var app = new Vue({
+    router
+}).$mount('#app2');
+
+
+//실습 4
+var app = new Vue({
+    el: '#app3',
+    data: {
+        message: '첫번째 메세지',
+        secondMessage: '두번째 메세지',
+        uid: 'noh',
+        flag: true
+    },
+    methods: {
+        clickBtnType() {
+            console.log("hi");
+            alert("안녕");
+        },
+    }
+});
+
+
+
 
 
  

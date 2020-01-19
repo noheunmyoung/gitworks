@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>스터디 2일차</h1>
+    <h1>스터디 2일차 : 전역, 지역 컴포넌트</h1>
     <div id="app">
         {{ message }}
 
@@ -30,7 +30,7 @@
         Vue.component('my-global-component', {
             template: '<div>전역 콤포넌트가 등록되었습니다.</div>'
         });
-        //지역 콤포넌트
+        //지역 콤포넌트: 변수를 선언하고 뷰 인스턴스에 컴포넌트 생성
         var cmp = {
             template: '<div>지역 콤포넌트가 등록되었습니다.</div>'
         };

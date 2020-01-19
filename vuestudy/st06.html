@@ -5,55 +5,60 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>vue study</title>
+    <script src="https://unpkg.com/vue@2.4.4/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
 </head>
 
 <body>
-    <h1>스터디 5일차</h1>
+    <h1>스터디 5일차 : 라우터 네임드 뷰</h1>
     <section id="app">
         <h1>네임드 뷰 예제</h1>
-        <router-view></router-view> 
+        <router-view name="header"></router-view> 
+        <router-view></router-view><!-- name 없는 경우는 디폴트 -->
+        <router-view name="footer"></router-view>
     </section>
 
 
     <script>
         //컴포넌트 정의
-        var User = {
-            template: '<div>Uset component <router-view></router-view></div>'
-        };
+        var Body = { template: '<div>This is Body</div>' }; 
+        var Header = { template: '<div>This is Header</div>' };
+        var Footer = { template: '<div>This is Footer</div>' }; 
 
-        var UserProfile = {
-            template: '<p>User profile component </p>'
-        };
-        var UserPost = {
-            template: '<p>User Post component </p>'
-        };
+        var LoginBody = { template: '<div>This is LoginBody</div>' };
+        var LoginHeader = { template: '<div>This is LoginHeader</div>' };
+        var LoginFooter = { template: '<div>This is LoginFooter</div>' };
 
-        // 각 URL에 맞춰 표시할 컴포넌트 지정
-        var routes = [{
-            path: '/user',
-            component: User,
-            children: [{
-                    path: 'posts',
-                    component: UserPost
-                },
-                {
-                    path: 'profile',
-                    component: UserProfile
-                }
-            ]
-        }];
-        // 뷰 라우터 정의
+        // <router-view>의 name 속성과 컴포넌트를 연결
         var router = new VueRouter({
-            routes
+            routes: [
+                {
+                    path: '/',
+                    components: {
+                        default: Body,
+                        header: Header,
+                        footer: Footer                              
+                    }  
+                },
+
+                {
+                    path: '/login',
+                    components: {
+                        default: LoginBody,
+                        header: LoginHeader,
+                        footer: LoginFooter
+                    }
+                }
+                
+            ]
         });
 
         // 뷰 인스턴스에 라우터 추가
         var app = new Vue({
             router
         }).$mount('#app');
-    </script>
+    </script> 
 
 </body>
 

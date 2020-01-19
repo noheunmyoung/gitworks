@@ -10,9 +10,9 @@
 
 <body>
     <h1>스터디 1일차</h1>
-    <section id="app4">
+    <section id="app1">
         <header>
-            <h2>{{ message }}</h2>
+            <h2>{{ message }}</h2> 
         </header>
 
         <article>
@@ -22,7 +22,14 @@
     </section>
 </body>
 
-<script src="app.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app1',
+        data: {
+        message: 'Hello Vue! passed from Parent component1' 
+        }
+    });
+</script>
 
 </body>
 </html>

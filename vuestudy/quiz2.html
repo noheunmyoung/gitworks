@@ -13,32 +13,8 @@
 <body>
     <section id="app">
         <header>
-            <h1>실습1</h1>
-            {{ message }}
-        </header>
-        <todo-footer></todo-footer>
-        <todo-list></todo-list> 
-    </section>
-
-    <section id="app1">
-         <h1>실습2</h1>
-        <child-component v-bind:propsdata="message"></child-component> 
-        <sibling-component v-bind:propsdata="anotherMessage"></sibling-component>
-    </section>
-
-    <section id="app2">
-        <h1>실습3</h1> 
-        <router-view name="header"></router-view>
-        <router-view></router-view><!-- name 없는 경우는 디폴트 -->
-        <router-view name="footer"></router-view>
-    </section>
-
-
-    <hr>
-    <section id="app3">
-        <h1>실습4</h1>
-        <header>
-            <h3>
+            <h1>실습2</h1>
+            <h3> 
                 {{ message }},
                 {{ secondMessage }}
             </h3>
@@ -53,11 +29,9 @@
                 <li>4</li>
             </ul>
         </article>
-    </section>
-    <hr>
-
+    </section> 
  
-    <script src="app.js"></script>
+    <script src="app2.js"></script>
 </body>
 
 </html>
