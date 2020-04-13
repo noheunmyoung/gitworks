@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>infomark </title>
+<style type="text/css">
+	* {margin:0; padding:0;}
+	html {overflow-y:scroll;}
+	body {padding: 8px; color:#666; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif;}
+	a {color:#27e; text-decoration:none;}
+	a:focus, a:hover, a:active {text-decoration:underline;}
+	.header {position: fixed; width: 100%; height: 70px; padding: 8px;background: #fff;  border-bottom: 1px solid #ccc;  box-sizing: border-box; top: 0; left: 0; font:12px/1.5 Malgun Gothic, Tahoma, Sans-serif; z-index: 10}
+	.header h1 {height: 40px; line-height: 40px; border: 2px solid #ccc; color:#444; font-size:2em; text-align: center; }
+	.header h1 strong {font-size:70%;}
+	.header .nav {list-style:none; background:#969696; padding:0.5em 0.5em 0.2em; color:#f9f9f9; font-weight:bold; font-size:1.1em;}
+	.header .nav li {display:inline; margin-right:0.5em;}
+	.header .nav li a {color:#f9f9f9;}
+	.header .nav li a.on {color:#fff !important; border-bottom:2px solid #3e3e3e; text-shadow:#7c7c7c 2px 1px 2px; text-decoration:none; font-size:105%;}
+	.header .nav-otherlink {list-style:none; text-align:right; padding:0.5em 0.5em 0.2em; color:#969696; font-size:1em;}
+	.header .nav-otherlink li {display:inline;}
+	.header .nav-otherlink li a {color:#969696; font-weight:bold;}
+	.header .nav-otherlink li a.on {color:#3e3e3e;}
+	.header .nav-otherlink li a.on:before {content:'→'; font-size:0.9em;}
+	.rule {background:#f7f7f7; margin:0 0.8em 2em; padding:0.5em; font-size:95%;}
+	.rule dt {margin-bottom:0.3em; font-weight:bold;}
+	.rule dd {padding-left:0.5em;}
+	.rule dd ul {list-style-type:square; margin-left:1.2em;}
+	.progress {height: 24px; line-height: 24px;background: #fafafa; border: 2px solid #eee; border-top: 0 none; }
+	.progress .total{ float: right ; width: 50%; border-left: 1px solid #eee;font-size:11px; font-weight:bold; color:#666; text-align: center; box-sizing: border-box; }
+	.progress .total_D{ float: left; width: 50%;  font-size:11px; font-weight:bold; color:#666; text-align: center;  }
+	.guide_txt {float: right; margin-top: 33px; font-size:11px; font-weight:bold; color:#666; text-align:right;}
+	.togglebtn{padding:2px 5px; margin:0; background:#000; border:0; border-radius:3px; color:#f2f2f2; font:bold 11px/1.5 Malgun Gothic, Tahoma, Sans-serif; cursor:pointer; text-decoration:none}
+	.noneHideBtn,
+	.noneHideBtn:hover,
+	.showHideBtn,
+	.showHideBtn:hover {padding:2px 8px; margin:0; background:#ab1111; border:0; border-radius:3px; color:#fff; font:bold 11px/1.5 Malgun Gothic, Tahoma, Sans-serif; cursor:pointer; text-decoration:none}
+	.body {margin-top:80px; padding-bottom:1em;}
+	.section .title {margin:0; padding:0.5em; background-color:#6b7178; color:#fff; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1; }
+	.section {margin-top:10px; }
+	.section .title_toggle {margin:0; padding:0 0 6px 0;  color:#000; font-weight:bold; font-size:100%; margin-top:-1px; position:relative; *zoom:1;}
+	.section table {width:100%; border-collapse:collapse; border-spacing:0; border:0; table-layout:fixed;}
+	.section table caption {display:none;}
+	.section table th {color:#333; background-color:#f1f1f1; font-size:11px; text-align:center;}
+	.section table td {text-align:left;/* text-overflow: ellipsis; overflow: hidden; white-space: norwap; */}
+	.section table td.center {text-align:center;}
+	.section table th, table td {padding:0.3em; border:1px solid #ddd; }
+	.section table td.tit {color:#333; font-weight:bold;}
+	.section table td.file {color:#aaa;}
+	.section table td.date {text-align:center; font-style:italic; white-space:nowrap;}
+	.section table td.date del {display:block; color:#aaa !important;}
+	.section table td.stat , .section table td.statD{text-align:center; font-family:Gulim;}
+	 .statD{color: #db2124}
+	 .stat {color: #5da9dd}
+
+	.section table td.desc, .section table td.note, .section table td.history {font-style:italic; color:#777; font-size:11px;}
+	.section table td.author {text-align:center; white-space:nowrap;}
+	.section table td ul {list-style:none; margin:0; padding:0 10px; font-style:italic;}
+	.section table td em {color:#c82026;}
+	.section table td em.blue {color:#69f;}
+	.section table tr.overcoloring {background:#fafafa !important;}
+	.section table tr.today {background:#fcf7bd;}
+	.section table tr.today .date {color:#444;}
+	.section table td.history-jira {font-style:italic; font-size:11px;}
+	.section table td.history-jira a {color:#3b73af; font-weight:bold;}
+	.section table td.history ul li:before, .section table td.history-jira ul li:before {content:'- ';}
+	.section table .taCenter{text-align:center !important}
+	.section table .dg{background:#f6f1f4}/*중복스타일게시판*/
+	.section table .none{background:#e9eef1}/*중복스타일게시판*/
+	.section table .none2{background:#dce7be}/*기획서내 내용없음*/
+	table td span.red {color:red} /* 추가 수정*/
+	.brbottom1 td{border-bottom: 1px solid #bebebe; }
+	.brbottom2 {border-bottom: 2px solid #aaa; }
+
+</style>
+
+</head>
+<body>
+<div class="header">
+	<h1>::  페이지 목록  ::</h1>
+</div>
+<div class="body">
+ 
+	<div class="section"> 
+		<div class="content">
+			<table border="1">
+				<colgroup>
+					<col width="25%" /><col width="*" /> 
+					<col width="15%" /><col width="25%" /> 
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">1depth</th> 
+						<th scope="col">File Name(html)</th> 
+						<th scope="col" title="△ :대기 / ○ :부분완료 / ● :완료">Publishing Status</th>
+						<th scope="col">modify Date</th> 
+			  		</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tit">메인</td> 
+						<td class="file"><a href="html/main.html" target="_blank">html/main.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td> 
+					</tr>
+					<tr>
+						<td class="tit">적용기술</td> 
+						<td class="file"><a href="html/technology.html" target="_blank">html/technology.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td> 
+					</tr>
+					<tr>
+						<td class="tit">학습전략</td> 
+						<td class="file"><a href="html/strategy.html" target="_blank">html/strategy.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td> 
+					</tr>
+					<tr>
+						<td class="tit">학습 콘텐츠</td> 
+						<td class="file"><a href="html/learning.html" target="_blank">html/learning.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td>  
+					</tr>
+					<tr>
+						<td class="tit">사용안내 메인</td> 
+						<td class="file"><a href="html/guidemain.html" target="_blank">html/guidemain.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td> 
+					</tr>
+					<tr>
+						<td class="tit">FAQ</td> 
+						<td class="file"><a href="html/faq.html" target="_blank">html/faq.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td> 
+					</tr>
+					<tr>
+						<td class="tit">공지사항 목록</td> 
+						<td class="file"><a href="html/notice.html" target="_blank">html/notice.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td>  
+					</tr>
+					<tr>
+						<td class="tit">공지사항 상세</td> 
+						<td class="file"><a href="html/detail.html" target="_blank">html/detail.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td> 
+					</tr>
+					<tr>
+						<td class="tit">1:1 문의</td> 
+						<td class="file"><a href="html/Inquire.html" target="_blank">html/Inquire.html</a></td> 
+						<td class="stat">●</td>
+						<td class="center">2020. 04.13</td> 
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div> 
+
+</div>
+</body>
+</html>
