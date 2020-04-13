@@ -125,8 +125,15 @@ select {padding:.4rem; border:1px solid #555555}
 .colorSkyPink {color:#ff81dd;} 
 .colorPurple {color:#a673ff;}
 .colorPurple2 {color:#8235ff;} 
-.colorAqua {color:#43e0d7} 
- 
+.colorAqua {color:#43e0d7}  
+
+.whiteBox {background:#fbfbfb;}
+.colorBox {background:#eceaf2;}
+
+.imgPc { display:block;}
+.imgPc img {width:100%;}
+.imgPm { display:none;} 
+.imgPm img {width:100%;}
 
 /* --- 레이아웃 --- */
 #wrapper {height:100%} 
@@ -200,15 +207,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .hgroup.center h2 br{display: none;}
 .hgroup.center p {text-align:center; line-height:150%; font-weight:700; margin-top:1rem;}   
 .hgroup.center p.sizeUp { font-size:2.4rem; font-weight:400; padding-top:2rem;}
-.hgroup.center p.sizeUp u{ font-size:2.4rem; font-weight:900;}
-
-.whiteBox {background:#fbfbfb;}
-.colorBox {background:#eceaf2;}
-
-.imgPc { display:block;}
-.imgPc img {width:100%;}
-.imgPm { display:none;} 
-.imgPm img {width:100%;}
+.hgroup.center p.sizeUp u{ font-size:2.4rem; font-weight:900;} 
 
 /*메인*/
 .mainopy {position:relative; height:87.1rem;} 
@@ -217,7 +216,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainopy .inner dl dt {font-family:'Black Han Sans', sans-serif; font-size:5.4rem; line-height:110%; letter-spacing:-1.32px; margin-bottom:.5rem} 
 .mainopy .inner dl dt i {display:block; margin-bottom:.2rem; color:#00b1ea; font-size:2rem;  letter-spacing:0; font-family:'NanumSquareRound',sans-serif; font-weight:300;}
 .mainopy .inner dl dd {font-size:2rem; font-weight:300; line-height:150%;} 
-.mainopy .owl-carousel .item:after {content:""; position:absolute; left:0; top:0; width:100%; height:100%; z-index: 1;}
+.mainopy .owl-carousel .item:after {content:""; position:absolute; left:0; top:0; width:100%; height:100%; z-index:1;}
 .mainopy .owl-carousel .item.type01:after {background: url(../images/landing/img_main.jpg) no-repeat 50% 0}
 .mainopy .owl-carousel .item.type02:after {background: url(../images/landing/img_main.jpg) no-repeat 50% 0}
 .mainopy .owl-carousel .item.type03:after {background: url(../images/landing/img_main.jpg) no-repeat 50% 0}
@@ -232,10 +231,10 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .noticeBox .notice {position: relative; max-width:1280px; margin:0 auto; height:5.4rem; background-color: rgba(92, 61, 124, 0.67); border-radius:2.4rem 2.4rem 0 0;}
 .noticeBox .notice ul { margin-right:6rem;}
 .noticeBox .notice ul li a {display:block; color:#fff; padding-left:4rem; height:5.4rem; letter-spacing: -0.48px;  line-height:5.4rem;font-weight:300;}
-.noticeBox .notice .btnW {display:block; position: absolute; right:2rem; top:0; height:5.4rem; }
+.noticeBox .notice .btnW {display:block; position: absolute; right:2rem; top:0; height:5.4rem;}
 .noticeBox .notice .btnW button {position: relative; display:block; width:2.7rem; height:2.7rem; text-indent:-999px; overflow:hidden;}
-.noticeBox .notice .btnW button:after {content:""; position:absolute; left:50%; top:50%; margin-left:-.4rem;margin-top:.1rem; border-top:4px solid transparent; border-right:8px solid #fff; border-bottom: 4px solid transparent;}
-.noticeBox .notice .btnW button.btnUp:after {transform: rotate(90deg) }
+.noticeBox .notice .btnW button:after {content:""; position:absolute; left:50%; top:50%; margin-left:-.4rem; margin-top:.1rem; border-top:4px solid transparent; border-right:8px solid #fff; border-bottom: 4px solid transparent;}
+.noticeBox .notice .btnW button.btnUp:after {transform: rotate(90deg)}
 .noticeBox .notice .btnW button.btnDown:after {transform: rotate(270deg); margin-top:-.6rem;} 
 
 [class*="mainSec"] {position:relative; height:38rem} 
@@ -246,7 +245,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 [class*="mainSec-sec04"]{height:80rem; background:url(../images/landing/img_bg04.jpg) no-repeat 50% 0}
 [class*="mainSec-sec05"]{height:92.6rem; background:url(../images/landing/img_bg05.jpg) no-repeat 50% 0}
 [class*="mainSec-sec06"]{height:131rem; background:#eceaf2}
-[class*="mainSec-sec07"]{height:auto; }
+[class*="mainSec-sec07"]{height:auto;}
 
 [class*="mainSec"] .inner .titArea {}
 [class*="mainSec"] .inner .titArea h2 {font-size:4.2rem; line-height:1;}
@@ -261,7 +260,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec01 .inner .titArea p i {color:#672385; font-size:1.4rem; margin-top:1.5rem;}
 .mainSec-sec01 .inner:after {content:""; position:absolute; left:50%; margin-left:-25.7rem; z-index:1; bottom:3.8rem; width:51.3rem; height:47.9rem; background: url(../images/landing/img_bg01_1.png) repeat 50% 0; background-size:51.3rem auto;} 
 .mainSec-sec01 .inner .txt {z-index:2; position:absolute;}
-.mainSec-sec01 .inner .txt p {background:#fff; color:#672385; font-size:1.7rem;; border-radius:2rem 2rem 0 2rem; text-align:center;}
+.mainSec-sec01 .inner .txt p {background:#fff; color:#672385; font-size:1.7rem; border-radius:2rem 2rem 0 2rem; text-align:center;}
 .mainSec-sec01 .inner .txt p strong {display:block; font-family:'Black Han Sans', sans-serif; font-size:2.8rem; line-height:1; margin-bottom:1rem; font-weight:normal;}
 .mainSec-sec01 .inner .txt.type01 {left:0; top:19.1rem}
 .mainSec-sec01 .inner .txt.type01 p {width:34.8rem; height:16.9rem; padding-top:3.5rem; font-family: Tahoma, sans-serif;}
@@ -275,35 +274,32 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec01 .inner .txt.type04 {right:3.2rem; top:63.3rem; width:29rem; line-height:180%; text-align:right;}
 .mainSec-sec01 .inner .txt.type04 strong {display:block; font-family:나눔명조, Nanum Myeongjo; color:#1c1c1c; font-weight:900;}
 .mainSec-sec01 .inner .txt.type04 i { font-size:1.4rem;}
-
-.mainSec-sec02 .inner { }
+ 
 .mainSec-sec02 .inner .txtLeft {position:absolute; left:8.1rem; top:21.1rem}
 .mainSec-sec02 .inner .txtLeft p {position:relative; border:1px solid #672385; height:5rem; line-height:5rem; text-align:center; color:#672385; font-weight:700;}
 .mainSec-sec02 .inner .txtLeft p:first-child {margin-left:5.6rem; width:35.5rem; border-radius:2rem 2rem 2rem 0; margin-bottom:1.5rem;}
 .mainSec-sec02 .inner .txtLeft p:first-child:before {content:""; position:absolute; top:0; left:-5.6rem; width:4.7rem; height:4.7rem; background: url(../images/landing/icon09.png) repeat 50% 0; background-size:4.7rem auto;} 
-.mainSec-sec02 .inner .txtLeft p:last-child {width:27.5rem; border-radius:2rem 2rem 0 2rem; margin-left:19rem; margin-right:-5.6rem; } 
+.mainSec-sec02 .inner .txtLeft p:last-child {width:27.5rem; border-radius:2rem 2rem 0 2rem; margin-left:19rem; margin-right:-5.6rem;} 
 .mainSec-sec02 .inner .txtLeft p:last-child:after {content:""; position:absolute; top:0; right:-5.6rem; width:4.7rem; height:4.7rem; background: url(../images/landing/icon07.png) repeat 50% 0; background-size:4.7rem auto;} 
 
 .mainSec-sec02 .inner .txtRight { position:absolute; right:17.5rem; top:19.3rem; text-align:right; color:#672385; line-height:170%; font-weight:700;}
-
-.mainSec-sec03 .inner { }
-.mainSec-sec03 .inner .titArea h2 br {display:none; }
-.mainSec-sec03 .inner .hashTag { text-align:center; display:block; margin-top:2rem;}
-.mainSec-sec03 .inner .hashTag i {display:inline-block; border-radius:24rem; text-align:center; padding:0 1rem; background:#672385; height:2.4rem; line-height:2.4rem; 
-  color:rgba(255, 255, 255, 0.6); font-size:1.4rem;letter-spacing: -0.28px} 
+ 
+.mainSec-sec03 .inner .titArea h2 br {display:none;}
+.mainSec-sec03 .inner .hashTag {text-align:center; display:block; margin-top:2rem;}
+.mainSec-sec03 .inner .hashTag i {display:inline-block; border-radius:24rem; text-align:center; padding:0 1rem; background:#672385; height:2.4rem; line-height:2.4rem; color:rgba(255, 255, 255, 0.6); font-size:1.4rem;letter-spacing: -0.28px} 
 .mainSec-sec03 .slideWrap {position:relative; padding-left:32.1rem; max-width:1920px; margin:8.4rem auto 0;}
 .mainSec-sec03 .slideWrap .owl-carousel .item {overflow:hidden; letter-spacing:-0.23px; position: relative; height:40rem; background:#fff; border-radius:2rem 2rem 2rem 0;}
 .mainSec-sec03 .slideWrap .owl-carousel .item p {position:absolute; bottom:0; left:0; width:100%; padding:3rem 1rem 0; height:12rem; background: #be9bfb; color: #672385; text-align:center; font-weight:900;}
 .mainSec-sec03 .slideWrap .owl-carousel .item p em {display:block; font-weight:700; font-size:1.4rem;}
 .mainSec-sec03 .slideWrap .owl-nav {position:absolute; left:-6.5em; top:11rem}
-.mainSec-sec03 .slideWrap .owl-nav button {display:block; text-indent:-999px; overflow: hidden; width:5.8rem; height:5.8rem; }
+.mainSec-sec03 .slideWrap .owl-nav button {display:block; text-indent:-999px; overflow: hidden; width:5.8rem; height:5.8rem;}
 .mainSec-sec03 .slideWrap .owl-nav .owl-prev {background: url(../images/landing/icon_prev.png) no-repeat 0 0; background-size:5.8rem auto;}
 .mainSec-sec03 .slideWrap .owl-nav .owl-next {background: url(../images/landing/icon_next.png) no-repeat 0 0; background-size:5.8rem auto;}
 .mainSec-sec03 .slideWrap .owl-nav.disabled {display:block;}
 
 .mainSec-sec04 .inner {padding-top:8.9rem;} 
 .mainSec-sec04 .inner .titArea h2 {color:#fff; z-index:2; position:relative;}
-.mainSec-sec04 .inner .iconList {overflow: hidden; margin-top:5.6rem; z-index:2; position:relative;}
+.mainSec-sec04 .inner .iconList {overflow:hidden; margin-top:5.6rem; z-index:2; position:relative;}
 .mainSec-sec04 .inner .iconList li {float:left; width:33.33333%; height:12rem; color:#fff; padding-left:13.7rem; padding-top:2rem; line-height:160%; margin-bottom:6.2rem; font-weight:300;}
 .mainSec-sec04 .inner .iconList li strong { line-height:160%; color:#43e0d7; font-size:2rem; display:block; font-weight:700;}
 .mainSec-sec04 .inner .iconList li:nth-of-type(1) {width:58%; height:13rem; padding-top:0; background: url(../images/icon/icon01.png) no-repeat 0 0; background-size:12rem auto;}
@@ -318,11 +314,11 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec05 .inner {padding-top:6.4rem; height:92.6rem;} 
 .mainSec-sec05 .inner:after {content:""; position:absolute; left:-3.4rem; z-index:1; bottom:0; width:63.8rem; height:61.3rem; background: url(../images/landing/img_01.png) repeat 50% 0; background-size:63.8rem auto;} 
 .mainSec-sec05 .inner .txtArea {position:absolute; right:0rem; width:70rem; top:40rem; z-index:2;}
-.mainSec-sec05 .inner .txtArea p {display:inline-block; border:1px solid #672385; font-weight:700; background:#fff; color:#672385; font-size:1.8rem;;  width:46.6rem; letter-spacing:-0.36px; border-radius:3rem 3rem 3rem 0; padding:1.9rem 1.5rem 1.9rem 3rem;}
+.mainSec-sec05 .inner .txtArea p {display:inline-block; border:1px solid #672385; font-weight:700; background:#fff; color:#672385; font-size:1.8rem;  width:46.6rem; letter-spacing:-0.36px; border-radius:3rem 3rem 3rem 0; padding:1.9rem 1.5rem 1.9rem 3rem;}
 .mainSec-sec05 .inner .txtArea p strong {display:block; line-height:1; margin-bottom:1rem; font-weight:900; color:#fc4d20;}
 .mainSec-sec05 .inner .txtArea .mov {margin-left:10rem; position:relative; padding-top:8rem; margin-bottom:3rem;}
 .mainSec-sec05 .inner .txtArea .mov i {display: block; margin-top:.5rem; font-weight:700; color:#672385; text-align:right; width:38rem;}
-.mainSec-sec05 .inner .txtArea .mov p {border-radius:3rem 3rem 0 3rem; width:38rem; }
+.mainSec-sec05 .inner .txtArea .mov p {border-radius:3rem 3rem 0 3rem; width:38rem;}
 .mainSec-sec05 .inner .txtArea .mov .movIcon {position:absolute; right:.5rem; top:4.5rem; width:20rem; height:12.3rem;}
 .mainSec-sec05 .inner .txtArea .mov .movIcon img {width:100%;}
 
@@ -333,7 +329,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec06 .inner .contType01 {position: relative; height:60rem; padding:0 40rem 0 9.2rem;}
 .mainSec-sec06 .inner .contType01:after {content:""; position:absolute; right:0; z-index:1; top:-5.5rem; width:51.3rem; height:64rem; background: url(../images/landing/img_03.png) repeat 6rem 0; background-size:55rem auto;} 
 .mainSec-sec06 .inner .contType01 ul {margin-top:4rem; overflow:hidden; max-width:75.1rem; margin-left:-2.5rem; margin-bottom:4.5rem;}
-.mainSec-sec06 .inner .contType01 ul li {text-align:center; padding-top:14.5rem; line-height:140%; float:left; width:25%; font-size:1.8rem; letter-spacing:-0.32px; font-weight:700; color:#672385; vertical-align:top; } 
+.mainSec-sec06 .inner .contType01 ul li {text-align:center; padding-top:14.5rem; line-height:140%; float:left; width:25%; font-size:1.8rem; letter-spacing:-0.32px; font-weight:700; color:#672385; vertical-align:top;} 
 .mainSec-sec06 .inner .contType01 ul li:nth-of-type(1) {background:url(../images/landing/icon11.png) no-repeat 50% 0; background-size:12.9rem auto} 
 .mainSec-sec06 .inner .contType01 ul li:nth-of-type(2) {background:url(../images/landing/icon12.png) no-repeat 50% 0; background-size:12.9rem auto} 
 .mainSec-sec06 .inner .contType01 ul li:nth-of-type(3) {background:url(../images/landing/icon13.png) no-repeat 50% 0; background-size:12.9rem auto} 
@@ -344,7 +340,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec06 .inner .contType02 .imgW img {width:100%;}
 .mainSec-sec06 .inner .contType02 {  height:55rem; padding-left:55%; padding-top:3em; position: relative;} 
 .mainSec-sec06 .inner .contType02 > ul {margin-top:2rem; overflow:hidden; margin-left:-2.5rem;}
-.mainSec-sec06 .inner .contType02 > ul li {text-align:center; padding-top:10.5rem; line-height:140%; float:left; width:25%; font-size:1.4rem; font-weight:300; color:#672385; vertical-align:top; } 
+.mainSec-sec06 .inner .contType02 > ul li {text-align:center; padding-top:10.5rem; line-height:140%; float:left; width:25%; font-size:1.4rem; font-weight:300; color:#672385; vertical-align:top;} 
 .mainSec-sec06 .inner .contType02 > ul li:nth-of-type(1) {background:url(../images/landing/icon15.png) no-repeat 50% 0; background-size:10rem auto} 
 .mainSec-sec06 .inner .contType02 > ul li:nth-of-type(2) {background:url(../images/landing/icon16.png) no-repeat 50% 0; background-size:10rem auto} 
 .mainSec-sec06 .inner .contType02 > ul li:nth-of-type(3) {background:url(../images/landing/icon17.png) no-repeat 50% 0; background-size:10rem auto} 
@@ -354,7 +350,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec06 .inner .contType02 dd {float:left; width:50%;}
 .mainSec-sec06 .inner .contType02 dd strong {display:block; margin-bottom:.5rem;}
 .mainSec-sec06 .inner .contType02 dd ul li{ text-indent:-5px; padding-left:8px; line-height:160%; letter-spacing:-0.32px;} 
-.mainSec-sec06 .inner .contType02 dd ul li:before { content:"·"; padding-right:.5rem; display: inline-block;} 
+.mainSec-sec06 .inner .contType02 dd ul li:before {content:"·"; padding-right:.5rem; display: inline-block;} 
 
 .mainSec-sec07 {margin-bottom:8.8rem;}
 .mainSec-sec07 .inner {padding-top:8rem;} 
@@ -366,7 +362,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec07 .inner .innerType01 .imgBox img {width:100%;}
 .mainSec-sec07 .inner .innerType01 .imgBox p { position:absolute; display:table; width:100%; bottom:.5rem; left:0; right:0; height:12rem; border-radius:0 0 2rem 0; background:#672385;}
 .mainSec-sec07 .inner .innerType01 .imgBox p em {display:table-cell; vertical-align: middle; padding:2rem 3rem; font-size:2rem; text-align:right; color:#fff;  font-weight:700; line-height:160%;}
-.mainSec-sec07 .inner .innerType01 .imgBox p button { position: absolute; left:3rem; top:50%; margin-top:-2.2rem; width:4.4rem; height:4.4rem;; background:url(../images/landing/icon06.png) no-repeat 50% 0; background-size:4.4rem auto; text-indent:-999px; overflow: hidden;;}
+.mainSec-sec07 .inner .innerType01 .imgBox p button { position:absolute; left:3rem; top:50%; margin-top:-2.2rem; width:4.4rem; height:4.4rem; background:url(../images/landing/icon06.png) no-repeat 50% 0; background-size:4.4rem auto; text-indent:-999px; overflow: hidden;}
 .mainSec-sec07 .inner .innerType01 .imgList {float:right; width:50%;}
 .mainSec-sec07 .inner .innerType01 .imgList li {width:50%; padding-left:2.5%; float:left; position: relative; margin-bottom:1.6rem; cursor: pointer;}
 .mainSec-sec07 .inner .innerType01 .imgList li img {width:100%;} 
@@ -380,23 +376,22 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec07 .inner .innerType02 .owl-carousel .item div img {width:100%;}
 .mainSec-sec07 .inner .innerType02 .owl-carousel .item div span {display: block; position:absolute; bottom:2.5rem; left:4rem; right:2rem; color:#fff; font-weight:700; line-height:160%;}
 .mainSec-sec07 .inner .innerType02 .owl-carousel .item p {position:relative; padding:4rem 3rem 0; font-size:1.4rem; color:#fff; font-weight:700; height:10rem; background:#672385; color:#fff;}
-.mainSec-sec07 .inner .innerType02 .owl-carousel .item p strong {font-size:2rem; }
-.mainSec-sec07 .inner .innerType02 .owl-carousel .item p button { position: absolute; right:3rem; top:50%; margin-top:-2.2rem; width:4.4rem; height:4.4rem;; background:url(../images/landing/icon06.png) no-repeat 50% 0; background-size:4.4rem auto; text-indent:-999px; overflow: hidden;;}
+.mainSec-sec07 .inner .innerType02 .owl-carousel .item p strong {font-size:2rem;}
+.mainSec-sec07 .inner .innerType02 .owl-carousel .item p button { position: absolute; right:3rem; top:50%; margin-top:-2.2rem; width:4.4rem; height:4.4rem;  background:url(../images/landing/icon06.png) no-repeat 50% 0; background-size:4.4rem auto; text-indent:-999px; overflow: hidden;}
 
 .mainSec-sec07 .inner .innerType02 .owl-carousel .item p em {display:block; font-weight:700; font-size:1.4rem;}
 .mainSec-sec07 .inner .innerType02 .owl-nav {position:absolute; left:-6.5em; top:11rem}
-.mainSec-sec07 .inner .innerType02 .owl-nav button {display:block; text-indent:-999px; overflow: hidden; width:5.8rem; height:5.8rem; }
+.mainSec-sec07 .inner .innerType02 .owl-nav button {display:block; text-indent:-999px; overflow: hidden; width:5.8rem; height:5.8rem;}
 .mainSec-sec07 .inner .innerType02 .owl-prev {background: url(../images/landing/icon_prev.png) repeat 50% 0; background-size:5.8rem auto;}
 .mainSec-sec07 .inner .innerType02 .owl-next {background: url(../images/landing/icon_next.png) repeat 50% 0; background-size:5.8rem auto;}
-
-.mainSec-sec07 .inner .innerType03 {}
+ 
 .mainSec-sec07 .inner .innerType03 .titArea {margin-bottom:4rem;}
 .mainSec-sec07 .inner .innerType03 .titArea h2 br {display:none;}
 .mainSec-sec07 .inner .innerType03 .mainFaqlist {overflow: hidden; margin-left:-2.5%; margin-bottom:5.5rem;}
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li {float:left; width:22.5%; margin-left:2.5%; margin-bottom:4rem;}
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire {}
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div {padding:3rem; height:29rem; background: #eceaf2; border-radius:2rem 2rem 0 2rem; position: relative;}
-.mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div:after {content:""; position: absolute; left:3rem; bottom:7.5rem; width:12.1rem; height:9.6rem; background: url(../images/landing/img_04.png) repeat 50% 0; background-size:12.1rem auto; }
+.mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div:after {content:""; position: absolute; left:3rem; bottom:7.5rem; width:12.1rem; height:9.6rem; background: url(../images/landing/img_04.png) repeat 50% 0; background-size:12.1rem auto;}
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div strong {display:block; font-family:'Black Han Sans', sans-serif; font-size:2.4rem; color:#24154a; font-weight:normal;}
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div a {display:inline-block; line-height:2.8rem; position:absolute; bottom:2em;  left:3rem; padding-right:3.5rem; font-weight:300;}
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div a:after {content:">"; position: absolute; right:0; top:0; width:2.8rem; height:2.8rem; text-align:center; border-radius:24rem; background:#24154a; color:#fff;}
@@ -415,14 +410,13 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li:nth-of-type(6) > a:hover,
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li:nth-of-type(7) > a:hover {border-color: #e4ddfa;} 
 .mainSec-sec07 .inner .innerType03 .mainFaqlist li.faqGo.mob {display:none;}
-
-.mainSec-sec07 .inner .innerType04 {}
-.mainSec-sec07 .inner .innerType04 {max-width:1280px; margin:0 auto; position:relative; }
-.mainSec-sec07 .inner .innerType04 dl { letter-spacing:-1.32px; margin-bottom:2.3rem; }  
+ 
+.mainSec-sec07 .inner .innerType04 {max-width:1280px; margin:0 auto; position:relative;}
+.mainSec-sec07 .inner .innerType04 dl { letter-spacing:-1.32px; margin-bottom:2.3rem;}  
 .mainSec-sec07 .inner .innerType04 dl dt {font-family:'Black Han Sans', sans-serif; font-size:4.2rem; line-height:110%; color:#fff; margin-bottom:1.5rem} 
 .mainSec-sec07 .inner .innerType04 dl dd {font-size:2.4rem; color:#f6ebe9;} 
 .mainSec-sec07 .inner .innerType04 dl dd i {display:block; font-size:2rem; margin-top:.5rem;}
-.mainSec-sec07 .inner .innerType04 a {display:inline-block; line-height:5rem; padding:0 3rem; color:#fff;  height:5rem; border-radius:3rem; background-color: #be9bfb;}
+.mainSec-sec07 .inner .innerType04 a {display:inline-block; line-height:5rem; padding:0 3rem; color:#fff; height:5rem; border-radius:3rem; background-color: #be9bfb;}
 
 .mainSec-sec07 .inner .innerType04 .item { height:40rem; padding-left:10.5rem; padding-top:7.5rem;}
 .mainSec-sec07 .inner .innerType04 .type01 {background: url(../images/landing/img_bg07.png) no-repeat 50% 0}
@@ -484,7 +478,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .textbookLeft {position:relative; width:64rem; height:64rem; float:left; width:64rem;}
 .textbookLeft .imgWrap{display:none; position:absolute; left:0; top:0}
 .textbookLeft .imgWrap img {width:100%;}
-.textbookLeft input[type=radio] {margin-left:-22px; opacity:0; }
+.textbookLeft input[type=radio] {margin-left:-22px; opacity:0;}
 .textbookLeft label {display:block; width:6rem; height:6rem; position:absolute; bottom:6rem; z-index:2;}
 .textbookLeft label img {width:6rem; height:6rem; border:1px solid #672385;}
 .textbookLeft input#radio + label {left:2rem;}  
@@ -545,7 +539,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .iconBoxType02 {float:left; width:57%; background:#fcf6ff; min-height:40rem; padding-left:4%; padding-top:6rem;} 
 .iconBoxType02 p { font-size:1.8rem; line-height:160%;}
 .iconBoxType02 ul {margin-top:3.3rem; overflow:hidden; padding-right:4%;}
-.iconBoxType02 ul li {text-align:center; padding-top:13.5rem; line-height:160%; float:left; width:25%; font-size:1.5rem; font-weight:900; color:#672385; vertical-align:top; } 
+.iconBoxType02 ul li {text-align:center; padding-top:13.5rem; line-height:160%; float:left; width:25%; font-size:1.5rem; font-weight:900; color:#672385; vertical-align:top;} 
 .iconBoxType02 ul li:nth-of-type(1) {background:url(../images/strategy/icon09.png) no-repeat 50% 0; background-size:12.5rem auto} 
 .iconBoxType02 ul li:nth-of-type(2) {background:url(../images/strategy/icon10.png) no-repeat 50% 0; background-size:12.5rem auto} 
 .iconBoxType02 ul li:nth-of-type(3) {background:url(../images/strategy/icon11.png) no-repeat 50% 0; background-size:12.5rem auto} 
@@ -581,7 +575,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .techList .dlWrap dl.icon08:after {background:url(../images/technology/icon08.png) no-repeat 50% 0; background-size:6rem auto}
 
 .hgroup.center span {display:block;  text-align:center; line-height:150%; margin-top:1rem;}  
-.hgroup.center span.comTxt {background:url(../images/technology/text_p.png) no-repeat 50% 0; height:5.6rem;; text-indent:-9999px; overflow: hidden;}
+.hgroup.center span.comTxt {background:url(../images/technology/text_p.png) no-repeat 50% 0; height:5.6rem; text-indent:-9999px; overflow: hidden;}
 .hgroup.center span.sizeUp {font-size:1.8rem; line-height:170%;}
 
 .tabArea {position:relative; overflow:hidden; margin-bottom:2rem;}
@@ -645,12 +639,12 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .learningConts {padding-top:0; background:#fff;}
 .learningConts .learningList {max-width:1280px; margin:0 auto;}
 .learningWrap {padding:7.8rem 0 2rem;}
-.learningWrap:nth-of-type(even) {background:#eceaf2; } 
+.learningWrap:nth-of-type(even) {background:#eceaf2;} 
 .learningList {overflow:hidden; margin-left:-2.5%; margin-bottom:9.5rem; margin-top:2rem}
 .learningList > li {width:30.8%; margin-left:2.5%; text-align:center; float:left; margin-bottom:5.8rem;}  
 .learningList > li > div {position:relative;  background:#fff; min-height:78rem; border-radius:6rem; overflow: hidden;} 
 .learningList > li > div:after { content:""; position:absolute; left:0; top:0; bottom:0; right:0; border-radius:6rem; border:solid 3px #e4ddfa;}
-.learningList > li > div .iconWrap {position: relative; z-index:2; }
+.learningList > li > div .iconWrap {position: relative; z-index:2;}
 .learningList > li > div .iconWrap span { height:33rem; margin-bottom:1.5rem; overflow:hidden; height:0; padding-bottom:100%; position:relative;}
 .learningList > li > div .iconWrap span img {width:100%;}
 .learningList > li > div .iconWrap i { display: block; position:absolute; left:50%; bottom:-.5rem; width:13rem; height:13rem; margin-left:-6.5rem}
@@ -667,7 +661,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .learningList > li > div dl dd p {max-width:85%; margin:0 auto; text-align:left;text-indent:-8px; padding-left:8px;}
 .learningList > li > div dl dd p:before {content:"*"; padding-right:.5rem; display: inline-block;}
  
-.learningList > li.contentsAdd > div {border-radius:6rem; border:dashed 3px #e4ddfa; } 
+.learningList > li.contentsAdd > div {border-radius:6rem; border:dashed 3px #e4ddfa;} 
 .learningList > li.contentsAdd > div:after { display:none;}
 .learningList > li.contentsAdd > div span {position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); display:block; width:100%; padding-top:15rem; background:url(../images/learning/add.png) no-repeat 50% 0; background-size:12.7rem auto}
 .learningList > li.contentsAdd > div span strong {display:block; color: #d2c4ff; font-size:2.4rem;font-family:'Black Han Sans', sans-serif; margin-bottom:3rem; font-weight:400;}
@@ -814,6 +808,17 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .faqList li.more {display:none; background:#f5f5f5; color:#000; font-weight:700; margin-top:-1px} 
 .faqList li.more div{display:block; padding-left:25%; line-height:160%}
 
+/* popup */
+.popLayer{display:table; position:fixed; left:0; top:0; bottom:0; height:100%; right:0; width:100%; background-color: rgba(0,0,0, 0.5); z-index:999; table-layout:fixed;}
+.popLayer .popupWrap{position: relative; top:50%; left:50%; width:80rem; padding-bottom:2rem; margin-left:-40rem;  background:#e4ddfa;}
+.popLayer .popInner{display:table-cell; vertical-align:middle}
+.popLayer .popupWrap .popTit{position: absolute; left:0; top:0; width:100%; z-index:2; height:5.7rem; line-height:5.7rem; background:#672385;}
+.popLayer .popupWrap .popTit span{font-size:1.8rem; color:#fff; display:block; padding-left:2rem; font-weight:700;}
+.popLayer .popupWrap .btnClose{display:block; overflow:hidden; position:absolute; right:0; top:0; height:5.7rem; width:5.7rem; z-index:3; text-indent:-999px; background:url(../images/landing/close2.png) no-repeat 50% 50%; background-size:2rem auto;} 
+.popLayer .popupWrap .popCont{height:45rem; position:relative; padding-top:5.7rem;}  
+.popLayer .popupWrap .popCont:after {content:""; position:absolute; left:50%; top:50%; z-index: 1; margin-left:-.4rem; margin-top:.1rem;transform: rotate(180deg); border-top:26px solid transparent; border-right:52px solid #fff; border-bottom:26px solid transparent;}
+.popLayer .popupWrap .popCont .movBox { height:45rem; position: relative; z-index:2;}
+
 @media only screen and (max-width:950px){
  
 }  
@@ -863,7 +868,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   header .inner nav .depth2 > li {display: block;  width:100%}
   header .inner nav .depth2 > li > a {display:block; font-size:1.2rem; padding-left:2rem; height:2.5rem; line-height:2.5rem}
   header .inner nav .depth2 > li > a:hover {border-bottom:0}
-  header .inner nav .close {display:block; position:absolute; right:1rem; top:1rem;  width:3.1rem; height:3.1rem; background:url(../images/gnb/close.png) no-repeat 50% 50%; background-size:1.7rem auto; text-indent:-999px; }
+  header .inner nav .close {display:block; position:absolute; right:1rem; top:1rem;  width:3.1rem; height:3.1rem; background:url(../images/gnb/close.png) no-repeat 50% 50%; background-size:1.7rem auto; text-indent:-999px;}
 
   footer {height:auto; padding-bottom:2rem}
   footer .inner {position:relative; max-width:1280px; margin:0 2rem; padding-top:1.5rem}
@@ -904,7 +909,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainopy .inner dl {padding-top:6.5rem; text-align:center;l}  
   .mainopy .inner dl dt { font-size:2.7rem; line-height:110%; margin-bottom:.5rem} 
   .mainopy .inner dl dt i { margin-bottom:.5rem; font-size:1.2rem; font-weight:700;}
-  .mainopy .inner dl dd {font-size:1.1rem; font-weight:300; line-height:150%; } 
+  .mainopy .inner dl dd {font-size:1.1rem; font-weight:300; line-height:150%;} 
   .mainopy .owl-carousel .item:after {content:""; position:absolute; left:0; top:0; width:100%; height:100%; z-index: 1;}
   .mainopy .owl-carousel .item.type01:after {background: url(../images/landing/img_main_m.jpg) no-repeat 70% 0; background-size:100% auto;}
   .mainopy .owl-carousel .item.type02:after {background: url(../images/landing/img_main_m.jpg) no-repeat 50% 0; background-size:100% auto;}
@@ -926,7 +931,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   [class*="mainSec-sec04"]{height:auto; background:url(../images/landing/img_bg04_m.jpg) no-repeat 66% 0; background-size:auto 75rem;}
   [class*="mainSec-sec05"]{height:auto; background:url(../images/landing/img_bg05.jpg) no-repeat 60.3% 0; background-size:auto 60.4rem;}
   [class*="mainSec-sec06"]{height:auto; background:#eceaf2}
-  [class*="mainSec-sec07"]{height:auto; }
+  [class*="mainSec-sec07"]{height:auto;}
  
   [class*="mainSec"] .inner .titArea h2 {font-size:2rem; line-height:1.2;}
   [class*="mainSec"] .inner .titArea p {margin-top:1.2rem; font-size:1.1rem; line-height:140%;}
@@ -938,11 +943,11 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec01 .inner .titArea p em u{font-size:1.1rem; color:#00b1ea;}
   .mainSec-sec01 .inner .titArea p i {color:#672385; font-size:1rem; margin-top:1.5rem;}
   .mainSec-sec01 .inner:after { margin-left:-12.3rem; z-index:1; bottom:3.8rem; width:24.6rem; height:23rem; background-size:24.6rem auto;} 
-  .mainSec-sec01 .inner .txt p { font-size:.9rem;; border-radius:2rem 2rem 0 2rem; }
-  .mainSec-sec01 .inner .txt p strong { font-size:1.5em; line-height:1; margin-bottom:.8rem; }
+  .mainSec-sec01 .inner .txt p { font-size:.9rem; border-radius:2rem 2rem 0 2rem;}
+  .mainSec-sec01 .inner .txt p strong { font-size:1.5em; line-height:1; margin-bottom:.8rem;}
   .mainSec-sec01 .inner .txt.type01 {left:6.4rem; top:12.5rem}
-  .mainSec-sec01 .inner .txt.type01 p {width:18rem; height:8.7rem; padding-top:1.7rem; }
-  .mainSec-sec01 .inner .txt.type01 span {display:none; }  
+  .mainSec-sec01 .inner .txt.type01 p {width:18rem; height:8.7rem; padding-top:1.7rem;}
+  .mainSec-sec01 .inner .txt.type01 span {display:none;}  
   .mainSec-sec01 .inner .txt.type02 {right:4.7rem; top:21.7rem}
   .mainSec-sec01 .inner .txt.type02 p {width:15rem; height:7.5rem; padding-top:1.7rem;}
   .mainSec-sec01 .inner .txt.type03 {left:5.3rem; top:30.1rem}
@@ -957,20 +962,20 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec02 .inner .txtLeft p {height:2.6rem; line-height:2.6rem;}
   .mainSec-sec02 .inner .txtLeft p:first-child { width:19.3rem; border-radius:2rem 2rem 2rem 0; margin-bottom:.9rem; font-size:1rem; margin-left:8.2rem;}
   .mainSec-sec02 .inner .txtLeft p:first-child:before { left:-3.6rem; width:2.6rem; height:2.6rem; background-size:2.6rem auto;} 
-  .mainSec-sec02 .inner .txtLeft p:last-child {width:15.5rem; border-radius:2rem 2rem 0 2rem; font-size:1rem; margin-left:15rem; } 
+  .mainSec-sec02 .inner .txtLeft p:last-child {width:15.5rem; border-radius:2rem 2rem 0 2rem; font-size:1rem; margin-left:15rem;} 
   .mainSec-sec02 .inner .txtLeft p:last-child:after {right:0rem; width:2.6rem; height:2.6rem; background-size:2.6rem auto; margin-right:-3.6rem;} 
 
   .mainSec-sec02 .inner .txtRight { position:static; text-align:center; font-size:1rem; margin-top:1.5rem;}
 
-  .mainSec-sec03 .inner .titArea h2 br {display:block; }
+  .mainSec-sec03 .inner .titArea h2 br {display:block;}
   .mainSec-sec03 .inner .hashTag { margin-top:.5rem; padding:0 4rem;}
   .mainSec-sec03 .inner .hashTag i {margin-bottom:.5rem; height:1.6rem; line-height:1.6rem; font-size:.9rem;} 
   .mainSec-sec03 .slideWrap { padding-left:7.3rem; margin:1rem auto 3.5rem;}
   .mainSec-sec03 .slideWrap .owl-carousel .item { height:20rem; border-radius:2rem 2rem 2rem 0;}
-  .mainSec-sec03 .slideWrap .owl-carousel .item p {font-size:1rem; padding:1rem .5rem 0; height:6rem; }
+  .mainSec-sec03 .slideWrap .owl-carousel .item p {font-size:1rem; padding:1rem .5rem 0; height:6rem;}
   .mainSec-sec03 .slideWrap .owl-carousel .item p em { font-size:1rem; margin-top:.3rem;}
   .mainSec-sec03 .slideWrap .owl-nav {position:absolute; left:-3.2em; top:5.5rem}
-  .mainSec-sec03 .slideWrap .owl-nav button { width:2.9rem; height:2.9rem; }
+  .mainSec-sec03 .slideWrap .owl-nav button { width:2.9rem; height:2.9rem;}
   .mainSec-sec03 .slideWrap .owl-nav .owl-prev {background: url(../images/landing/icon_prev.png) no-repeat 0 0; background-size:2.9rem auto;}
   .mainSec-sec03 .slideWrap .owl-nav .owl-next {background: url(../images/landing/icon_next.png) no-repeat 0 0; background-size:2.9rem auto;}
   .mainSec-sec03 .slideWrap .owl-nav.disabled {display:block;}
@@ -987,13 +992,12 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec04 .inner .iconList li:nth-of-type(5) {background-size:6rem auto;}
   .mainSec-sec04 .inner .iconList li:nth-of-type(6) {background-size:6rem auto;}
   .mainSec-sec04 .inner .iconList li:nth-of-type(7) {background-size:6rem auto;}
-  .mainSec-sec04 .inner .iconList li:nth-of-type(8) {background-position:.5rem 0; background-size:5rem auto;}
-  
+  .mainSec-sec04 .inner .iconList li:nth-of-type(8) {background-position:.5rem 0; background-size:5rem auto;} 
 
   .mainSec-sec05 .inner {padding-top:3rem; height:60rem;} 
   .mainSec-sec05 .inner:after {left:50%; margin-left:-16.3rem; width:32.6rem; height:31.3rem; background: url(../images/landing/img_01.png) repeat 50% 0; background-size:32.6rem auto;} 
   .mainSec-sec05 .inner .txtArea {position: static; width:100%; margin:7rem auto 1rem; width:31rem;}
-  .mainSec-sec05 .inner .txtArea p {font-size:1rem;; width:26rem; padding:.9rem 1rem .9rem 1rem; border-radius:1.5rem 1.5rem 0 1.5rem;}
+  .mainSec-sec05 .inner .txtArea p {font-size:1rem; width:26rem; padding:.9rem 1rem .9rem 1rem; border-radius:1.5rem 1.5rem 0 1.5rem;}
   .mainSec-sec05 .inner .txtArea p strong {line-height:1; margin-bottom:.5rem;}  
   .mainSec-sec05 .inner .txtArea > p {display: inline-block;}
   .mainSec-sec05 .inner .txtArea .mov {padding-top:0; margin:-4rem 0 2rem;}
@@ -1001,7 +1005,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec05 .inner .txtArea .mov p {border-radius:1.5rem 1.5rem 0 1.5rem; width:20rem;}
   .mainSec-sec05 .inner .txtArea .mov .movIcon {right:0; top:-1.5rem; width:9.9rem; height:6.1rem;} 
  
-  .mainSec-sec06 .inner {padding-top:2.4rem; } 
+  .mainSec-sec06 .inner {padding-top:2.4rem;} 
   .mainSec-sec06 .inner .titArea h2 {text-align:center;}
   .mainSec-sec06 .inner .titArea p {text-align:center;}
   .mainSec-sec06 .inner .titArea p strong {margin:1rem 0 .5rem; font-weight:900;}
@@ -1016,7 +1020,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec06 .inner .contType01 .btnW {text-align:center; display:block;}
   .mainSec-sec06 .inner .contType01 .btnW a {width: 19.1rem; height:2.4rem; line-height:2.4rem; font-size:1rem;}
 
-  .mainSec-sec06 .inner .contType02 .imgW {position:absolute; left:0; top:auto; bottom:2rem; width:100%;text-align:center; }
+  .mainSec-sec06 .inner .contType02 .imgW {position:absolute; left:0; top:auto; bottom:2rem; width:100%;text-align:center;}
   .mainSec-sec06 .inner .contType02 .imgW img {width:68%;}
   .mainSec-sec06 .inner .contType02 {height:68rem; padding-left:0; padding-top:2.5em; position: relative;} 
   .mainSec-sec06 .inner .contType02 > ul {margin-left:0; max-width:34rem; margin:2rem auto 0;}
@@ -1039,9 +1043,9 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec07 .inner .innerType01 .imgBox img {width:100%;}
   .mainSec-sec07 .inner .innerType01 .imgBox p { bottom:0; height:6rem; border-radius:0 0 2rem 0;}
   .mainSec-sec07 .inner .innerType01 .imgBox p em { padding:2rem 3rem; font-size:1rem;}
-  .mainSec-sec07 .inner .innerType01 .imgBox p button {margin-top:-1.1rem; width:2.2rem; height:2.2rem;; background-size:2.2rem auto;}
+  .mainSec-sec07 .inner .innerType01 .imgBox p button {margin-top:-1.1rem; width:2.2rem; height:2.2rem; background-size:2.2rem auto;}
   .mainSec-sec07 .inner .innerType01 .imgList {width:auto; margin-top:1rem; margin-right:-1rem;}
-  .mainSec-sec07 .inner .innerType01 .imgList li {width:50%; padding-left:0; padding-right:1rem; margin-bottom:.4rem; }
+  .mainSec-sec07 .inner .innerType01 .imgList li {width:50%; padding-left:0; padding-right:1rem; margin-bottom:.4rem;}
   .mainSec-sec07 .inner .innerType01 .imgList li img {width:100%;}
   .mainSec-sec07 .inner .innerType01 .imgList li p {position:absolute; bottom:1.5rem; left:1.5rem; right:.5rem; font-size:.9rem;}
   .mainSec-sec07 .inner .innerType01 .imgList li p em {display: block; font-weight:300; font-size:.8rem;}
@@ -1053,12 +1057,12 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item div img {width:100%;}
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item div span { bottom:1.5rem; left:4rem; right:2rem; line-height:160%; font-size:1rem;}
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item p {position:relative; padding:2rem 3rem 0; font-size:.9rem; height:5rem}
-  .mainSec-sec07 .inner .innerType02 .owl-carousel .item p strong {font-size:1rem; }
+  .mainSec-sec07 .inner .innerType02 .owl-carousel .item p strong {font-size:1rem;}
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item p button {margin-top:-1.1rem; width:2.2rem; height:2.2rem; background-size:2.2rem auto;}
 
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item p em {display:block; font-weight:700; font-size:1.4rem;}
   .mainSec-sec07 .inner .innerType02 .owl-nav {left:-2.8em; top:5rem}
-  .mainSec-sec07 .inner .innerType02 .owl-nav button {width:2.4rem; height:2.4rem; }
+  .mainSec-sec07 .inner .innerType02 .owl-nav button {width:2.4rem; height:2.4rem;}
   .mainSec-sec07 .inner .innerType02 .owl-prev {background: url(../images/landing/icon_prev.png) repeat 50% 0; background-size:2.4rem auto;}
   .mainSec-sec07 .inner .innerType02 .owl-next {background: url(../images/landing/icon_next.png) repeat 50% 0; background-size:2.4rem auto;}
  
@@ -1067,11 +1071,11 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec07 .inner .innerType03 .titArea h2 br {display:block;}
   .mainSec-sec07 .inner .innerType03 .mainFaqlist { margin-left:-2.5%; margin-bottom:2.5rem;}
   .mainSec-sec07 .inner .innerType03 .mainFaqlist li { width:47.5%; margin-left:2.5%; margin-bottom:1.5rem;}
-  .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div {padding:2rem 1.3rem; height:15rem; border-radius:2rem 2rem 0 2rem; }
+  .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div {padding:2rem 1.3rem; height:15rem; border-radius:2rem 2rem 0 2rem;}
   .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div:after {left:1.3rem; bottom:4rem; width:6.1rem; height:4.6rem; background-size:6.1rem auto;}
   .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div strong { font-size:1.2rem;}
   .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div a {font-size:1rem;  line-height:1.6rem; bottom:1.5em; left:1.3rem; padding-right:2rem;}
-  .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div a:after { width:1.4rem; height:1.4rem; }
+  .mainSec-sec07 .inner .innerType03 .mainFaqlist li.Inquire div a:after { width:1.4rem; height:1.4rem;}
   .mainSec-sec07 .inner .innerType03 .mainFaqlist li.faqGo { width:97.5%; height:15rem; padding:2rem; margin:0 0 0 2.5%; border-radius:2rem; background-size:100% auto;}
   .mainSec-sec07 .inner .innerType03 .mainFaqlist li.faqGo strong { font-size:1.2rem; margin-bottom:1rem;}  
   .mainSec-sec07 .inner .innerType03 .mainFaqlist li.faqGo a {font-size:.9rem; line-height:1.4rem; padding-right:2.5rem;} 
@@ -1126,7 +1130,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .strategyDltxt > div:nth-of-type(3) dl {float:left; width:50%;}
   .strategyDltxt > div:nth-of-type(3) dl + dl {padding-left:.8rem;}
   .threeList {margin-bottom:2rem; border-top: 2px solid #eceaf2; border-bottom: 1px solid #672385;}
-  .threeList > li {border-bottom:1px solid #eceaf2; padding:2rem 1rem }
+  .threeList > li {border-bottom:1px solid #eceaf2; padding:2rem 1rem}
   .threeList > li:last-child {border-bottom:0;}
   .threeList > li dl {width:100%; text-align:center;}
   .threeList > li dl dt {font-size:1.7rem; margin-bottom:.5rem;}
@@ -1134,7 +1138,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .threeList > li dl dd dl {text-align:center;}
   .threeList > li dl dd li { padding-left:4px; line-height:180%; display:inline-block;}
   .threeList > li dl dd li:before {padding-right: .1rem;}
-  .threeList > li .iconArea { width:100%;}
+  .threeList > li .iconArea {width:100%;}
   .threeList > li .iconArea span { width:9.7rem; height:9.7rem; border-radius:1rem; border: solid 2px #eceaf2; margin-right:.2rem; font-size:.7rem; line-height:140%; padding-top:5.5rem; margin-bottom:0;}
   .threeList > li .iconArea span.icon01 {background:url(../images/strategy/icon01.png) no-repeat 50% 1.5rem; background-size:3rem auto}
   .threeList > li .iconArea span.icon02 {background:url(../images/strategy/icon02.png) no-repeat 50% 1.5rem; background-size:3rem auto}
@@ -1241,7 +1245,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .tech .hgroup.center span.comTxt { padding:.7rem 2rem 0;  background:url(../images/technology/text_m.png) no-repeat 50% 0; background-size:32.6rem auto; height:4.6rem}
 
   .tabArea {position:relative; overflow:hidden; margin-bottom:2rem; overflow: hidden; padding:0 2rem;}
-  .tabArea .techTab {width:100%; height:auto }
+  .tabArea .techTab {width:100%; height:auto}
   .tabArea .techTab li {width:50%; float:left;}
   .tabArea .techTab li span {height:4rem; line-height:4rem; font-size:1.1rem; padding-left:5rem;}
   
@@ -1305,7 +1309,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .learningList > li > div .iconWrap span { width:100%;}
   .learningList > li > div .iconWrap i {bottom:3rem; width:10rem; height:10rem; margin-left:-5rem}
  
-  .learningList > li > div a span { font-size:3.2rem; }
+  .learningList > li > div a span { font-size:3.2rem;}
   .learningList > li > div dl {padding:0 3% 0; margin-top:-2rem;}
   .learningList > li > div dl dt {font-size:1.8rem; height:auto; margin-bottom:.5rem; line-height:140%;} 
   .learningList > li > div dl dd.listWrap {font-size:1.3rem;} 
@@ -1315,6 +1319,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .learningList > li.contentsAdd > div span {background:url(../images/learning/add.png) no-repeat 50% 0; background-size:10rem auto}  
   .learningList > li.contentsAdd > div span strong {margin-bottom:2rem; font-size: 1.8rem;}
   .learningWrap .textInfo {font-size: 1rem; margin-top: 0; padding-bottom:1.5rem;}
+
   /*사용안내*/
   .guide header .inner h1{ top:1rem}
   .guide .container {padding-top:5rem} 
@@ -1331,7 +1336,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .userGuideMenu li:nth-of-type(2) a:after {background:url(../images/guide/icon_02.png) no-repeat 50% 50%; background-size:5.4rem auto}
   .userGuideMenu li:nth-of-type(3) a:after {background:url(../images/guide/icon_03.png) no-repeat 50% 50%; background-size:5.8rem auto}
   .userGuideMenu li:nth-of-type(4) a:after {background:url(../images/guide/icon_04.png) no-repeat 50% 50%; background-size:5.3rem auto}
-  .userGuideMenu li p {font-size:1.2rem; line-height:1.27; padding:0 }
+  .userGuideMenu li p {font-size:1.2rem; line-height:1.27; padding:0}
 
   .userGuideDown {margin:1.5rem .5rem 1rem}
   .userGuideDown li {width:100%; margin-left:0; margin-bottom:1.9rem}
@@ -1397,7 +1402,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .detailHead p strong {width:5rem; font-weight:900;}
   .detailHead p em {width:auto; line-height:150%} 
   .detailHead span strong {width:auto; font-weight:900;}
-  .detailHead span em {width:auto; }
+  .detailHead span em {width:auto;}
   .detailBody{padding:1.8rem 2rem; font-size:1.1rem;}
   .btnArea {margin:1.7rem 0 2rem}
   .btnArea button {height:3rem; width:32%; font-size:1rem; margin:0 1rem}
