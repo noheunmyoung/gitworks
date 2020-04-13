@@ -1,20 +1,16 @@
-$(window).scroll(function () {
-	gnbAreaInit(); // gnb 스크롤체크
-}); 
-
 function chkScTop() { //현재 스크롤 위치 저장
 	oriScroll = $(window).scrollTop();
-} 
+}
 
 /* gnb navigation */
-function gnbAreaInit() { 
+$(window).scroll(function () {
 	if ($(window).scrollTop() > 10) {
 		$('#wrapper').addClass('scrolled');
 	}
 	else {
 		$('#wrapper').removeClass('scrolled');
-	} 
-} 
+	}
+});  
 
 /* 토글*/
 $(function () {
@@ -45,6 +41,7 @@ $(function () {
 	}); 
 });
 
+/* tab */
 $(function () {
 	$('ul.tabMenu li').click(function () {
 		var activeTab = $(this).attr('data-tab');
@@ -78,7 +75,7 @@ $(function () {
 	})
 }); 
 
- 
+/* faq */
 $(function () { 
 	$(".view").click(function () { 
 		$(this).toggleClass("clicked").next().slideToggle(200); 
