@@ -75,6 +75,7 @@ $(function () {
 	})
 }); 
 
+
 /* faq */
 $(function () { 
 	$(".view").click(function () { 
