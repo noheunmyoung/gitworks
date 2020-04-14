@@ -251,7 +251,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 [class*="mainSec"] .inner .titArea h2 {font-size:4.2rem; line-height:1;}
 [class*="mainSec"] .inner .titArea p {margin-top:1.2rem; font-size:1.8rem; text-align:center; line-height:150%;}
 [class*="mainSec"] .inner .titArea ul {text-align:center; width:64.7rem; margin:1.2rem auto 0;}
-[class*="mainSec"] .inner .titArea ul li{display:block; text-indent:-5px; padding-left:8px; line-height:150%; font-size:1.8rem; color:#000;} 
+[class*="mainSec"] .inner .titArea ul li{display:block; text-indent:-5px; padding-left:8px; line-height:160%; font-size:1.8rem; color:#000;} 
 [class*="mainSec"] .inner .titArea ul li:before { content:"·"; padding-right:.5rem; display: inline-block;} 
 
 .mainSec-sec01 .inner {height:81.6rem;}
@@ -713,10 +713,12 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .tabWrap .tabMenu li{float:left; width:33.33333%; height:5.6rem}
 .tabWrap .tabMenu.num li {width:25%}
 .tabWrap .tabMenu li span{display:block; height:5.6rem; line-height:5.6rem; background:#f5f5f5; text-align:center; font-size:1.8rem; border:1px solid #d8d8d8}
-.tabWrap .tabMenu li.current span{background:#672385; color:#fff; font-weight:700}
+.tabWrap .tabMenu li.current span{background:#672385; color:#fff; font-weight:700; border-color: #672385}
 .tabWrap .tabcontent{display:none; position:relative}
 .tabWrap .tabcontent:after {content:""; clear:both; display:block}
 .tabWrap .tabcontent.current{display:block}  
+.tabWrap .tabMenu li:nth-of-type(2) span {border-left:0; border-right:0;}
+.tabWrap .tabMenu.num  li:nth-of-type(3) span {border-right:0;}
 
 /*사용안내 > paginate*/
 .paginate {margin-bottom:30px; text-align:center; padding:4rem 0}
@@ -813,12 +815,12 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 
 /* popup */
 .popLayer{display:table; position:fixed; left:0; top:0; bottom:0; height:100%; right:0; width:100%; background-color: rgba(0,0,0, 0.7); z-index:999; table-layout:fixed;}
-.popLayer .popupWrap{position: relative; top:50%; left:50%; width:80rem; padding-bottom:2rem; margin-left:-40rem;  background:#e4ddfa;border-radius:1rem 1rem 0 0;}
+.popLayer .popupWrap{position: relative; top:50%; left:50%; width:80rem; padding-bottom:2rem; margin-left:-40rem;  background:#e4ddfa; border-radius:1rem 1rem 0 0;}
 .popLayer .popInner{display:table-cell; vertical-align:middle}
 .popLayer .popupWrap .popTit{position: absolute; left:0; top:0; width:100%; z-index:2; height:5.7rem; line-height:5.7rem; background:#672385; border-radius:1rem 1rem 0 0;}
 .popLayer .popupWrap .popTit span{font-size:1.8rem; color:#fff; display:block; padding-left:2rem; font-weight:700;}
 .popLayer .popupWrap .btnClose{display:block; overflow:hidden; position:absolute; right:0; top:0; height:5.7rem; width:5.7rem; z-index:3; text-indent:-999px; background:url(../images/landing/close2.png) no-repeat 50% 50%; background-size:2rem auto;} 
-.popLayer .popupWrap .popCont{height:45rem; position:relative; padding-top:5.7rem; border-radius:2rem 2rem 0 0;}  
+.popLayer .popupWrap .popCont{height:45rem; position:relative; padding-top:5.7rem;}  
 .popLayer .popupWrap .popCont:after {content:""; position:absolute; left:50%; top:50%; z-index: 1; margin-left:-.4rem; margin-top:.1rem;transform: rotate(180deg); border-top:26px solid transparent; border-right:52px solid #fff; border-bottom:26px solid transparent;}
 .popLayer .popupWrap .popCont .movBox { height:45rem; position: relative; z-index:2;}
 
