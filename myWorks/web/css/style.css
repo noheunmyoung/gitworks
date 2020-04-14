@@ -249,9 +249,9 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 
 [class*="mainSec"] .inner .titArea {}
 [class*="mainSec"] .inner .titArea h2 {font-size:4.2rem; line-height:1;}
-[class*="mainSec"] .inner .titArea p {margin-top:1.2rem; font-size:1.8rem; text-align:center; line-height:140%;}
+[class*="mainSec"] .inner .titArea p {margin-top:1.2rem; font-size:1.8rem; text-align:center; line-height:150%;}
 [class*="mainSec"] .inner .titArea ul {text-align:center; width:64.7rem; margin:1.2rem auto 0;}
-[class*="mainSec"] .inner .titArea ul li{display:inline-block; text-indent:-5px; padding-left:8px; line-height:140%;} 
+[class*="mainSec"] .inner .titArea ul li{display:block; text-indent:-5px; padding-left:8px; line-height:150%; font-size:1.8rem; color:#000;} 
 [class*="mainSec"] .inner .titArea ul li:before { content:"·"; padding-right:.5rem; display: inline-block;} 
 
 .mainSec-sec01 .inner {height:81.6rem;}
