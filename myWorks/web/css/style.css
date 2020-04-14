@@ -812,7 +812,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .faqList li.more div{display:block; padding-left:25%; line-height:160%}
 
 /* popup */
-.popLayer{display:table; position:fixed; left:0; top:0; bottom:0; height:100%; right:0; width:100%; background-color: rgba(0,0,0, 0.5); z-index:999; table-layout:fixed;}
+.popLayer{display:table; position:fixed; left:0; top:0; bottom:0; height:100%; right:0; width:100%; background-color: rgba(0,0,0, 0.7); z-index:999; table-layout:fixed;}
 .popLayer .popupWrap{position: relative; top:50%; left:50%; width:80rem; padding-bottom:2rem; margin-left:-40rem;  background:#e4ddfa;border-radius:1rem 1rem 0 0;}
 .popLayer .popInner{display:table-cell; vertical-align:middle}
 .popLayer .popupWrap .popTit{position: absolute; left:0; top:0; width:100%; z-index:2; height:5.7rem; line-height:5.7rem; background:#672385; border-radius:1rem 1rem 0 0;}
