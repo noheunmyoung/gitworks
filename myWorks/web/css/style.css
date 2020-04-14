@@ -888,8 +888,8 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   footer .familySite button i {padding-right:2rem; background:url(../images/footer/arrow_up.png@.png) no-repeat 100% 50%; background-size:1rem auto}
   footer .familySite .familyMenu {position:absolute; top:2.1rem; width:100%; padding:10px 0; display:none; background:#ffffff; z-index:4}
   .iconMenu {height:auto} 
-  .iconMenu ul li {width:33.33333%; padding-bottom:2.5rem;}
-  .iconMenu ul li a {font-size:1.rem;  padding-top:3.5rem; font-size:1.2rem; height:62px; } 
+  .iconMenu ul li {width:33.33333%; padding-bottom:1.5rem;}
+  .iconMenu ul li a {font-size:1.rem; padding-top:3.5rem; font-size:1.2rem; height:62px; } 
   .iconMenu ul li:nth-of-type(1) a {background:url(../images/footer/icon_01.png) no-repeat 50% 0; background-size:3rem auto}
   .iconMenu ul li:nth-of-type(2) a {background:url(../images/footer/icon_02.png) no-repeat 50% 0; background-size:3rem auto}
   .iconMenu ul li:nth-of-type(3) a {background:url(../images/footer/icon_03.png) no-repeat 50% 0; background-size:3rem auto}
@@ -1414,7 +1414,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .detailHead span strong {width:auto; font-weight:900;}
   .detailHead span em {width:auto;}
   .detailBody{padding:1.8rem 2rem; font-size:1.1rem;}
-  .btnArea {margin:1.7rem 0 2rem}
+  .btnArea {margin:1.7rem 0 2.6rem}
   .btnArea button {height:3rem; width:32%; font-size:1rem; margin:0 1rem}
   .btnArea .btnList {height:2.3rem;line-height: 2.3em; font-size:1rem; width:6.7rem;}
 
@@ -1431,7 +1431,18 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .tblListRow td p {margin-top:1rem; font-size:1rem;}
   .textInfo { margin-bottom:1rem; font-size:1rem;}
   .textInfo u {font-weight:900; font-size:1rem;}
+  .textInfo + p {padding-bottom:.4rem;}
   .textInfo + p label { font-size:1rem;}
+
+  /* popup */ 
+  .popLayer .popupWrap{left:0; width:auto; margin:0 2rem; padding-bottom:0;} 
+  .popLayer .popupWrap .popTit{ height:4.6rem; line-height:4.6rem;}
+  .popLayer .popupWrap .popTit span{font-size:1.4rem; padding-left:1rem;}
+  .popLayer .popupWrap .btnClose{height:4.6rem; width:4.6rem;background-size:1.5rem auto;} 
+  .popLayer .popupWrap .popCont{height:30rem; position:relative; padding-top:4.7rem;}  
+  .popLayer .popupWrap .popCont:after {border-top:13px solid transparent; border-right:26px solid #fff; border-bottom:13px solid transparent;}
+  .popLayer .popupWrap .popCont .movBox {height:30rem;}
+
 }  
 
 @media only screen and (max-width:375px){
