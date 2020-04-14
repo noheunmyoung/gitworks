@@ -593,7 +593,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .tabArea .scroll h3 {margin-bottom:1rem;}
 .tabArea .scroll ul {margin-bottom:3rem;}
 .tabArea.device .scroll {height:50rem;} 
-.tabArea.normal .scroll {height:50rem;} 
+.tabArea.normal .scroll {height:43rem;} 
 .techInfotxt {margin-bottom:7.7rem;}
 .techInfotxt strong {display: inline-block; border-radius:2rem; width:26rem; height:3rem; line-height:3rem; text-align:center; border:1px solid #672385; color:#672385; margin-right:1rem;}
 
