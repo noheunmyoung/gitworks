@@ -221,14 +221,14 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainopy .owl-carousel .item.type02:after {background: url(../images/landing/img_main.jpg) no-repeat 50% 0}
 .mainopy .owl-carousel .item.type03:after {background: url(../images/landing/img_main.jpg) no-repeat 50% 0}
 
-.mainopy .owl-theme .owl-dots  {text-align:left;  width:111.4rem; position:absolute; top:46.7rem; left:50%; margin-left:-55.7rem; z-index:3;}
+.mainopy .owl-theme .owl-dots  {text-align:left; width:111.4rem; position:absolute; top:46.7rem; left:50%; margin-left:-55.7rem; z-index:3;}
 .mainopy .owl-theme .owl-dots  span {margin:0 .4rem 0 0;}
 .mainopy .owl-theme .owl-dots .owl-dot.active span,
 .mainopy .owl-theme .owl-dots .owl-dot:hover span {background: #672385; width:9.6rem;}
 .mainopy .owl-theme .owl-dots .owl-dot span {width:4rem; height:6px; background: #aea4a1;} 
 
 .noticeBox {position:absolute; bottom:0; left:50%; width:110.4rem; margin-left:-55.2rem; z-index:2; overflow: hidden;}
-.noticeBox .notice {position: relative; max-width:1280px; margin:0 auto; height:5.4rem; background-color: rgba(92, 61, 124, 0.67); border-radius:2.4rem 2.4rem 0 0;}
+.noticeBox .notice {position: relative; margin:0 auto; height:5.4rem; background-color: rgba(92, 61, 124, 0.67); border-radius:2.4rem 2.4rem 0 0;}
 .noticeBox .notice ul { margin-right:6rem;}
 .noticeBox .notice ul li a {display:block; color:#fff; padding-left:4rem; height:5.4rem; letter-spacing: -0.48px;  line-height:5.4rem;font-weight:300;}
 .noticeBox .notice .btnW {display:block; position: absolute; right:2rem; top:0; height:5.4rem;}
@@ -820,8 +820,10 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .popLayer .popupWrap .popCont:after {content:""; position:absolute; left:50%; top:50%; z-index: 1; margin-left:-.4rem; margin-top:.1rem;transform: rotate(180deg); border-top:26px solid transparent; border-right:52px solid #fff; border-bottom:26px solid transparent;}
 .popLayer .popupWrap .popCont .movBox { height:45rem; position: relative; z-index:2;}
 
-@media only screen and (max-width:950px){
- 
+@media only screen and (max-width:1044px){ 
+.mainopy .inner dl {width:102.4rem;}   
+.mainopy .owl-theme .owl-dots  {width:102.4rem;}  
+.noticeBox {width:102.4rem; margin-left:-51.2rem;} 
 }  
  
 @media only screen and (max-width:768px){ 
@@ -908,7 +910,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   /*메인*/
   .mainopy {height:53rem; overflow: hidden;} 
   .mainopy .inner {min-height:53rem;}
-  .mainopy .inner dl {padding-top:6.5rem; text-align:center;l}  
+  .mainopy .inner dl {padding-top:6.5rem; text-align:center; width:100%;}  
   .mainopy .inner dl dt { font-size:2.7rem; line-height:110%; margin-bottom:.5rem} 
   .mainopy .inner dl dt i { margin-bottom:.5rem; font-size:1.2rem; font-weight:700;}
   .mainopy .inner dl dd {font-size:1.1rem; font-weight:300; line-height:150%;} 
