@@ -10,7 +10,7 @@ $(window).scroll(function () {
 	else {
 		$('#wrapper').removeClass('scrolled');
 	}
-});  
+}); 
 
 /* 토글*/
 $(function () {
@@ -41,7 +41,7 @@ $(function () {
 	}); 
 });
 
-/* tab */
+/* TAB */
 $(function () {
 	$('ul.tabMenu li').click(function () {
 		var activeTab = $(this).attr('data-tab');

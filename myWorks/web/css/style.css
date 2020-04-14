@@ -193,8 +193,8 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .container [class*="headCopy-learning"] {background:#672385 url(../images/learning/img_top.jpg) no-repeat 50% 0}
 .container [class*="headCopy-technology"] {background:#672385 url(../images/technology/img_top.jpg) no-repeat 50% 0}
 .container [class*="headCopy-strategy"] {background:#672385 url(../images/strategy/img_top.jpg) no-repeat 50% 0}
-.container [class*="headCopy"] dl {position:relative; max-width:1280px; margin:0 auto; padding-top:16.5rem; text-align:center; color:#fff} 
-.container [class*="headCopy-strategy"] dl:after {content:""; position:absolute; right:0; bottom:-7.1rem; width:42.4rem; height:22.4rem; background:url(../images/strategy/img_deco01.png) no-repeat 0 0}
+.container [class*="headCopy"] dl {position:relative; max-width:1280px; height:38rem; margin:0 auto; padding-top:16.5rem; text-align:center; color:#fff; overflow:hidden;} 
+.container [class*="headCopy-strategy"] dl:after {content:""; position:absolute; right:0; bottom:0; width:42.4rem; height:22.4rem; background:url(../images/strategy/img_deco01.png) no-repeat 0 0}
 .container [class*="headCopy"] dl dt {font-family:'Black Han Sans', sans-serif; font-size:4.4rem; line-height:1.09; letter-spacing:-1.32px; margin-bottom:1rem}
 .container [class*="headCopy-guide"] dl dt { margin-bottom:3rem} 
 .container [class*="headCopy"] dl dd {font-size:1.8rem; font-weight:300; line-height:160%;} 
@@ -212,7 +212,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 /*메인*/
 .mainopy {position:relative; height:87.1rem;} 
 .mainopy .inner {max-width:1280px; margin:0 auto; position:relative; min-height:87.1rem;}
-.mainopy .inner dl {padding-top:16.5rem; color:#fff; position: relative; z-index:2;}  
+.mainopy .inner dl {padding-top:22rem; color:#fff; position: relative; z-index:2; width:111.4rem; margin:0 auto;}  
 .mainopy .inner dl dt {font-family:'Black Han Sans', sans-serif; font-size:5.4rem; line-height:110%; letter-spacing:-1.32px; margin-bottom:.5rem} 
 .mainopy .inner dl dt i {display:block; margin-bottom:.2rem; color:#00b1ea; font-size:2rem;  letter-spacing:0; font-family:'NanumSquareRound',sans-serif; font-weight:300;}
 .mainopy .inner dl dd {font-size:2rem; font-weight:300; line-height:150%;} 
@@ -221,13 +221,13 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .mainopy .owl-carousel .item.type02:after {background: url(../images/landing/img_main.jpg) no-repeat 50% 0}
 .mainopy .owl-carousel .item.type03:after {background: url(../images/landing/img_main.jpg) no-repeat 50% 0}
 
-.mainopy .owl-theme .owl-dots  {text-align:left; max-width:1280px; position:absolute; top:42rem; left:50%; margin-left:-31.5%; z-index:3;}
+.mainopy .owl-theme .owl-dots  {text-align:left;  width:111.4rem; position:absolute; top:46.7rem; left:50%; margin-left:-55.7rem; z-index:3;}
 .mainopy .owl-theme .owl-dots  span {margin:0 .4rem 0 0;}
 .mainopy .owl-theme .owl-dots .owl-dot.active span,
 .mainopy .owl-theme .owl-dots .owl-dot:hover span {background: #672385; width:9.6rem;}
 .mainopy .owl-theme .owl-dots .owl-dot span {width:4rem; height:6px; background: #aea4a1;} 
 
-.noticeBox {position:absolute; bottom:0; left:0; width:100%; z-index:2; overflow: hidden;}
+.noticeBox {position:absolute; bottom:0; left:50%; width:110.4rem; margin-left:-55.2rem; z-index:2; overflow: hidden;}
 .noticeBox .notice {position: relative; max-width:1280px; margin:0 auto; height:5.4rem; background-color: rgba(92, 61, 124, 0.67); border-radius:2.4rem 2.4rem 0 0;}
 .noticeBox .notice ul { margin-right:6rem;}
 .noticeBox .notice ul li a {display:block; color:#fff; padding-left:4rem; height:5.4rem; letter-spacing: -0.48px;  line-height:5.4rem;font-weight:300;}
@@ -472,7 +472,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .threeList > li .iconArea span.icon03 {background:url(../images/strategy/icon03.png) no-repeat 50% 2rem; background-size:6rem auto}
 .threeList > li .iconArea span.icon04 {background:url(../images/strategy/icon04.png) no-repeat 50% 2rem; background-size:6rem auto}
 
-.textbook {overflow: hidden;}
+.textbook {overflow: hidden; border-bottom:1px solid #672385;}
 .textbook h3 {color: #672385; font-size:3.4rem; margin-bottom:2rem; font-family:'Black Han Sans', sans-serif; text-align:center; font-weight:normal;}
 .textbook h3 br {display:none;}
 .textbookLeft {position:relative; width:64rem; height:64rem; float:left; width:64rem;}
@@ -488,12 +488,12 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .textbookLeft input#radio1:checked ~ .view2,
 .textbookLeft input#radio2:checked ~ .view3{display:block;}
 
-.textbookRight {display:block; float:left; width:50%; border:1px solid #eceaf2; height:64rem;}
-.textbookRight > span {display:block; text-align:center; padding-top:4rem;}
+.textbookRight {display:block; float:left; width:50%; border:1px solid #eceaf2; height:64rem; background: #f8f5f7;}
+.textbookRight > span {display:block; text-align:center; padding-top:4rem; background:#fff;}
 .textbookRight span i {display:inline-block;}
 .textbookRight span i:nth-of-type(1) img {width:12em;}
 .textbookRight span i:nth-of-type(2) img {width:14em;} 
-.textbookRight dl {padding:2em 5.5rem;}
+.textbookRight dl {padding:2em 5.5rem; background:#fff;}
 .textbookRight dl dt {color: #672385; font-size:2.2rem; margin-bottom:1.3rem; font-weight:700;}
 .textbookRight dl dd {margin-bottom:1rem; line-height:170%;}
 .textbookRight dl dd li {text-align:left; text-indent:-5px; padding-left:8px; line-height:160%;}
@@ -756,8 +756,9 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
 .tblListRow th {width:12rem; padding:4rem 0 1.5rem; text-align:left; vertical-align:top}
 .tblListRow th em {color:#672385}
 .tblListRow td {padding:1.5rem 0; vertical-align:top} 
-.tblListRow td input[type=text]{width:100%; height:6.4rem; border:0; padding:0 0 0 3.5rem}
-.tblListRow td select {width:50%; height:6.4rem; border:0; padding:0 0 0 3.5rem}
+.tblListRow td input[type=text]{width:100%; height:6.4rem; border:0; padding:0 0 0 3.5rem} 
+.tblListRow td select {width:50%; height:6.4rem; border:0; padding:0 0 0 3.5rem; -webkit-appearance: none; -moz-appearance: none; appearance: none; background:#fff url(../images/guide/select.png) no-repeat 97% 50%; background-size:3rem auto;} 
+.tblListRow td select::-ms-expand { display: none;}   
 .tblListRow td textarea {width:100%; height:29rem; border:0; padding:2rem; line-height:150%}
 .tblListRow td input[type=text].file {width:50%}
 .tblListRow td .btnFile {background:#be9bfb; font-size:1.8rem; height:6.4rem; width:12rem; color:#fff; font-weight:700}
@@ -895,9 +896,10 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .container [class*="headCopy-learning"]{background:#672385 url(../images/learning/img_top.jpg) no-repeat 50% 0}
   .container [class*="headCopy-technology"]{background:#672385 url(../images/technology/img_top.jpg) no-repeat 50% 0}
   .container [class*="headCopy-strategy"]{background:#672385 url(../images/strategy/img_top.jpg) no-repeat 50% 0}
-  .container [class*="headCopy-strategy"] dl:after { bottom:-3.4rem; width:12.2rem; height:6.5rem; background-size:12.2rem auto; z-index:1;}
+  .container [class*="headCopy-strategy"] dl {height:19rem; overflow:hidden;}
+  .container [class*="headCopy-strategy"] dl:after {bottom:-.1rem; width:12.2rem; height:6.5rem; background-size:12.2rem auto; z-index:1;}
 
-  .container [class*="headCopy-"] dl {padding-top:8rem} 
+  .container [class*="headCopy-"] dl {padding-top:8rem;} 
   .container [class*="headCopy-"] dl dt {font-size:2.2rem; margin-bottom:.5rem; letter-spacing: 0;} 
   .container [class*="headCopy-"] dl dd {position: relative; z-index:2; font-size:1rem} 
 
@@ -1051,7 +1053,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .mainSec-sec07 .inner .innerType01 .imgList li p em {display: block; font-weight:300; font-size:.8rem;}
 
   .mainSec-sec07 .inner .innerType02 {overflow: hidden; margin-top:3rem; margin-bottom:3.5rem; padding-left:5.5rem;}
-  .mainSec-sec07 .inner .innerType02 .titArea {margin-bottom:3rem;}
+  .mainSec-sec07 .inner .innerType02 .titArea {margin-bottom:3rem; margin-left:-5.5rem;}
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item {overflow:hidden; letter-spacing:-0.23px; position: relative; background:#fff; border-radius:2rem 2rem 2rem 0;}
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item div {position: relative;}
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item div img {width:100%;}
