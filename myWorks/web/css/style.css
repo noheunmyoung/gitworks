@@ -1073,7 +1073,7 @@ footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item p button {margin-top:-1.1rem; width:2.2rem; height:2.2rem; right:1.5rem; background-size:2.2rem auto;}
 
   .mainSec-sec07 .inner .innerType02 .owl-carousel .item p em {display:block; font-weight:700; font-size:1.4rem;}
-  .mainSec-sec07 .inner .innerType02 .owl-nav {left:-2.8em; top:5rem}
+  .mainSec-sec07 .inner .innerType02 .owl-nav {left:-2.8em; top:50%; margin-top:-3.15rem;}
   .mainSec-sec07 .inner .innerType02 .owl-nav button {width:2.4rem; height:2.4rem;}
   .mainSec-sec07 .inner .innerType02 .owl-prev {background: url(../images/landing/icon_prev.png) repeat 50% 0; background-size:2.4rem auto;}
   .mainSec-sec07 .inner .innerType02 .owl-next {background: url(../images/landing/icon_next.png) repeat 50% 0; background-size:2.4rem auto;}
