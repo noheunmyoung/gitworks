@@ -174,9 +174,10 @@ footer .copyArea address span i {position:relative; display:inline-block; margin
 footer .copyArea address span i:after {content:"|"; position:absolute; right:-1.4rem; top:0}
 footer .copyArea address span i:last-child:after {display:none}
 footer .familySite {position:absolute; right:0; top:5.8rem}
-footer .familySite button {width:20rem; height:4rem; color:#fff; background:#51b3ee; border-radius:2.4rem}
+footer .familySite button {width:20rem; height:4rem; color:#fff; background:#51b3ee; border-radius:2.4rem; position: relative; z-index:5;}
 footer .familySite button i {display:inline-block; padding-right:3.5rem; background:url(../images/footer/arrow_up.png@.png) no-repeat 100% 50%; background-size:2rem auto}
-footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding:10px 0; display:none; background:#ffffff; z-index:4}
+footer .familySite .familyMenu {position:absolute; top:2.6rem; left:.1rem; right:.1rem;  padding:2rem 0 1rem; display:none; background:#eceaf2; z-index:4; border-radius:0 0 1rem 1rem;}
+footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
 .iconMenu {height:16.6rem}
 .iconMenu ul {max-width:1280px; margin:0 auto; overflow:hidden}
 .iconMenu ul li {float:left; width:16.66666%; text-align:center}
@@ -886,7 +887,9 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   footer .familySite {top:1.5rem}
   footer .familySite button {width:10rem; height:2rem;  font-size:1rem}
   footer .familySite button i {padding-right:2rem; background:url(../images/footer/arrow_up.png@.png) no-repeat 100% 50%; background-size:1rem auto}
-  footer .familySite .familyMenu {position:absolute; top:2.1rem; width:100%; padding:10px 0; display:none; background:#ffffff; z-index:4}
+  footer .familySite .familyMenu {top:1.1rem; padding:1.5rem 0 1rem; }
+  footer .familySite .familyMenu a {font-size:.9rem;} 
+
   .iconMenu {height:auto} 
   .iconMenu ul li {width:33.33333%; padding-bottom:1.5rem;}
   .iconMenu ul li a {font-size:1.rem; padding-top:3.5rem; font-size:1.2rem; height:62px; } 
@@ -1376,7 +1379,7 @@ footer .familySite .familyMenu {position:absolute; top:45px; width:100%; padding
   .searchWrap p {padding:1rem 2rem 0; font-size:1rem;} 
 
   .faqList li {padding: 1rem 0;background-size: 1rem auto;} 
-  .faqList li.more > div {display:block; padding:0 2rem} 
+  .faqList li.more > div {display:block; padding:0 2rem; font-size:.9rem;} 
   .faqList li span:first-child {width:22%; text-align:left; padding-left:1.5rem;font-size: .9rem;}
   .faqList li span:last-child {width:77%; padding-right:3rem;font-size: .9rem;} 
   .faqList li.tdHead span:first-child,
