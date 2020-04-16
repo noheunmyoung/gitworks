@@ -480,11 +480,11 @@ footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
 .textbookLeft .imgWrap{display:none; position:absolute; left:0; top:0}
 .textbookLeft .imgWrap img {width:100%;}
 .textbookLeft input[type=radio] {margin-left:-22px; opacity:0;}
-.textbookLeft label {display:block; width:6rem; height:6rem; position:absolute; bottom:6rem; z-index:2;}
-.textbookLeft label img {width:6rem; height:6rem; border:1px solid #672385;}
-.textbookLeft input#radio + label {left:2rem;}  
-.textbookLeft input#radio1 + label {left:9.5rem}
-.textbookLeft input#radio2 + label {left:17rem} 
+.textbookLeft label {display:block; width:7.2rem; height:7.2rem; position:absolute; bottom:2.9rem; z-index:2;}
+.textbookLeft label img {width:7.2rem; height:7.2rem; border:1px solid #672385;}
+.textbookLeft input#radio + label {left:3.9rem;}  
+.textbookLeft input#radio1 + label {left:13rem}
+.textbookLeft input#radio2 + label {left:22.1rem} 
 .textbookLeft input#radio:checked ~ .view1,
 .textbookLeft input#radio1:checked ~ .view2,
 .textbookLeft input#radio2:checked ~ .view3{display:block;}
@@ -1160,9 +1160,10 @@ footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
   .textbook h3 {font-size:2rem; margin-bottom:2rem; letter-spacing:-1px;}
   .textbook h3 br {display:block;}
   .textbookLeft {width:36rem; height:36rem; float:none; margin:0 auto;}
-  .textbookLeft label {bottom:1.8rem; width:4rem; height:4rem;}
+  .textbookLeft label {bottom:1.5rem; width:4rem; height:4rem;}
   .textbookLeft label img {width:4rem; height:4rem;}
-  .textbookLeft input#radio1 + label {left:7rem}
+  .textbookLeft input#radio + label {left:2rem}
+  .textbookLeft input#radio1 + label {left:7rem} 
   .textbookLeft input#radio2 + label {left:12rem} 
 
   .textbookRight { width:100%; height:auto; border-bottom: 1px solid #672385;}
