@@ -30,15 +30,21 @@ $(function () {
 	$('.mobileMenu').on('click', function () {
 		$(this).toggleClass('active');
 		$(this).next().slideToggle(300);
-	}); 
+	});
 
 	$('.close').on('click', function () {
 		$('.gnbMenu').slideUp(300);
 	});
-	$('.subMenu').on('click', function () {
-		$(this).toggleClass('active');
-		$(this).next().slideToggle(300);
-	}); 
+	//$('.subMenu').on('click', function () {
+	//$(this).toggleClass('active');
+	//$(this).next().slideToggle(300);
+	//}); 
+});
+
+$(window).resize(function () {
+	if ($(window).width() > 768) {
+
+	}
 });
 
 /* TAB */
