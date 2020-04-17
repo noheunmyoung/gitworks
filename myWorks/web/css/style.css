@@ -502,10 +502,11 @@ footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
 
 .textbookRight {display:block; float:left; width:50%; border:1px solid #eceaf2; height:64rem; background: #f8f5f7;}
 .textbookRight > span {display:block; text-align:center; padding-top:4rem; background:#fff;}
-.textbookRight span i {display:inline-block;}
-.textbookRight span i:nth-of-type(1) img {width:12em;}
-.textbookRight span i:nth-of-type(2) img {width:14em;} 
-.textbookRight dl {padding:2em 5.5rem; background:#fff;}
+.textbookRight span button {display:inline-block; opacity:0.4;}
+.textbookRight span button.active {opacity:1;}
+.textbookRight span button:nth-of-type(1) img {width:12em;}
+.textbookRight span button:nth-of-type(2) img {width:14em;} 
+.textbookRight dl {padding:2em 5.5rem; background:#fff; height:21.4rem;}
 .textbookRight dl dt {color: #672385; font-size:2.2rem; margin-bottom:1.3rem; font-weight:700;}
 .textbookRight dl dd {margin-bottom:1rem; line-height:170%;}
 .textbookRight dl dd li {text-align:left; text-indent:-5px; padding-left:8px; line-height:160%;}
