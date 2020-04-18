@@ -39,17 +39,17 @@ $(function () {
 	});
 });
 
-$(window).resize(function () {
-	var width_size = window.outerWidth;
+// $(window).resize(function () {
+// 	var width_size = window.outerWidth;
 
-	if (width_size <= 800) {
-		$('.depth1 li a').on('click', function () {
-			$(this).toggleClass('active');
-			$(this).next().slideToggle();
-			$('.depth1 li a').not(this).removeClass('active').next().slideUp(200);
-		});
-	}
-})
+// 	if (width_size <= 800) {
+// 		$('.depth1 li a').on('click', function () {
+// 			$(this).toggleClass('active');
+// 			$(this).next().slideToggle();
+// 			$('.depth1 li a').not(this).removeClass('active').next().slideUp(200);
+// 		});
+// 	}
+// })
 
 /* TAB */
 $(function () {
