@@ -10,7 +10,7 @@ $(window).scroll(function () {
 	else {
 		$('#wrapper').removeClass('scrolled');
 	}
-}); 
+});
 
 /* 토글*/
 $(function () {
@@ -30,68 +30,69 @@ $(function () {
 	$('.mobileMenu').on('click', function () {
 		$(this).toggleClass('active');
 		$(this).next().slideToggle(300);
-	}); 
+		$('body').addClass('dim');
+	});
 
 	$('.close').on('click', function () {
 		$('.gnbMenu').slideUp(300);
+		$('body').removeClass('dim');
 	});
-	//$('.subMenu').on('click', function () {
-		//$(this).toggleClass('active');
-		//$(this).next().slideToggle(300);
-	//}); 
 });
 
-$(window).resize(function () { 
-	if ($(window).width() > 768) { 
-		
+$(window).resize(function () {
+	var width_size = window.outerWidth;
+
+	if (width_size <= 800) {
+		$('.depth1 li a').on('click', function () {
+			$(this).toggleClass('active');
+			$(this).next().slideToggle();
+			$('.depth1 li a').not(this).removeClass('active').next().slideUp(200);
+		});
 	}
- });
- 
- 
+})
 
 /* TAB */
 $(function () {
 	$('ul.tabMenu li').click(function () {
 		var activeTab = $(this).attr('data-tab');
 		$('ul.tabMenu li').removeClass('current');
-		$('.tabcontent').removeClass('current'); 
+		$('.tabcontent').removeClass('current');
 		$(this).addClass('current');
 		$('#' + $(this).attr('data-tab')).addClass('current');
 		return false;
 	})
-}); 
+});
 
 $(function () {
 	$('ul.tabMenutech li').click(function () {
 		var activeTab = $(this).attr('data-tab');
-		$('ul.tabMenutech li').removeClass('current'); 
+		$('ul.tabMenutech li').removeClass('current');
 		$('.techcontent').removeClass('current');
 		$(this).addClass('current');
 		$('#' + $(this).attr('data-tab')).addClass('current');
 		return false;
 	})
-}); 
+});
 
 /* 메인 동영상*/
 $(function () {
 	$('ul.imgList li').click(function () {
-		var activeTab = $(this).attr('data-tab'); 
+		var activeTab = $(this).attr('data-tab');
 		$('.imgBox').removeClass('current');
 		$(this).addClass('current');
 		$('#' + $(this).attr('data-tab')).addClass('current');
 		return false;
 	})
-}); 
-
-/* faq */
-$(function () { 
-	$(".view").click(function () { 
-		$(this).toggleClass("clicked").next().slideToggle(200); 
-		$(".view").not(this).removeClass("clicked").next().slideUp(200);
-	}); 
 });
 
- 
- 
- 
- 
+/* faq */
+$(function () {
+	$('.view').click(function () {
+		$(this).toggleClass("clicked").next().slideToggle(200);
+		$('.view').not(this).removeClass('clicked').next().slideUp(200);
+	});
+});
+
+
+
+
