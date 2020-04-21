@@ -164,7 +164,7 @@ header .inner .mobileMenu {display:none}
 
 footer {height:29.8rem; background:#672385}
 footer .inner {position:relative; max-width:1280px; margin:0 auto; padding-top:5.8rem}
-footer .copyArea mark {display:block; height:3.5rem; margin-bottom:2.5rem; text-indent:-999px; overflow:hidden; background:url(../images/footer/logo.png) no-repeat 0 0}
+footer .copyArea > a {display:block; height:3.5rem; margin-bottom:2.5rem; text-indent:-999px; overflow:hidden; background:url(../images/footer/logo.png) no-repeat 0 0}
 footer .copyArea * {color:#fff; font-style:normal; line-height:1.71; font-size:1.4rem}
 footer .copyArea .footerMenu {display:block; margin-bottom:1.5rem}
 footer .copyArea .footerMenu a {position:relative; display:inline-block; margin-right:2rem}
@@ -844,7 +844,7 @@ footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
 }  
  
 @media only screen and (max-width:768px){ 
-
+  .dim:after { content:""; z-index: 1; position:fixed; left:0; top:0; bottom:0; right:0; opacity: 0.6; background-color: #000;}  
   .block { display:inline;}
   .imgPc { display:none;} 
   .imgPm { display:block;}  
@@ -866,7 +866,7 @@ footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
   header .inner h1{position:absolute; left:1.7rem; top:1.3rem; width:9rem; height:3.3rem}
   header .inner h1 a {display:block; height:3.3rem; background:url(../images/gnb/img_logo.png) no-repeat 0 0; background-size:6.5rem auto}
   header .inner .mobileMenu {display:block; position:absolute; right:.7rem; top:.5rem; width:4rem; height:3.5rem; text-indent:-999px; overflow:hidden; background:url(../images/gnb/mobile_menu.png) no-repeat 50% 50%; background-size:2rem auto}
-  header .inner nav {display:none; right:0; top:0; width:100%; padding:2rem; background:#eceaf2 url(../images/gnb/img_logo_ov.png) no-repeat 1.5rem 1.5rem;  background-size:7.2rem auto}
+  header .inner nav {display:none; right:0; top:0; width:100%; padding:2rem; background:#eceaf2 url(../images/gnb/img_logo_ov.png) no-repeat 1.5rem 1.5rem; background-size:7.2rem auto; z-index:200;}
   header .inner nav * {color:#672385; font-size:1.4rem; text-align:left}
   header .inner nav .depth1 {display:block; padding:4rem 0 2rem}
   header .inner nav .depth1 > li {width:100%}
@@ -884,7 +884,8 @@ footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
   .scrolled header .inner h1 a {background:url(../images/gnb/img_logo_ov.png) no-repeat 0 0;  background-size:7.2rem auto}  
   .scrolled header .inner nav .depth1 > li > a:hover {border-bottom:0}
   .scrolled header .inner nav .depth1 + span a {border:0} 
-    
+   
+  header .inner nav .depth1 > li .depth2.bl {display:block} 
   header .inner nav .depth2 > li {display: block;  width:100%}
   header .inner nav .depth2 > li > a {display:block; font-size:1.2rem; padding-left:2rem; height:2.5rem; line-height:2.5rem}
   header .inner nav .depth2 > li > a:hover {border-bottom:0}
@@ -892,7 +893,7 @@ footer .familySite .familyMenu a {display:block; padding:.5rem 1rem;}
 
   footer {height:auto; padding-bottom:2rem}
   footer .inner {position:relative; max-width:1280px; margin:0 2rem; padding-top:1.5rem}
-  footer .copyArea mark {height:2rem; margin-bottom:1rem; background:url(../images/footer/logo.png) no-repeat 0 0; background-size:8.6rem auto}
+  footer .copyArea > a {height:2rem; margin-bottom:1rem; background:url(../images/footer/logo.png) no-repeat 0 0; background-size:8.6rem auto}
   footer .copyArea * {line-height:1.71; font-size:1rem}
   footer .copyArea .footerMenu {margin-bottom:1rem}
   footer .copyArea .footerMenu a {font-size:1.4rem}  
