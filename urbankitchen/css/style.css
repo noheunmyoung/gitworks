@@ -7,7 +7,7 @@ Date :2020-03-31
 
 @import "owl.carousel.min.css"; 
 @import "owl.theme.default.min.css";
-@import "all.css";  
+@import "fontawesome.css";  
 
 @font-face{
   font-family: 'Noto Sans KR';
