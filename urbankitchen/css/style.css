@@ -111,7 +111,7 @@ header {position:fixed; left:0; width:100%; height:6rem; z-index:2; background:#
 header h1{display:inline-block; padding-left:6rem; font-size:2rem; height:6rem; line-height:6rem; letter-spacing: -0.59px }
 body.main header {text-align:center;} 
 body.main header h1{ padding-left:5rem; text-align:center; background:url(../images/logo.png) no-repeat 0 50%; background-size:4.5rem auto;}
-header button {position:absolute;  height:6rem; top:0; text-indent:-999px; overflow:hidden;}
+header button {position:absolute;  height:6rem; top:0; text-indent:-999px; overflow:hidden;outline:none;}
 header .btn-menu {width:6rem; left:0; background:url(../images/icon_menu.png) no-repeat 50% 50%; background-size:2.4rem auto;}
 header .btn-my {width:5rem; right:0; background:url(../images/icon_my.png) no-repeat 50% 50%; background-size:1.8rem auto;}
 header .btn-back {width:6rem; left:0; background:url(../images/icon_back.png) no-repeat 50% 50%; background-size:2.4rem auto;}
@@ -168,6 +168,7 @@ footer .copy-area span i:last-child:after {display:none}
 [class*="mainsec-sec01"] dl dd{ padding-left:13rem; padding-top:1.7rem; font-size:1.4rem;}
 [class*="mainsec-sec01"] dl dd button{width:6rem; height:2.8rem; border-radius:2.5rem; border:solid 1px #4f4f4f; background-color: #f2f2f2; margin-bottom:1rem; margin-right:2.3rem; letter-spacing: -0.42px;}
 [class*="mainsec-sec01"] dl dd button:last-child {margin-right:0}
+
 [class*="mainsec-sec02"]{padding:2.6rem 2rem; overflow:hidden;}
 [class*="mainsec-sec02"] .icon-menu li{position:relative; float:left; width:25%; text-align:center; font-size:1.5rem; font-weight:300;}
 [class*="mainsec-sec02"] .icon-menu li:after {content:""; position:absolute;top:0; left:50%; margin-left:-2.95rem; display:block; width:5.9rem; height:5.9rem; border-radius:3.6rem; background-repeat:no-repeat; background-position:50% 50%; background-size:3.4rem auto;}
@@ -176,6 +177,7 @@ footer .copy-area span i:last-child:after {display:none}
 [class*="mainsec-sec02"] .icon-menu li:nth-of-type(2):after {background-color: rgba(57, 155, 205, 0.3); background-image:url(../images/menu2.png);} 
 [class*="mainsec-sec02"] .icon-menu li:nth-of-type(3):after {background-color:rgba(135, 187, 74, 0.3); background-image:url(../images/menu3.png);} 
 [class*="mainsec-sec02"] .icon-menu li:nth-of-type(4):after {background-color: rgba(172, 111, 250, 0.3); background-image:url(../images/menu4.png);} 
+
 [class*="mainsec-sec03"]{ margin-bottom:3.6rem; color:#000; font-size:1.6rem; } 
 [class*="mainsec-sec03"] .slideWrap { margin-left:2rem;}
 [class*="mainsec-sec03"] .slideWrap mark{ position:absolute; left:0; top:0; display:block; width:6.1rem; height: 2.8rem; text-align:center; font-size:1.4rem; line-height:2.6rem; letter-spacing:-0.42px; color: #4f4f4f; border-radius: 25px; border: solid 1px #4f4f4f; background-color: #f2f2f2;} 
@@ -184,9 +186,11 @@ footer .copy-area span i:last-child:after {display:none}
 [class*="mainsec-sec03"] .slideWrap p { line-height:120%; margin-top:.7rem; letter-spacing: -0.16px; padding-right:2rem;}
 [class*="mainsec-sec03"] .slideWrap strong {display:block; font-weight:700; margin-top:.5rem;}
 [class*="mainsec-sec03"] .slideWrap s { font-size:1.4rem; color:#bdbdbd;}
+
 [class*="mainsec-sec04"]{ margin-bottom:3.6rem;} 
 [class*="mainsec-sec04"] .img-wrap {margin:0 2rem; border-radius:1rem; overflow:hidden;}
 [class*="mainsec-sec04"] .img-wrap img {width:100%; display:block;}
+
 [class*="mainsec-sec05"]{ position:relative;} 
 [class*="mainsec-sec05"] .img-wrap img{width:100%; display:block;} 
 [class*="mainsec-sec05"] p { position: absolute; left:2rem; bottom:2rem; font-size:1.9rem; color:#fafafa; line-height:130%; font-weight:700; letter-spacing: -0.57px;}
