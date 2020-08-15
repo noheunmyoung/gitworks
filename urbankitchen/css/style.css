@@ -199,7 +199,7 @@ footer .copy-area span em:last-child:after{display:none}
 .calendar-wrap .calendar-head span{display:inline-block; padding-top:1.2rem; font-size:2rem;}
 .calendar-wrap .calendar-head span button{width:3rem; height:3rem; font-size:1.8rem;}
 .calendar-wrap .calendar-head span button em{display:inline-block; text-indent:-999px; overflow:hidden; font-size:0;}
-.calendar-wrap .calendar-head .btn-add{position:absolute; right:1.5rem; top:50%; margin-top:-1.9rem; width:3.8rem; height:3.8rem; line-height:2.2rem; border-radius:3.6rem; font-size:3rem; font-weight:300; background:#f41b5d; color:#fff;}
+.calendar-wrap .calendar-head .btn-add{position:absolute; right:1.5rem; top:50%; margin-top:-1.9rem; width:3.8rem; height:3.8rem; line-height:2.2rem; border-radius:3.6rem; font-size:3rem; font-weight:300; background:rgba(255, 46, 46, 0.83); color:#fff;}
 
 .calendar-wrap .calendar-box{height:32.5rem;}
 .calendar-wrap table{table-layout:fixed; width:100%; letter-spacing:1px;}
