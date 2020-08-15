@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>buddy</title> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js" charset="utf-8"></script> 
+	<script type="text/javascript" src="../js/owl.carousel.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+	<div id="wrapper"> 
+		<header>
+			<button type="button" class="btn-back">이전</button>
+			<h1>메뉴 & 공유주방 스케쥴러</h1> 
+			<button type="button" class="btn-my">my</button>
+			<nav class="side-menu">
+				<ul class="depth1">
+					<li><a href="#">레시피</a></li>
+					<li><a href="#">추천메뉴</a></li>
+					<li><a href="#">요리강좌</a></li>
+					<li><a href="#">커뮤니티</a></li>
+					<li><a href="#">위시리스트</a></li>
+					<li><a href="#">정산내역</a></li>
+					<li><a href="#">장바구니</a></li>
+				</ul> 
+				<button type="button" class="btn-close">닫기</button>
+			</nav>
+		</header>  
+
+		<section class="container">
+			 ddddd
+		</section> 
+
+		<footer>
+			<div class="footer-menu">
+				<a href="#none">사업자정보확인</a>
+				<a href="#none">회사소개</a>
+				<a href="#none">이용약관</a>
+				<a href="#none">개인정보처리방침</a>
+			</div>
+			<div class="copy-area">
+				<span><i>상호명: (주)어반키친</i> <i>대표자:이정은</i></span>
+				<span><i>사업자등록번호: 216-07-69826</i> <i>통신판매업신고번호 : 000</i></span>
+				<span>고객센터: 031-240-3639(연중무휴, 08:00 ~ 22:00)</span>
+				<span>대표매일: nagarylife80@naver.com</span>
+				<span>주소: 경기도 수원시 영통구 광교로 146, 103호</span>
+				<span><i>호스팅서비스제공: (주)어반키친</i> <i>개인정보호호책임: 이동일</i></span>
+			</div> 
+		</footer> 
+	</div> 
+	
+	<script>
+		$(document).ready(function () {
+			var owl = $('.mainslide .owl-carousel');
+			owl.owlCarousel({
+				items: 1,
+				margin: 0,
+				dots: true,
+				nav: false,
+				loop: true, 
+			 	autoplay: true,
+				autoplayTimeout:3500,
+				autoplayHoverPause: true  
+			})
+		})
+
+		$(document).ready(function () {
+			var owl = $('.slideWrap .owl-carousel');
+			owl.owlCarousel({
+				items:3,
+				margin:0,
+				dots: false,
+				nav: true,
+				loop: true 
+			})
+		}) 
+	</script>
+</body>
+</html> 
