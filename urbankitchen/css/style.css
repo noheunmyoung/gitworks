@@ -70,7 +70,7 @@ html{font-size:10px; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; s
 body{font-size:1.4rem; font-family:'Noto Sans KR','dotum', sans-serif; font-weight:400; color:#4f4f4f; height:100%;}
 strong{font-weight:700}
 em, b, i{font-style:normal}
-a{cursor:pointer; background-color:transparent; color:inherit}
+a{cursor:pointer; background-color:transparent; color:inherit;}
 a,label,span{display:inline-block}
 a, a:hover{text-decoration:none}
 a,button,[role=button],[role=tab], main.ios{cursor:pointer} 
@@ -96,7 +96,11 @@ button{margin:0; padding:0; cursor:pointer; border:0; background:0 0; outline:no
 input[type=checkout],input[type=radio]{margin-right:.4rem; padding:.5rem .5rem .3rem; border:1px solid #555555}
 input[type=search]{box-sizing:content-box}
 input[type=file],input[type=number],input[type=password],input[type=tel],input[type=text]{border-radius:0; -webkit-appearance:none; -webkit-border-radius:0; margin:0; padding:0; font-size:1.8rem}
-select{padding:.4rem; border:1px solid #555}  
+select{padding:.4rem; border:1px solid #555} 
+
+a:active {outline:1px #ccc solid;}
+button:active{width:inherit; outline:auto; outline-color:#ccc;}
+input:focus,textarea:focus {outline:none;}
 
 /* --- 레이아웃 --- */
 #wrapper{height:100%} 
@@ -162,16 +166,18 @@ footer .copy-area span em:last-child:after{display:none}
 [class*="mainsec-sec01"] dl dd button:last-child{margin-right:0}
 
 [class*="mainsec-sec02"]{padding:2.6rem 2rem; overflow:hidden;}
-[class*="mainsec-sec02"] .icon-menu li{position:relative; float:left; width:25%; text-align:center; font-size:1.5rem; font-weight:300;}
-[class*="mainsec-sec02"] .icon-menu li:after{content:""; position:absolute;top:0; left:50%; margin-left:-2.95rem; display:block; width:5.9rem; height:5.9rem; border-radius:3.6rem; background-repeat:no-repeat; background-position:50% 50%; background-size:3.4rem auto;}
-[class*="mainsec-sec02"] .icon-menu li a{display:block; padding-top:6.9rem;}
-[class*="mainsec-sec02"] .icon-menu li.recipe:after{background-color: rgba(240, 228, 77, 0.3); background-image:url(../images/menu1.png);} 
-[class*="mainsec-sec02"] .icon-menu li.foodmall:after{background-color: rgba(57, 155, 205, 0.3); background-image:url(../images/menu2.png);} 
-[class*="mainsec-sec02"] .icon-menu li.contest:after{background-color:rgba(135, 187, 74, 0.3); background-image:url(../images/menu3.png);} 
-[class*="mainsec-sec02"] .icon-menu li.lunchbox:after{background-color: rgba(172, 111, 250, 0.3); background-image:url(../images/menu4.png);} 
+[class*="mainsec-sec02"] .icon-menu li{float:left; width:25%; text-align:center; font-size:1.5rem; font-weight:300;}
+[class*="mainsec-sec02"] .icon-menu li a{position:relative; display:block; padding-top:6.9rem;}
+[class*="mainsec-sec02"] .icon-menu li a:before{content:""; position:absolute; top:0; left:50%; margin-left:-2.95rem; display:block; width:5.9rem; height:5.9rem; border-radius:3.6rem; background-repeat:no-repeat; background-position:50% 50%; background-size:3.4rem auto;}
+
+[class*="mainsec-sec02"] .icon-menu li.recipe a:before{background-color: rgba(240, 228, 77, 0.3); background-image:url(../images/menu1.png);} 
+[class*="mainsec-sec02"] .icon-menu li.foodmall a:before{background-color: rgba(57, 155, 205, 0.3); background-image:url(../images/menu2.png);} 
+[class*="mainsec-sec02"] .icon-menu li.contest a:before{background-color:rgba(135, 187, 74, 0.3); background-image:url(../images/menu3.png);} 
+[class*="mainsec-sec02"] .icon-menu li.lunchbox a:before{background-color: rgba(172, 111, 250, 0.3); background-image:url(../images/menu4.png);} 
 
 [class*="mainsec-sec03"]{margin-bottom:3.6rem; color:#000; font-size:1.6rem;} 
 [class*="mainsec-sec03"] .slideWrap{margin-left:2rem;}
+[class*="mainsec-sec03"] .slideWrap a { outline:none;}
 [class*="mainsec-sec03"] .slideWrap mark{position:absolute; left:0; top:0; display:block; width:6.1rem; height: 2.8rem; text-align:center; font-size:1.4rem; line-height:2.6rem; letter-spacing:-0.42px; color: #4f4f4f; border-radius: 25px; border: solid 1px #4f4f4f; background-color: #f2f2f2;} 
 [class*="mainsec-sec03"] .slideWrap span{display:block; width:13.7rem; height:11.8rem; text-align:center;} 
 [class*="mainsec-sec03"] .slideWrap span img{width:100%;} 
@@ -198,7 +204,7 @@ footer .copy-area span em:last-child:after{display:none}
 .calendar-wrap .calendar-head span{display:inline-block; padding-top:1.2rem; font-size:2rem;}
 .calendar-wrap .calendar-head span button{width:3rem; height:3rem; font-size:1.8rem;}
 .calendar-wrap .calendar-head span button em{display:inline-block; text-indent:-999px; overflow:hidden; font-size:0;}
-.calendar-wrap .calendar-head .btn-add{position:absolute; right:1.5rem; top:50%; margin-top:-1.9rem; width:3.8rem; height:3.8rem; line-height:2.2rem; border-radius:3.6rem; font-size:3rem; font-weight:300; background:rgba(255, 46, 46, 0.83); color:#fff;}
+.calendar-wrap .calendar-head .btn-add{overflow:hidden; position:absolute; right:1.5rem; top:50%; margin-top:-1.9rem; width:3.8rem; height:3.8rem; line-height:2.2rem; border-radius:3.6rem; font-size:3rem; font-weight:300; background:rgba(255, 46, 46, 0.83); color:#fff;}
 
 .calendar-wrap .calendar-box{height:32.5rem;}
 .calendar-wrap table{table-layout:fixed; width:100%; letter-spacing:1px;}
