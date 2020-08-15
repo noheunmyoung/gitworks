@@ -2,7 +2,7 @@
 
 /************************************************ 
 Version :
-Date :2020-03-31
+Date :2020-08-14
 *************************************************/   
 
 @import "owl.carousel.min.css"; 
@@ -40,15 +40,7 @@ Date :2020-03-31
    src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
         url(../fonts/NotoSansKR-Bold.woff) format('woff'),
         url(../fonts/NotoSansKR-Bold.otf) format('opentype');
-}
-@font-face{
-   font-family: 'Noto Sans KR';
-   font-style: normal;
-   font-weight: 900;
-   src: url(../fonts/NotoSansKR-Black.woff2) format('woff2'),
-        url(../fonts/NotoSansKR-Black.woff) format('woff'),
-        url(../fonts/NotoSansKR-Black.otf) format('opentype');
-}
+} 
 
 /* reset */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,
