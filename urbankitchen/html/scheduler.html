@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="../css/style.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">  
 	<script type="text/javascript" src="../js/jquery-3.3.1.min.js" charset="utf-8"></script> 
 	<script type="text/javascript" src="../js/owl.carousel.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
@@ -13,7 +14,7 @@
 <body>
 	<div id="wrapper"> 
 		<header>
-			<button type="button" class="btn-back">이전</button>
+			<button type="button" class="btn-back"><i class="fas fa-angle-left"></i><em>이전</em></button>
 			<h1>메뉴 & 공유주방 스케쥴러</h1> 
 			<button type="button" class="btn-my">my</button>
 			<nav class="side-menu">
@@ -31,7 +32,147 @@
 		</header>  
 
 		<section class="container">
-			 ddddd
+			<div class="calendar-wrap"> 
+				<div class="calendar-head">
+					<h3>오늘</h3>
+					<span>
+						<button type="button" class="btn-prev"><i class="fas fa-angle-left"></i><em>이전달</em></button>
+						<span>2020년 8월</span>
+						<button type="button" class="btn-next"><i class="fas fa-angle-right"></i><em>다음달</em></button>
+					</span>
+					<button type="button" class="btn-add">+</button>
+				</div>
+				<div class="calendar-box">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col style="width:14.222222%;" span="7"> 
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">MON</th>
+								<th scope="col">TUE</th>
+								<th scope="col">WED</th>
+								<th scope="col">THU</th>
+								<th scope="col">FRI</th>
+								<th scope="col">SAT</th>
+								<th scope="col">SAT</th>
+							</tr> 
+						</thead>
+						<tbody>
+							<tr>
+								<td class="txcolor-g"><i>30</i></td>
+								<td><i>1</i></td>
+								<td class="bgcolor-red"><i>2</i></td>
+								<td><i>3</i></td>
+								<td><i>4</i></td>
+								<td><i>5</i></td>
+								<td><i>6</i></td>
+							</tr>
+							<tr>
+								<td><i>7</i></td>
+								<td><i>8</i></td>
+								<td><i>9</i></td>
+								<td><i>10</i></td>
+								<td><i>11</i></td>
+								<td><i>12</i></td>
+								<td><i>13</i></td>
+							</tr>
+							<tr>
+								<td><i>14</i></td>
+								<td><i>15</i></td>
+								<td><i>16</i></td>
+								<td><i>17</i></td>
+								<td><i>18</i></td>
+								<td class="bgcolor-red"><i>19</i></td>
+								<td><i>20</i></td>
+							</tr>
+							<tr>
+								<td><i>21</i></td>
+								<td class="bgcolor-blue first"><i>22</i></td>
+								<td class="bgcolor-blue"><i>23</i></td>
+								<td class="bgcolor-blue last"><i>24</i></td>
+								<td><i>25</i></td>
+								<td><i>26</i></td>
+								<td><i>27</i></td>
+							</tr>
+							<tr>
+								<td><i>28</i></td>
+								<td><i>29</i></td>
+								<td><i>30</i></td>
+								<td><i>31</i></td>
+								<td class="txcolor-g"><i>1</i></td>
+								<td class="txcolor-g"><i>2</i></td>
+								<td class="txcolor-g"><i>3</i></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="tab-wrap">
+				<ul class="tab-menu">
+					<li data-tab="tab1"><span>일정마감</span></li>
+					<li class="current" data-tab="tab2"><span>진행중 일정</span></li>
+				</ul> 
+				<div id="tab1" class="schedulewrap">
+					1
+				</div>
+				<div id="tab2" class="schedulewrap current">
+					<div class="schedule-head">
+						<h2>Activity</h2>
+						<button type="button" class="btn-all"><em>전체보기</em><i class="fas fa-check"></i></button>
+					</div>
+				
+					<ul class="schedule-list">
+						<li class="contest">
+							<strong>홍길동</strong>
+							<span>8/12 (금) 09:00</span>
+							<em>370,000원</em>
+						</li> 
+						<li class="lunchbox">
+							<strong>홍길동</strong>
+							<span>8/12 (금) 09:00</span>
+							<em>370,000원</em>
+						</li>
+						<li class="foodmall">
+							<strong>홍길동</strong>
+							<span>8/12 (금) 09:00</span>
+							<em>370,000원</em>
+						</li>
+						<li class="recipe">
+							<strong>홍길동</strong>
+							<span>8/12 (금) 09:00</span>
+							<em>370,000원</em>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="schedule-wrap"> 
+				<h2>일정 등록</h2>
+				<fieldset> 
+					<input type="text" placeholder="일정제목">
+					<span class="time-area">
+						<button type="button" class="start-time">시작시간<i class="fas fa-chevron-down"></i></button>
+						<em>~</em> 
+						<button type="button" class="end-time">종료시간<i class="fas fa-chevron-down"></i></button>
+					</span>
+					<textarea placeholder="내용을입력해주세요"></textarea>
+					<span class="file-area">
+						<i>최대 50MB 업로드 가능</i>
+						<button type="button">첨부하기</button>
+					</span>
+					<span class="radio-area">
+						<em>개인정보 수집 및 이용동의</em>
+						<input type="radio" id="radio"><label for="radio">동의</label>
+					</span>
+				 </fieldset>
+			</div>
+
+			<div class="brn-wrap">
+				<button type="button" class="btn-type01">일정등록하기</button>
+			</div>
+			 
 		</section> 
 
 		<footer>
