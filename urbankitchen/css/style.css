@@ -203,7 +203,7 @@ footer .copy-area span i:last-child:after{display:none}
 [class*="mainsec-sec05"] span i.icon03{padding-left:2rem; background:url(../images/icon03.png) no-repeat 0 50%; background-size:1rem auto;} 
 
 /*scheduler*/
-.calendar-wrap{margin-bottom:5.5rem; box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);}
+.calendar-wrap{margin-bottom:4.5rem; box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.08);}
 .calendar-wrap .calendar-head{position:relative; height:8rem; background:rgba(0, 0, 0, 0.02); text-align:center; color:#1e2022;}
 .calendar-wrap .calendar-head h3{position:absolute; left:1.5rem; top:2.5rem; font-size:1.8rem; font-weight:400;}
 .calendar-wrap .calendar-head span{display:inline-block; padding-top:1.2rem; font-size:2rem;}
@@ -224,10 +224,12 @@ footer .copy-area span i:last-child:after{display:none}
 .calendar-wrap table td.bgcolor-blue.last i{border-radius:0 3.6rem 3.6rem 0;} 
  
 .tab-wrap{margin-bottom:7.7rem;}
-.tab-wrap .tab-menu{overflow:hidden; height:4.5rem; text-align:center; margin-bottom:4rem; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);}
+.tab-wrap .tab-menu{height:5.5rem; text-align:center; margin-bottom:4rem; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);}
+.tab-wrap .tab-menu:after {content:""; clear:both;}
 .tab-wrap .tab-menu li{float:left; width:50%;} 
-.tab-wrap .tab-menu li span{display:block; height:4.5rem; text-align:center; font-size:1.7rem; border-bottom:1px solid #fff; color:#bebebe; font-weight:700;}
-.tab-wrap .tab-menu li.current span{color:#87bb4a; font-weight:700; border-bottom:1px solid #87bb4a}
+.tab-wrap .tab-menu li span{position:relative; display:block; height:5.5rem; line-height:5.5rem; text-align:center; font-size:1.7rem; border-bottom:1px solid #fff; color:#bebebe; font-weight:700;}
+.tab-wrap .tab-menu li.current span{color:#87bb4a; font-weight:700; }
+.tab-wrap .tab-menu li.current span:after{content:""; position:absolute; bottom:-2px; left:0; width:100%; border-bottom:1px solid #87bb4a}
 .tab-wrap .schedulewrap{display:none; position:relative; padding:0 1.5rem;}
 .tab-wrap .schedulewrap:after{content:""; clear:both; display:block}
 .tab-wrap .schedulewrap.current{display:block}   
@@ -237,7 +239,7 @@ footer .copy-area span i:last-child:after{display:none}
 .schedulewrap .schedule-head .btn-all em{display:inline-block;}
 .schedulewrap .schedule-head .btn-all i{margin-left:.7rem; font-size:1rem;}
 .schedule-list li{position:relative; padding-left:8rem; min-height:6rem; margin-bottom:2rem;}
-.schedule-list li:after{content:""; position:absolute;top:0; left:0; display:block; width:5.9rem; height:5.9rem; border-radius:3.6rem; background-repeat:no-repeat; background-position:50% 50%; background-size:3.4rem auto;}
+.schedule-list li:after{content:""; position:absolute; top:0; left:0; display:block; width:5.9rem; height:5.9rem; border-radius:3.6rem; background-repeat:no-repeat; background-position:50% 50%; background-size:3.4rem auto;}
 .schedule-list li.recipe:after{background-color: rgba(240, 228, 77, 0.3); background-image:url(../images/menu1.png);} 
 .schedule-list li.foodmall:after{background-color: rgba(57, 155, 205, 0.3); background-image:url(../images/menu2.png);} 
 .schedule-list li.contest:after{background-color:rgba(135, 187, 74, 0.3); background-image:url(../images/menu3.png);} 
