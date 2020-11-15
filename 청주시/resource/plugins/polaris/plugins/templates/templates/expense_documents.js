@@ -1,0 +1,1 @@
+﻿POLARIS.addTemplates("expense_documents",{name:"지출결의서",imagesPath:POLARIS.getUrl(POLARIS.plugins.getPath("templates")+"templates/images/"),templates:[{title:"지출결의서",filename:"spending_resolutions.js",templatename:"spending_resolutions"}]});

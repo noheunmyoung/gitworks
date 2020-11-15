@@ -1,0 +1,2 @@
+﻿POLARIS.addTemplates("all_documents",{name:"문서",imagesPath:POLARIS.getUrl(POLARIS.plugins.getPath("templates")+"templates/images/"),templates:[{title:"빈문서",filename:"empty_document.js",templatename:"empty_document"},{title:"표준기안문서",filename:"gerneral_drafting_paper.js",templatename:"gerneral_drafting_paper"},{title:"일반 휴가 신청서",filename:"vacation.js",templatename:"vacation"},{title:"지출결의서",filename:"spending_resolutions.js",templatename:"spending_resolutions"},{title:"주간업무보고서",filename:"week_report.js",
+templatename:"week_report"}]});

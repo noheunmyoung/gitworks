@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@page { size:A4;margin:0mm;}
+
+	
+	body, td, button {
+		font-size:11pt;
+		font-family:"바탕체";
+		line-height:1.2;
+		letter-spacing:0px;
+		-webkit-print-color-adjust: exact; 
+		margin:20mm 20mm 0mm 20mm; 
+	}
+	p { 
+		margin:0;
+		padding:0;
+		word-break; break-all;
+	}
+	.divBottom {
+		width: 639px;
+		position: absolute;
+		height:50px;
+		padding-top:50px;
+	}
+	
+	#divHtml {
+		padding:10px;
+		width:650px;
+	}
+	
+	.divBottom { 
+		position:absolute; 
+		bottom:10mm; 
+		left:5mm;
+	}
+	
+	.divBottom td { font-size:10pt;}
+	
+	b.bottomTable { width: 639px; }
+	
+	#justify {
+	    width: 100%;
+	}
+	#justify p.txtDist {
+		font-size:9pt;
+	    text-align: justify;
+	}
+	
+	#justify p.txtDist:after {
+	  content: "";
+	  display: inline-block;
+	  width: 100%;
+	}
+	.pSubject2 {
+		padding:2px 0;
+		font-size:11pt;
+	}
+	.pSubject1 {
+		padding:10px 0 2px 0;
+		font-size:11pt;
+	}
+	
+	.font8pt {
+		font-size:8pt !important;
+	}
+	
+	.imgStamp {
+		position:absolute;
+		right:150px;
+		top:-1px;
+		float:right;
+	}
+
+	#divContent {
+		padding:0px;
+		margin:0px;
+	}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="[청주시시설관리공단]">
+	<meta name="keywords" content="청주시시설관리공단">
+	<meta name="description" content="[청주시시설관리공단]">
+	<title>청주시시설관리공단:통합예약ㆍ결제시스템</title>
+
+	<!-- 공통 -->
+	<link href="../resource/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+
+	<!-- bootstrap -->
+	<link href="../resource/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+	<!-- bootstrap-datepicker -->
+	<link href="../resource/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet"
+		type="text/css" />
+	<link href="../resource/plugins/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet"
+		type="text/css" />
+	<link href="../resource/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet"
+		type="text/css" />
+
+
+	<!-- bootstrap-fileinput -->
+	<link href="../resource/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+
+
+	<!-- bootstrap-touchspin -->
+	<link href="../resource/plugins/bootstrap-touchspin/bootstrap.touchspin.css" rel="stylesheet" type="text/css" />
+
+
+	<!-- bootstrap-toastr -->
+	<link href="../resource/plugins/bootstrap-toastr/toastr.css" rel="stylesheet" type="text/css" />
+
+
+	<!-- jquery-ui -->
+	<link href="../resource/plugins/jquery-messagebox/jquery.messagebox.css" rel="stylesheet" type="text/css" />
+
+
+	<!-- pace-loading -->
+	<link href="../resource/plugins/pace-1.0.2/themes/pace-ajax-loading.css" rel="stylesheet" type="text/css" />
+
+
+	<!-- daum-editor -->
+	<link rel="stylesheet" href="../resource/plugins/daumeditor/css/editor.css" type="text/css" />
+
+	<!-- layout & themes -->
+	<link href="../resource/skin/layout/css/components.css" rel="stylesheet" type="text/css" />
+	<link href="../resource/skin/layout/css/plugins.css" rel="stylesheet" type="text/css" />
+	<link href="../resource/skin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+
+	<!-- customizing -->
+	<link rel="stylesheet" type="text/css" href="../resource/css/pub/default.css">
+	<link rel="stylesheet" type="text/css" href="../resource/css/pub/custom.css">
+	<link rel="stylesheet" type="text/css" href="../resource/css/pub/ui_custom.css">
+
+
+	<script type="text/javascript" src="../resource/js/jquery-3.3.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../resource/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="../resource/js/ui.js"></script>
+</head>
+
+<body class="template-typeA"><!-- 2020.10.23 추가 -->
+	<div class="wrapper">
+		<!-- header -->
+		<div class="header" id="gnbNavi"> 
+			<div class="after"></div>
+			<div class="inner"> 
+				<div class="head-info">
+					<h1>
+						<a href="#">청주실내수영장</a>
+					</h1>
+					<span class="side-menu">
+						<a href="#">홈으로</a>
+						<a href="#">사이트맵</a>
+						<a href="#">회원가입</a> 
+						<a href="#"><strong>로그인</strong></a>
+					</span> 
+				</div>
+				<nav> 
+					<ul class="depth01">
+						<li>
+							<a href="#">시설안내</a>
+							<div>
+								<ul class="depth02">
+									<li><a href="#">시설안내</a></li>
+									<li><a href="#">찾아오시는 길</a></li>
+								</ul>
+							</div> 
+						</li> 
+						<li>
+							<a href="#">이용안내</a>
+							<div>
+								<ul class="depth02">
+									<li><a href="#">이용안내</a></li>
+									<li><a href="#">강습시간표</a></li>
+									<li><a href="#">강사정보</a></li>
+								</ul>
+							</div> 
+						</li> 
+						<li>
+							<a href="#">예약ㆍ결제 </a>
+							<div>
+								<ul class="depth02">
+									<li><a href="#">예약 · 결제</a></li>
+								</ul>
+							</div> 
+						</li>
+						<li>
+							<a href="#">고객센터</a>
+							<div>
+								<ul class="depth02">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">자료실</a></li>
+									<li><a href="#">자주묻는질문</a></li>
+									<li><a href="#">이용문의</a></li>
+								</ul>
+							</div> 
+						</li>
+					</ul>
+				</nav>
+			 
+				<div class="weather-wrap">
+					<p>
+						<span><img src="../resource/img/template/swim/iocn_w_01.png" alt="날씨 아이콘"></span> 
+						<strong>21>33</strong>
+						2020년 10월 1일 (목)
+					</p>
+					<ul> 
+						<li>현재온도 : <strong>17 C</strong></li>
+						<li>습 도 : <strong>7%</strong></li>
+						<li>강수확률 : <strong>17%</strong></li>
+						<li>풍 속 : <strong>1m/s</strong></li>
+					</ul>
+				</div>
+			</div>
+			 
+		</div><!--  // header -->  
+		
+		
+		<!-- container -->
+		<div class="container">
+			 
+			<div class="sub-header">
+				<img src="../resource/img/template/swim/sub_bg.png" alt="">
+				<div class="inner"> 
+					<p>
+						<strong>텍스트 텍스트텍스트 텍스트텍스트 텍스트텍스트 텍스트텍스트 텍스트텍스트 텍스트</strong>
+						<em>서브텍스트</em>
+					</p>
+				</div> 
+			</div>
+			<!--// 2020.11.09 이미지 추가 영역-->
+
+			<div class="inner">   
+				<!-- left Menu -->
+				<div class="lnb">
+					<div class="lnb_tit">
+						<p>이용안내</p>
+						<span>Information Use</span>
+					</div>
+					<ul id="lnb">
+						<li>
+							<a href="#;" class="selected">이용안내</a>
+							<ul class="depth2">
+								<li><a href="#">메뉴2</a></li>
+								<li><a href="#">메뉴2</a></li>
+								<li><a href="#">메뉴2</a></li>
+								<li><a href="#">메뉴2</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#;">강습시간표</a>
+							<ul class="depth2">
+								<li><a href="#">메뉴2</a></li>
+								<li><a href="#">메뉴2</a></li>
+								<li><a href="#">메뉴2</a></li>
+								<li><a href="#">메뉴2</a></li>
+							</ul>
+						</li>
+						<li><a href="#;">강사소개</a></li>
+					</ul>
+
+					<div class="help-desk">
+						<p><img src="../resource/img/template/swim/tit_help.png" alt="고객센터"></p>
+						<p class="phone-num">031<i>ㆍ</i>915<i>ㆍ</i>8943</p>
+						<ul>
+							<li>
+								<em>평일 : </em>
+								오전9시~오후6시
+							</li>
+							<li>
+								<em>주말,공휴일 : </em>
+								오전9시~오후1시
+							</li>
+						</ul>	
+					</div>
+				</div>
+				<!-- left Menu -->
+		
+		
+				<!-- contents -->
+				<div class="mainConts"> 
+					<div class="breadcrumb-section">
+						<ol class="breadcrumb">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">체계소개</a></li>
+							<li><strong>개요</strong></li>
+						</ol>
+					</div>
+					 
+					<h2>월회원/강습신청</h2>
+					<div class="cont-area">
+						<div class="text-new-box mrb4"><!--2020.11.08 박스 하단 공간 설정 다중클래스 [mrb4] -->
+							<ul class="dot-list">
+								<li><strong class="color-red">본인이 아닌 가족 타인명의로 예약시 취소처리 되오니 유의하시기 바랍니다.</strong></li>
+								<li><strong>본인명의로 등록된 휴대폰 또는 아이핀으로 회원가입 후 PC로 로그인하여 신청하세요. (모바일 접수불가)</strong></li>
+								<li>본인 외 대리접수,기초생활수급자,장애인,청주사랑카드소지자,면제 및 감면대상자는 제반서류 구비 후 방문접수해야 합니다.</li>
+								<li><strong class="color-red">어린이 강습접수 유의사항</strong> 
+									<ol class="num-list">
+										<li>1.접수대상 
+											<ul class="dash-list">
+												<li>일반강습 : 어린이+보호자 동반수강 시 접수 가능</li>
+												<li>어린이 전용 강습 : 어린이만 접수 가능(성인불가)</li>
+											</ul>
+										</li> 
+										<li>2.접수방법
+											<ul class="dash-list">
+												<li>법정보호자 현장 방문접수</li>
+											</ul>
+										</li> 
+									</ol>
+									</li>
+								<li>휴대폰인증/공공아이핀 로그인으로는 신청하실 수 없습니다.</li>
+								<li><strong class="color-red">결제취소는 신청당일만 100% 반환됩니다.</strong></li>
+								<li>통합예약 결제에 어려움이 있다면 공단(043-270-8523)으로 문의바랍니다.</li>
+								<li>사회적 거리두기 지침 준수를 위하여 <strong class="color-red">인원 제한 및 시간 제한</strong>을 실시합니다.<strong class="color-red">(월회원, 강습불가)</strong></li>
+							</ul>	 
+						</div>
+					
+						<!-- 월 자유회원 신청 -->
+						<h3 class="tit-h3">월 자유회원 신청</h3>
+						<div class="tblWrap type02 mrb4"><!-- 2020.11.08 다중클래스 [type02], 테이블 하단 공간 설정 다중클래스 [mrb4] -->
+							<table class="tb-list">
+								<colgroup>
+									<col style="width:15%;">
+									<col style="width:85%;"> 
+								</colgroup> 
+								<tbody>
+									<tr>
+										<th scope="row">구분</th>
+										<td class="left">월 자유회원</td> 
+									</tr>
+									<tr>
+										<th scope="row">구분</th>
+										<td class="left">
+											<div class="form-inline">
+												시작일 :
+												<div class="input-group input-medium date date-picker" data-date="" data-date-format="yyyy-mm-dd" data-date-viewmode="years">
+													<input type="text" id="start_ymd" name="start_ymd" value="" maxlength="8" title="발행일(부터)" class="form-control tYMD" onchange="autoCalc('member');">
+													<span class="input-group-btn"><button class="btn-calendar" type="button">날짜선택</button></span><!-- 2020.11.08 수정 -->
+												</div> ~
+												종료일 :
+												<input type="text" id="end_ymd" name="end_ymd" value="" maxlength="8" title="발행일(까지)" class="form-control tYMD" style="width:100px;" readonly>
+											</div>
+											<em class="color-blue">※ 시작일을 선택하시면 종료일은 자동으로 계산됩니다.</em><!-- 2020.11.08 수정 -->
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">이용료</th>
+										<td class="left">국가유공자 : 25,000원 / 일반 : 50,000원 / 청소년 : 35,000원 / 어린이 : 30,000원 / 노인 : 30,000원 / 유아 : 20,000원</td>
+									</tr>
+									<tr>
+										<th scope="row">상태</th>
+										<td class="left"><button type="button" class="btn-apply">신청</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					
+						<!-- 강습회원 신청 -->
+						<h3 class="tit-h3">월 강습회원 신청</h3>
+						<div class="mrb2"><!--2020.11.08 박스 하단 공간 설정 다중클래스 [mrb2] -->
+							<ul class="dot-list">
+								<li>본인 외 대리접수, 기초생활수급자, 장애인, 청주사랑카드소지자, 면제 및 감면대상자는 제반서류 구비 후 방문접수해야 합니다.</li>
+								<li><strong>월 강습회원 등록기간</strong> : 매월 21일부터~말일까지 선착순접수(접수기간 이후 신청불가)</li>
+								<li><strong>정원</strong> : 온라인 신청인원/정원 (총 신청인원/정원)</li>
+							</ul> 
+						</div>
+
+
+						<div class="search-area">
+							<select name="search_key" class="bs-select" style="width:100px">
+								<option value='1'>강습명</option>
+								<option value='2'>강사명</option>
+							</select>
+							<input type=text name="search_val" value="" class="form-control" style="width:300px;" onkeydown="if(event.keyCode == 13) goSearch();">
+							<button type="button" id="btnSearch" class="btn_search" onClick="goSearch('');">검색</button><!-- 2020.11.08 수정 -->
+						</div>
+					</div>
+ 
+					 
+
+					<div id="divListData"> 
+						<div class="tblWrap type02"><!-- 2020.11.08 다중클래스 [type02]-->
+							<table class="tb-list">
+								<colgroup>
+									<col style="width:10%%;">
+									<col style="width:20%%;">
+									<col style="width:20%%;">
+									<col style="width:10%%;">
+									<col style="width:15%%;">
+									<col style="width:10%%;">
+									<col style="width:10%%;">
+									<col style="width:5%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="t-center" scope="col">구분</th>
+										<th class="t-center" scope="col">기간</th>
+										<th class="t-center" scope="col">강습명</th>
+										<th class="t-center" scope="col">강사명</th>
+										<th class="t-center" scope="col">수업시간</th>
+										<th class="t-center" scope="col">수강료</th>
+										<th class="t-center" scope="col">정원</th>
+										<th class="t-center" scope="col">상태</th>
+									</tr>
+								</thead>
+								<tbody>
+					
+									<tr>
+										<td>고급A(어린이)</td>
+										<td>2020-09-01~</td>
+										<td class="left">쉽게 배우는 접영(어린이)</td>
+										<td>김진구</td>
+										<td>10:30~12:20</td>
+										<td></td>
+										<td>35</td>
+										<td><button type="button" class="btn-apply">신청</button> </td>
+									</tr>
+					
+									<tr>
+										<td>고급A(어린이)</td>
+										<td>2020-06-01~</td>
+										<td class="left">고급A(어린이)</td>
+										<td>김수정</td>
+										<td>10:10~11:00</td>
+										<td></td>
+										<td>88</td>
+										<td><button type="button" class="btn-apply">신청</button> </td>
+									</tr>
+					
+									<tr>
+										<td>마스터A</td>
+										<td>2020-09-01~</td>
+										<td class="left">마스터A</td>
+										<td>김진구</td>
+										<td>11:00~11:50</td>
+										<td></td>
+										<td>66</td>
+										<td><button type="button" class="btn-apply">신청</button> </td>
+									</tr>
+					
+								</tbody>
+							</table>
+						</div>
+					
+					</div>
+					 
+				
+				</div>
+				<!--// contents  -->
+
+				<div class="quickmenu-wrap">
+					<span class="quickmenu-btn">시설 바로가기</span><!-- 2020.11.08 수정 -->
+					<div class="quickmenu-list">
+						<h2>통합예약 · 결제시스템</h2>
+						<div class="qui-area">
+							<ul class="quidepth01">
+								<li> 
+									<a href="#">체육시설</a><!-- 2020.10.29 수정 -->
+									<ul class="quidepth02">
+										<li><a href="#">청주수영장</a></li>
+										<li><a href="#">푸르미스포츠센터</a></li>
+										<li><a href="#">국민생활관</a></li>
+										<li><a href="#">청주인라인롤러경기장</a></li>
+										<li><a href="#">김수녕양궁장</a></li>
+										<li><a href="#">용정축구공원</a></li>
+										<li><a href="#">흥덕축구공원</a></li>
+										<li><a href="#">청주배드민턴·태권도체육관</a></li>
+										<li><a href="#">국민체육센터 및 스쿼시경기장</a></li>
+										<li><a href="#">청주국제테니스장</a></li>
+										<li><a href="#">청주체육관</a></li>
+										<li><a href="#">주야구장</a></li>
+										<li><a href="#">청주종합경기장</a></li>
+										<li><a href="#">청주실내빙상장</a></li>
+									</ul>
+								</li>
+								<li> 
+									<a href="#">레저시설</a><!-- 2020.10.29 수정 -->
+									<ul class="quidepth02">
+										<li><a href="#">청주종합사격장</a></li>
+										<li><a href="#">옥화자연휴양림</a></li>
+										<li><a href="#">현도오토캠핑장</a></li>
+										<li><a href="#">가덕생활체육공원</a></li>
+										<li><a href="#">내수국궁장(약수정)</a></li>
+										<li><a href="#">청주국궁장(우암정)</a></li>
+										<li><a href="#">오창양궁장</a></li>
+										<li><a href="#">초정행궁</a></li>
+										<li><a href="#">내수공설운동장</a></li>
+									</ul>
+								</li>
+								<li> 
+									<a href="#">해피콜/주차시설</a><!-- 2020.10.29 수정 -->
+									<ul class="quidepth02">
+										<li><a href="#">청주해피콜</a></li>
+										<li><a href="#">공영주차장</a></li>
+										<li><a href="#">견인차량보관소</a></li>
+									</ul>
+								</li>
+								<li> 
+									<a href="#">환경시설</a><!-- 2020.10.29 수정 -->
+									<ul class="quidepth02">
+										<li><a href="#">청주권광역소각시설</a></li>
+									</ul>
+								</li>
+								<li> 
+									<a href="#">장사시설</a><!-- 2020.10.29 수정 -->
+									<ul class="quidepth02">
+										<li><a href="#">목련공원</a></li>
+										<li><a href="#">장미공원</a></li>
+										<li><a href="#">매화공원</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<!--  // container -->  
+		
+	
+		<!-- footer -->
+		<div class="footerWrap">  
+			<div class="footer">
+				<p>
+					<strong>[청주시시설관리공단]</strong>
+					<span> (28559) 충청북도 청주시 서원구 흥덕로61, 1층(사직동, 올림픽국민생활관내 1층) l 대표자 : 장홍원 | 사업자등록번호 : 301-82-11347 | 대표전화 : 043-270-8502</span>
+					<span>Copyright(C) 2020 KISA. All rights reserved.</span>
+				</p>
+			</div> 
+		</div>
+		<!--// footer -->
+		
+	</div> 
+
+	<script>
+		$(document).ready(function () {
+			var owl = $('.owl-carousel');
+			owl.owlCarousel({
+				items: 1,
+				margin: 0,
+				dots: false,
+				nav: true,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 3500,
+				autoplayHoverPause: true
+			})
+			 $('.stop').on('click', function () {
+				owl.trigger('stop.owl.autoplay')
+			})
+		}) 
+	</script>
+</body>
+</html>

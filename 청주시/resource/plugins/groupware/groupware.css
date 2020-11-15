@@ -1,0 +1,170 @@
+@charset "utf-8"; 
+/************************************************ 
+Version :그룹웨어 1.0
+Date :2017-07-28
+*************************************************/   
+@font-face {
+    font-family:'Nanum Gothic';
+    font-style:normal;
+    src:url("./font/NanumGothic-Regular.woff") format('woff') ;}
+@font-face {
+    font-family:'Nanum Gothic';
+    font-style:normal;
+    font-weight:700;
+    src:url("./font/NanumGothic-Bold.woff") format('woff');}
+
+body { font-family:NanumSquare, dotum, Arial, Helvetica, sans-serif !important; }
+
+/* button */
+button { border-radius:3px !important; color:#fff; height:25px; line-height:1; padding:0 8px; letter-spacing:-1px; margin-left:2px; vertical-align:middle}
+button.search { background:#b4b4b4 url(./images/ico_03.png) no-repeat 7px 50%; padding-left:23px;}
+button.search:hover { background:#8d8d8d url(./images/ico_03_ov.png) no-repeat 7px 50%; }
+button.selec { background:#fff; border:1px solid #ccc; color:#3a3a3a; height:23px;} 
+button.selec:hover { background:#ebebeb}
+button.delete { width:auto; padding:0;}
+button.btnOk { background:#b4b4b4 url(./images/ico_09.png) no-repeat 7px 50%; padding-left:23px;}
+button.btnOk:hover { background:#8d8d8d url(./images/ico_09.png) no-repeat 7px 50%; }
+button.btnGray { background:#b4b4b4} 
+button.btnGray:hover { background:#8d8d8d}
+button.btnBlue { background:#4d76ae}
+button.btnBlue:hover { background:#244b7d}
+button.btnBlueSmall { background:#4d76ae; padding: 0px 5px; height: 23px; font-size: 11px; }
+button.btnBook { background:url(./images/ico_01.png) no-repeat 5px 2px; padding-left:22px;}
+button.btnBook.selected { background:url(./images/ico_02.png) no-repeat 5px 2px;}
+
+/* tab */
+.tab { margin-bottom:20px;}
+.tab ul { overflow:hidden;}
+.tab ul li { float:left; width:14.28%;}
+.tab ul li a { display:block; height:35px; line-height:35px; text-align:center;font-size:14px; color:#626262; border:1px solid #d7d6db; border-width:1px 0 1px 1px}
+.tab ul li:last-child a { border-right:1px solid #d7d6db}
+.tab ul li.selected a{ background:#63aebe; color:#fff;}
+.tab ul.col05 li { float:left; width:20%;}
+
+.tab02 ul { overflow:hidden;}
+.tab02 ul li { float:left; width:117px;}
+.tab02 ul li a { display:block; height:35px; line-height:35px; text-align :center; font-size:14px; color:#626262; border:1px solid #d7d6db; border-width:1px 0 0 1px}
+.tab02 ul li:last-child a { border-right:1px solid #d7d6db; padding-top:1px;}
+.tab02 ul li.selected a { border-top:3px solid #427abf; color:#427abf; padding-top:0}
+.tab02 ul.col02 li { width:50%;}
+
+.tab03 ul { overflow:hidden;}
+.tab03 ul li { float:left; width:90px;}
+.tab03 ul li a { display:block; height:35px; line-height:35px; text-align:center; font-size:14px; color:#626262; border:1px solid #d7d6db; border-width:1px 0 0 1px}
+.tab03 ul li:last-child a { border-right:1px solid #d7d6db}
+.tab03 ul li.selected a { border-top:3px solid #427abf; color:#427abf}
+
+/* table */
+.table-bordered { font-family: NanumSquare,Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif !important; border: 0px; }
+.table-scrollable { border:1px solid #c8c9ca;}
+.table-opened th:first-child { border-left:0 !important; } 
+.table-opened td:first-child { border-left:0 !important; } 
+.table-opened th:last-child { border-right:0 !important; } 
+.table-opened td:last-child { border-right:0 !important; } 
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td { padding: 5px; }
+
+.selectedRow { background-color:#b2e1f1;}
+
+.titArea { overflow:hidden; border-bottom:1px solid #d4d4d4; margin:0 -10px 15px; height:45px; padding:10px; box-sizing:border-box}
+.titArea h4 { height:17px; line-height:17px; float:left; margin-top:5px; margin-left:20px; padding-left: 20px; background:url(./images/ico_12.png) no-repeat 0 0;}
+
+.toggleWrap { position:relative; margin-bottom:30px;}
+.toggleWrap #btnToggleBasicInfo { width:150px; position:absolute; bottom:-18px; height:18px; left:50%; margin-left:-75px;  border:1px solid #c8c9ca; border-top:0; border-radius:0 0 5px 5px !important; text-align: center; text-indent:-9999px; }
+.toggleWrap #btnToggleBasicInfo:hover { overflow:hidden;
+	background: #9c9c9c; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#9c9c9c, #c9c9c9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#9c9c9c, #c9c9c9); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#9c9c9c, #c9c9c9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#9c9c9c, #c9c9c9); /* Standard syntax */
+  }
+.toggleWrap #btnToggleBasicInfo:before { content:"CLOSE"; display: block; position:absolute; width:100%; height:18px; left:0; top:0; line-height:18px; font-size:11px; color:#3a3a3a; text-indent:0; background:url(./images/up01.png) no-repeat 70% 50% }
+.toggleWrap #btnToggleBasicInfo:hover:before { color:#fff; background:url(./images/up02.png) no-repeat 70% 50% }
+.toggleWrap #btnToggleBasicInfo.open:before { content:"OPEN";  background:url(./images/down01.png) no-repeat 70% 50%}
+.toggleWrap #btnToggleBasicInfo.open:hover:before { background:url(./images/down02.png) no-repeat 70% 50%}
+
+.approWrap { position:relative; }
+.approWrap .tit { position:absolute; left:1px; top:1px; width:106px; height:150px !important; overflow:hidden; text-indent:-9999em; }
+.approWrap .bg_sign { background: url(./images/bg_approval.png) no-repeat 0 0 ; }
+.approWrap .bg_receive { background: url(./images/bg_receive.png) no-repeat 0 0 ; } 
+
+#dropzone { background: palegreen; width: 100%; height: 200px; line-height: 50px; text-align: center; font-weight: bold; }
+#dropzone.hover { background: blue; }
+#dropzone.fade {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 1;
+}
+
+input[type="file"].file-border { line-height:1; padding:5px 10px 5px; border:1px solid #ccc; background:#fff; cursor:pointer; box-sizing:border-box; } 
+.file-tooltip { position: relative; display: inline-block; padding-bottom:5px; color:#222222; }
+.file-tooltip .tooltiptext {
+	visibility: hidden;
+	width: 80px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 3px 3px;
+	border-radius: 6px;
+	right:3px;
+	position: absolute;
+	z-index: 1;
+}
+.file-tooltip:hover .tooltiptext { visibility: visible; }
+
+.pdfobject-container { max-width: 100%; width: 100%; height: 100%; border: 5px solid rgba(0,0,0,.2); margin: 0; }
+
+.bmark { background:url(./images/ico_01.png) no-repeat 0 0; width:16px; height:16px; text-indent:-999px; overflow:hidden}
+.bmark.selected { background:url(./images/ico_02.png) no-repeat 0 0; }
+
+/********************여기까지***************************/
+#divMain.toggleWrap.table > thead > tr > th,
+#divMain.toggleWrap.table > thead > tr > td,
+#divMain.toggleWrap.table > tbody > tr > th,
+#divMain.toggleWrap.table > tbody > tr > td { font-size: 14px !important; }
+
+.tableStyle { border-top:2px solid #888} 
+.tableStyle table { width:100%}
+.tableStyle table + table { margin-top:30px; border-top:1px solid #d4d4d4}
+.tableStyle table th {  background:#f8f8f8; border-bottom:1px solid #d4d4d4; font-size:13px;  border-left:1px solid #d4d4d4; vertical-align:middle}
+.tableStyle table th:first-child { border-left:0} 
+.tableStyle table thead th { height:31px; } 
+.tableStyle table tbody th {padding:2px; height:24px; border-right:1px solid #d4d4d4; }
+.tableStyle table tbody td {padding:2px 2px 2px 8px; height:28px; border-bottom:1px solid #d4d4d4; border-left:1px solid #d4d4d4;  vertical-align:middle; font-size:13px;line-height:140%;}
+.tableStyle table tbody td:first-child { border-left:0} 
+.tableStyle table tbody td.center  { text-align:center}
+.tableStyle td.pad {padding:2px ;} 
+.tableStyle.form { margin-bottom:30px;}  
+.tableStyle.form td {padding:2px ;} 
+
+.popupWrap { padding:0px; background:#fff} 
+.popupWrap .floatWrap { margin-top:20px;} 
+.popupWrap .floatWrap:after {content:""; display:block;  clear:both; width:0; height:0;}
+.popupWrap .floatWrap .leftArea { float:left; width:270px}
+.popupWrap .floatWrap .rightArea { float:right; width:553px; }
+.popupWrap .floatWrap .tabBody { padding:15px; border:1px solid #c8c9ca; margin-top:-2px;}
+.popupWrap .floatWrap .tabBody .srroll { height:430px; overflow-y: scroll}
+.popupWrap .floatWrap .tabBody + .infoText { padding:10px 0 10px; background:url(./images/ico_21.png) no-repeat 0 15px; padding-left:8px;}
+
+.treeWrap:after {content:""; display:block;  clear:both; width:0; height:0;}
+.treeWrap .leftArea { float:left; width:232px}
+.treeWrap .tabBody { border:1px solid #c8c9ca; }
+.treeWrap .tabBody .srroll { padding:15px; height:468px; overflow-y: scroll}
+
+.treeWrap .tabBody .searchW { padding:10px; height:468px; }
+.treeWrap .tabBody .searchW .tit  { height:30px; line-height:30px; text-indent:10px; border-top:2px solid #888; background:#f8f8f8; border-bottom:1px solid #d4d4d4; font-weight:bold} 
+.treeWrap .tabBody .searchW .ser  { padding:2px; border-bottom:1px solid #d4d4d4; }
+.treeWrap .tabBody .searchW .ser button { height:24px;}
+.treeWrap .tabBody .searchW .suList { margin-top:10px; height:355px; } 
+.treeWrap .tabBody .searchW .suList li{ line-height:28px; border-bottom:1px solid #d4d4d4; font-size:12px; letter-spacing:-1px}
+
+.docWrap { margin-bottom:30px;} 
+.docWrap:after {content:""; display:block; clear:both; width:0; height:0;}
+.docWrap .scroll { float:left; width:555px; height:232px;}
+.docWrap .lineBox { float:right; width:271px; height:232px;border :1px solid #d4d4d4; padding:10px;}
+

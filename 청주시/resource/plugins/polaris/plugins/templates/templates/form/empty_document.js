@@ -1,0 +1,1 @@
+﻿POLARIS.addTemplatesHTML("empty_document",'\x3c!doctype html\x3e\x3chtml\x3e\x3chead\x3e\x3cmeta charset\x3d"utf-8"\x3e\x3c/head\x3e\x3cbody\x3e\x3c/body\x3e\x3c/html\x3e');

@@ -1,0 +1,515 @@
+body
+{
+	/* Font */
+	/*font-family: sans-serif, Arial, Verdana, "Trebuchet MS";*/
+	/*font-size: 12px;*/
+
+	/* Text color */
+	/*color: #333;*/
+
+	/* Remove the background color to make it transparent */
+	/*background-color: #fff;*/
+
+	margin: auto;
+	/*height: 100%; */
+
+	word-wrap: break-word; /* IE7 */
+	-webkit-text-size-adjust: antialiased;
+ 	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ 	text-rendering: optimizeLegibility;
+}
+
+table
+{
+	border-spacing:0;
+	border-collapse:collapse;
+}
+
+table[align="center"] {
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+table[align="right"] {
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: 0 !important;
+}
+
+table[align="left"] {
+	float: none !important;
+	margin-left: 0 !important;
+	margin-right: auto !important;
+}
+
+table, tr, td
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+td
+{
+	min-width:10px;
+	/* [IAC-1256][2016.03.23][Jay] 최소 줄간격을 늘림. 표 크기를 고정한 채 가로줄/세로 칸 크기 Alt+화살표 오동작 */
+	/* [IAC-1256][2016.03.23][Jay] 읽기모드(EditMode==0)일 때 표 높이가 변하는 문제, 원래대로 10px로 돌린다.*/
+	min-height:10px;
+	word-break: break-word; /* break-all; */
+	/* [IAC-4070][2018.09.13][is7001][PEditor][온나라] 표 내부의 이미지가 ODT편집기에서는 보이나, Editor에선 보이지 않는 이슈 */
+	/* overflow: hidden; */
+
+	/**
+	 * [IAC-4298] 셀에 기본으로 설정되는 paddingTop, paddingBottom값 제거
+	 */
+	padding: 0px;
+	/* [IAC-4427] 분리된 셀에 내용이 없는경우 커서유무에 따라 셀 높이가 변경되는 문제 */
+	line-height: 1;
+
+}
+
+/* table[style*="border: none"], table[style*="border:none"], td[style*="border: none"], td[style*="border:none"]
+table[style*="border-style: none"], table[style*="border-style:none"], td[style*="border-style: none"], td[style*="border-style:none"]
+{
+	border: solid 1px transparent !important;
+} */
+
+p {
+	/* [2016.06.01][Jay] 한컴이나 타사에서 생성한 HTML에는 margin이 모두 0이므로 동일하게 맞춘다. margin-bottom: 1px -> 0px; */
+	margin: 0px 0px 0px 0px;
+}
+
+/*[IAC-4254] 셀안의 이미지높이가 셀의 높이와 동일할때 셀의 높이가 실제 설정된 높이값보다 더크게 출력되는 문제*/
+img {
+	vertical-align: text-bottom;
+}
+
+p:focus { outline: 0; }
+table:focus { outline: 0; }
+
+.polaris_pagesize
+{
+	word-wrap: break-word;
+
+	/* [IAC-949][2015.12.30][Jay] 온나라 HTML Editor에서 스크롤바 문제로 최소 높이를 낮춘다. */
+	min-height: 100px !important;
+
+	margin-right: auto !important;
+	margin-left: auto !important;
+
+	/* [IAC-1458][2016.05.18][Jason] HTML Editor 안쪽 여백을 외부에서 설정가능하도록 수정*/
+	/*
+	padding-right: 18px !important;
+	padding-left: 18px !important;
+	padding-top: 18px !important;
+	*/
+}
+
+::selection {
+	background: #b5d6fd;
+}
+
+.cellblock_cell {
+	background: #b5d6fd !important;
+}
+
+.cellblock_cell_bgcolor {
+	background: #95c5ff !important;
+}
+
+.selection_table ::selection,
+.cellblock_table ::selection,
+.hidden_text_selection ::selection {
+	background: rgba( 255, 0, 0, 0 );
+}
+
+.disableselect
+{
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	-o-user-select: none !important;
+	-khtml-user-select: none !important;
+}
+
+.body_class
+{
+	font-family: '돋움체';
+	/*[IAC-1090][2016.02.22][Jason] 폰트 사이즈 기본값을 12pt로 변경 */
+	font-size: 12pt;
+	/*[IAC-1083][2016.02.22][Jason] 줄간격 default값 변경 및 글자간격 default값 설정 0pt */
+	line-height: 1.6;
+	letter-spacing: 0pt;
+}
+
+blockquote
+{
+	/*font-style: italic;*/
+	/*font-family: Georgia, Times, "Times New Roman", serif;*/
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+.polaris_contents_ltr blockquote
+{
+	padding-left: 20px;
+	padding-right: 8px;
+}
+
+.polaris_contents_rtl blockquote
+{
+	padding-left: 8px;
+	padding-right: 20px;
+}
+
+a
+{
+	color: #0000FF;
+}
+a:hover
+{
+	color: #0000FF;
+	cursor: pointer;
+}
+
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	margin-right: 0px;
+	/* [IAC-1112][2016.03.01][Jay] 문단모양에서 기본 margin 때문에 pagination 오차가 생김*/
+	margin-top: 0px;
+	margin-bottom: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	/* [2016.03.19][Jay] 문단모양일 때 오른쪽 패딩이 붙는 현상 수정 */
+	padding-top: 0px;
+	padding-left: 35px;
+}
+
+.polaris_editable ol,
+.polaris_editable ul
+{
+	list-style-position: inside;
+}
+
+
+.polaris_editable ol > li > p,
+.polaris_editable ul > li > p
+{
+	display:inline;
+}
+
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+hr
+{
+	border: 0px;
+	border-top: 1px solid #ccc;
+	clear: both;
+}
+
+img.right
+{
+	border: 1px solid #ccc;
+	float: right;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+img.left
+{
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	-webkit-tab-size: 4;
+	tab-size: 4;
+}
+
+.marker
+{
+	background-color: Yellow;
+}
+
+span[lang]
+{
+	font-style: italic;
+}
+
+figure
+{
+	text-align: left;
+	border: none 1px #ccc;
+	margin: 0px;
+	display: inline-block;
+}
+
+figure > figcaption
+{
+	text-align: left;
+	word-break: break-all;
+	display: block; /* For IE8 */
+}
+
+a > img {
+	padding: 1px;
+	margin: 1px;
+	border: none;
+	outline: 1px solid #0782C1;
+}
+
+@media screen
+{
+	figure > figcaption
+	{
+		text-align: left;
+		word-break: break-all;
+		display: block; /* For IE8 */
+		border: dotted 1px #ccc;
+	}
+
+	ruby {
+		word-break: break-all;
+		border: dotted 1px #ccc;
+	}
+
+	rt {
+		word-break: break-all;
+		border: dotted 1px #8199C0;
+	}
+
+	/*table.polaris_table_border {
+		position:relative;
+	}
+	td.polaris_table_border {
+		position:relative
+	}
+	table.polaris_table_border:after {
+		position: absolute;top:0;right:0;left:0;bottom:0;
+		border:1px dotted red;
+		content:''
+	}
+	td.polaris_table_border:after {
+		display:block;height:100%;
+		position: absolute;top:0;right:0;left:0;bottom:0;
+		border:1px dotted red;
+		content:''
+	}*/
+
+
+	table.polaris_table_border {
+		border-collapse: inherit;
+	}
+
+	td.polaris_table_border_top {
+		border-top: dotted 0.01mm red !important;
+	}
+
+	td.polaris_table_border_right {
+		border-right: dotted 0.01mm red !important;
+	}
+
+	td.polaris_table_border_bottom {
+		border-bottom: dotted 0.01mm red !important;
+	}
+
+	td.polaris_table_border_left {
+		border-left: dotted 0.01mm red !important;
+	}
+
+	td.polaris_dummy_cell {
+		display: none;
+	}
+
+	td.polaris_empty_cell {
+		cursor: default;
+		-webkit-user-select: none !important;
+		-moz-user-select: none !important;
+		-ms-user-select: none !important;
+		-o-user-select: none !important;
+		-khtml-user-select: none !important;
+		user-select: none;
+	}
+/*
+	table.polaris_table_border td:first-child > *
+	{
+		text-indent:-1px;
+		margin-top:-1px
+	}
+*/
+
+	img.polaris_img_border
+	{
+		border-left: dotted 0.01mm red !important;
+		border-top: dotted 0.01mm red !important;
+		border-right: dotted 0.01mm red !important;
+		border-bottom: dotted 0.01mm red !important;
+	}
+}
+
+a.polaris_comment_tag_anchor {
+	text-decoration: none;
+	color: inherit;
+	border: 0px;
+	padding: 0px;
+}
+
+a.polaris_comment_item_anchor {
+	text-decoration: none;
+	color: inherit;
+	border: 0px;
+	padding: 0px;
+}
+
+/* [IAC-1885][2016.08.10][Jay] 객체 Resize 기능 개발 */
+#polarisSelector, .polarisSelector {
+	position: absolute;
+}
+
+.polarisSelector > div {
+    width: 11px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    border: 1px solid #535353;
+	background-color: #ffffff;
+	outline: 1px solid #ffffff;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.topLine, .bottomLine, .leftLine, .rightLine {
+	border: 1px solid transparent;
+}
+
+.polarisSelector.outline {
+	border: 1px solid #3d6ec9;
+}
+
+.polarisSelector > div.disable {
+	display: none;
+}
+
+.topLine > .topLeft {
+    top: -6px;
+	left: -6px;
+	cursor: pointer;
+	border: 1px solid #466d9c;
+	background-color: #b5d6fd;
+	outline: 1px solid #ffffff;
+}
+
+.topLine > .topMiddle {
+    top: -6px;
+    left: 50%;
+	margin-left: -6px;
+	cursor: n-resize;
+}
+
+.topLine > .topRight {
+    top: -6px;
+	right: -6px;
+	cursor: sw-resize;
+}
+
+.bottomLine > .bottomLeft {
+    bottom: -6px;
+	left: -6px;
+	cursor: ne-resize;
+}
+
+.bottomLine > .bottomMiddle {
+    bottom: -6px;
+    left: 50%;
+	margin-left: -6px;
+	cursor: n-resize;
+}
+
+.bottomLine > .bottomRight {
+    right: -6px;
+	bottom: -6px;
+	cursor: se-resize;
+}
+
+.leftLine > .leftMiddle {
+    top: 50%;
+    left: -6px;
+	margin-top: -6px;
+	cursor: w-resize;
+}
+
+.rightLine > .rightMiddle {
+    top: 50%;
+    right: -6px;
+	margin-top: -6px;
+	cursor: w-resize;
+}
+
+.polarisClickHere {
+	position:relative;
+}
+
+.polarisClickHere:before {
+	position:absolute;
+	top:2px;left:-5px;
+	width:5px;
+	height:5px;
+	border:2px solid #C20505;
+	content:'';
+	border-right:0;
+	border-bottom:0;
+}
+
+.polarisClickHere:after {
+	position:absolute;
+	bottom:2px;right:-5px;
+	width:5px;
+	height:5px;
+	border:2px solid #C20505;
+	content:'';
+	border-left:0;
+	border-top:0;
+}
+
+table td.fixed {width:100% !important}
+
+div[doc-data-role="polaris-page-margin-top"],
+div[doc-data-role="polaris-page-header"],
+div[doc-data-role="polaris-page-background"],
+div[doc-data-role="polaris-page-grid"],
+div[doc-data-role="polaris-page-footer"],
+div[doc-data-role="polaris-page-margin-bottom"],
+div[doc-data-role="polaris-page-corner"]{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    /*-ms-user-select: none;*/
+    user-select: none;
+}
+
+/** [IAC-4468] 브라우저 자체 인쇄 동작시 표준기안문 테이블 깨짐현상 **/
+@media print {
+	td.polaris_dummy_cell,
+	.polarisClickHere:before,
+	.polarisClickHere:after,
+	#polarisSelector {
+		display: none;
+	}
+}
