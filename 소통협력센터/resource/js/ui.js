@@ -1,17 +1,18 @@
 $(function(){ 
     gnb();//gnb 
-    link_menu();//link_menub  
+    link_menu();//link_menu  
     footer_banner();//footer_banner 
+    all_menu();//전체메뉴 
 });
  
 /* ----- GNB ----- */ 
 function gnb(){
 	$(".depth01 > li > a").hover(function () {
         $(this).parent().addClass("on");
-        $(this).parent().find(".depth-warp").slideDown(100); 
+        $(this).parent().find(".depth-warp").addClass("focusActive"); 
         $(this).parent().hover(function() {
         }, function(){
-            $(this).find(".depth-warp").slideUp(100); 
+            $(this).find(".depth-warp").removeClass("focusActive"); 
             $(this).removeClass("on");
         });
     });
@@ -20,9 +21,25 @@ function gnb(){
     $(".depth01 .depth-warp").removeClass("focusActive");
         $(this).parent().find(".depth-warp").addClass("focusActive"); 
     }); 
+
+    $(".btn-allmenu").focusin(function(){
+		$(".depth01 .depth-warp").removeClass("focusActive");
+	});
     
 }
 
+function all_menu(){
+	$(".btn-allmenu").click(function () {
+        $('.allmenu-wrap').addClass("focusActive");
+        $('.logo').addClass("all");
+    });
+    $(".all-close").click(function () {
+        $('.allmenu-wrap').removeClass("focusActive");
+        $('.logo').removeClass("all");
+    });
+ 
+    
+}
 
 /* ----- 관련사이트 ----- */
 function link_menu(){
@@ -41,14 +58,14 @@ function footer_banner(){
         slidesPerView: 5,
         spaceBetween: 20,
         freeMode: true,
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
+        loop: false,
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
         navigation: {
-            nextEl: '.footerbanner .swiper-button-next',
-            prevEl: '.footerbanner .swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 }
