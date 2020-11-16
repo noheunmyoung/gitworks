@@ -1,8 +1,9 @@
 $(function(){ 
     gnb();//gnb 
-    link_menu();//link_menu  
-    footer_banner();//footer_banner 
+    link_menu();//관련사이트  
+    footer_banner();//하단 슬라이드 배너 
     all_menu();//전체메뉴 
+    card_tab();//전체메뉴
 });
  
 /* ----- GNB ----- */ 
@@ -40,6 +41,29 @@ function all_menu(){
  
     
 }
+
+/* ----- 카드뉴스 ----- */
+function card_tab(){
+	 $('.card-tab li').click(function () { 
+        $(this).addClass("active")
+        .attr({
+            "tabindex": "0",
+            "aria-selected":"true" 
+        }) 
+        .focus()
+        .siblings()
+        .removeClass("active")
+        .attr({
+            "tabindex": "-1",
+            "aria-selected":"false" 
+        }); 
+        $('#' + $(this).attr('aria-controls')) 
+        .addClass("focusActive")
+        .siblings(".tab-conts") 
+        .removeClass("focusActive")
+    });
+}
+ 
 
 /* ----- 관련사이트 ----- */
 function link_menu(){

@@ -267,16 +267,16 @@
 				<div class="card-wrap">
 					<h2><strong>1,232</strong> 개의 혁신카드</h2>
 					<div class="inner">
-						<ul class="card-tab">
-							<li class="active"><button type="button">추천<em>4</em></button></li>
-							<li><button type="button">환경<em>4</em></button></li>
-							<li><button type="button">문화<em>9</em></button></li>
-							<li><button type="button">지역공동체<em>10</em></button></li>
-							<li><button type="button">산업/경제<em>12</em></button></li>
-							<li><button type="button">교육<em>7</em></button></li>
-							<li><button type="button">기타<em>12</em></button></li>
+						<ul class="card-tab" role="tablist">
+							<li role="tab" aria-controls="section1" id="tab1" class="active"><span>추천<em>4</em></span></li>
+							<li role="tab" aria-controls="section2" id="tab2"><span>환경<em>4</em></span></li>
+							<li role="tab" aria-controls="section3" id="tab3"><span>문화<em>9</em></span></li>
+							<li role="tab" aria-controls="section4" id="tab4"><span>지역공동체<em>10</em></span></li>
+							<li role="tab" aria-controls="section5" id="tab5"><span>산업/경제<em>12</em></span></li>
+							<li role="tab" aria-controls="section6" id="tab6"><span>교육<em>7</em></span></li>
+							<li role="tab" aria-controls="section7" id="tab7"><span>기타<em>12</em></span></li>
 						</ul>
-						<div class="tab-conts">
+						<div role="tabpanel" id="section1" aria-labelledby="tab1" class="tab-conts focusActive">
 							<div class="card-swiper">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -385,10 +385,31 @@
 							
 								<!-- Add Arrows -->
 								<div class="swiper-button-next"><i>이전</i></div>
-								<div class="swiper-button-prev"><i>다음</i></div>
-							
-							
+								<div class="swiper-button-prev"><i>다음</i></div> 
+								<div class="btn-w">
+									<button type="button" class="btn-play">시작</button>
+									<button type="button" class="btn-pause">정지</button>
+								</div>  
 							</div>
+						</div>
+
+						<div role="tabpanel" id="section2" aria-labelledby="tab2" class="tab-conts">
+							탭2
+						</div>
+						<div role="tabpanel" id="section3" aria-labelledby="tab3" class="tab-conts">
+							탭3
+						</div>
+						<div role="tabpanel" id="section4" aria-labelledby="tab4" class="tab-conts">
+							탭4
+						</div>
+						<div role="tabpanel" id="section5" aria-labelledby="tab5" class="tab-conts">
+							탭5
+						</div>
+						<div role="tabpanel" id="section6" aria-labelledby="tab6" class="tab-conts">
+							탭6
+						</div>
+						<div role="tabpanel" id="section7" aria-labelledby="tab7" class="tab-conts">
+							탭7
 						</div>
 					</div>
 				</div>
@@ -537,11 +558,7 @@
 		var swiper = new Swiper('.card-swiper', {
 			slidesPerView:1,
 			spaceBetween: 0,
-			loop: false,
-			// autoplay: {
-			// 	delay: 2500,
-			// 	disableOnInteraction: false,
-			// },
+			loop: false, 
 			 pagination: {
 				el: ".swiper-pagination",
 				type: "fraction",
@@ -550,7 +567,22 @@
 				nextEl: '.card-swiper .swiper-button-next',
 				prevEl: '.card-swiper .swiper-button-prev',
 			},
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			}
 		});
+		$('.card-swiper .btn-pause').click(function () {
+			swiper.autoplay.stop();
+			$(this).hide(); 
+			$('.btn-play').show(); 
+		});
+		$('.card-swiper .btn-play').click(function () {
+			swiper.autoplay.start();
+			$(this).hide(); 
+			$('.btn-pause').show(); 
+		});	
+		 
 	</script>
 </body>
 
