@@ -195,6 +195,8 @@ select::-ms-expand {display:none;}
 img{max-width:100%; }  
 .focusActive {display:block!important;}
 .focusNone {display:none!important;}
+.focusVisib {visibility: visible!important;}
+
 /* --- 내용 바로가기 --- */  
 #skip { position: absolute; margin: 0 auto; width: 100%; list-style: none; font-size: 1.15em; top: -10.5em; left: 0; z-index: 999;}
 #skip a:focus, #skip a:active { position: absolute; padding-top: 0.5em; width: 100%; height: 2em; top: 10.5em; z-index: 999; text-align: center;color:#fff; background: #333; overflow: visible; clip: unset;}
@@ -347,13 +349,13 @@ footer .foot-info .inner p span:not(:last-child):after { content:"|"; display:in
 .card-wrap h2 { margin-bottom:5.7rem; text-align:center; font-size:3.5rem; font-family:'NanumSquare'; font-weight:400; color:#fff; letter-spacing:-1px;}
 .card-wrap h2 strong {display:inline-block; vertical-align:middle; font-weight:700; font-size:5rem;letter-spacing:-2px;}
 .card-wrap .inner {position:relative; width:128rem; padding:0 1rem; margin:0 auto;}
-.card-wrap .inner .card-tab { display:flex; justify-content: space-around; width:102rem; margin:0 auto 4rem;}
+/* .card-wrap .inner .card-tab { display:flex; justify-content: space-around; width:102rem; margin:0 auto 4rem;}
 .card-wrap .inner .card-tab li { width:12.5rem; }
 .card-wrap .inner .card-tab li span { width:12.5rem; height:12.5rem; padding-top:4rem; border-radius:36rem; text-align:center; background:#ec6884; color:#fff; font-size:2.2rem;}
 .card-wrap .inner .card-tab li span em {display:block; margin-top:.5rem;}
-/* .card-wrap .inner .card-tab li:hover span, */
+.card-wrap .inner .card-tab li:hover span,
 .card-wrap .inner .card-tab li.active span {background:#e7325c; font-weight:700;}
-.card-wrap .inner .tab-conts { display:none;height:42.4rem;}
+.card-wrap .inner .tab-conts { display:none;height:42.4rem;} */
 .card-wrap .inner .card-swiper {width:124rem; overflow: hidden;}
 .card-wrap .inner .card-swiper .swiper-slide {display:flex;  justify-content: space-around; }
 .card-wrap .inner .card-swiper .swiper-slide .swiper-wrap {width:27.8rem; height:42.4rem; position:relative; border-radius:1.5rem; background:#fff; box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);}
@@ -374,7 +376,17 @@ footer .foot-info .inner p span:not(:last-child):after { content:"|"; display:in
 .card-wrap .inner .card-swiper .btn-w { position:absolute; width:2.7rem; left:65rem; bottom:-5.2rem}
 .card-wrap .inner .card-swiper .btn-w button { width:2.7rem; height:2.7rem; text-indent:-999px; overflow:hidden;background:url('../img/icon_main.png') no-repeat -11.3rem -7.2rem;}
 .card-wrap .inner .card-swiper .btn-w button.btn-play {background-position:-15.6rem -7.2rem; display:none;}
-.card-wrap .inner .card-swiper .btn-w button.btn-pause { background-position:-11.3rem  -7.2rem;}
+.card-wrap .inner .card-swiper .btn-w button.btn-pause { background-position:-11.3rem  -7.2rem;} 
+
+.card-wrap [role="tablist"] { display:flex; justify-content: space-around; width:102rem; margin:0 auto 4rem; overflow: visible;}
+.card-wrap [role="tablist"] button { width:12.5rem; }
+.card-wrap [role="tablist"] button { width:12.5rem; height:12.5rem; padding-top:.5rem; border-radius:36rem; text-align:center; background:#ec6884; color:#fff; font-size:2.2rem;}
+.card-wrap [role="tablist"] button em {display:block; margin-top:.5rem;}
+.card-wrap [role="tablist"] [role="tab"] {overflow: visible;}  
+/* .card-wrap [role="tablist"] [role="tab"]:hover,  */
+.card-wrap [role="tablist"] [role="tab"]:focus,
+.card-wrap [role="tablist"] [role="tab"][aria-selected="true"] {background:#e7325c; font-weight:700;}
+.card-wrap [role="tabpanel"] {height:42.4rem;} 
 
 .newsletter-wrap { height:16rem; background:#6b9bd2 url('../img/newsletter_bg.png') no-repeat 50% 0; }
 .newsletter-wrap .inner {position:relative; width:128rem; padding:0 1rem; margin:0 auto; text-align:center;}

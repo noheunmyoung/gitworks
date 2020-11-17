@@ -37,32 +37,30 @@ function all_menu(){
     $(".all-close").click(function () {
         $('.allmenu-wrap').removeClass("focusActive");
         $('.logo').removeClass("all");
-    });
- 
-    
+    });  
 }
 
-/* ----- 카드뉴스 ----- */
-function card_tab(){
-	 $('.card-tab li').click(function () { 
-        $(this).addClass("active")
-        .attr({
-            "tabindex": "0",
-            "aria-selected":"true" 
-        }) 
-        .focus()
-        .siblings()
-        .removeClass("active")
-        .attr({
-            "tabindex": "-1",
-            "aria-selected":"false" 
-        }); 
-        $('#' + $(this).attr('aria-controls')) 
-        .addClass("focusActive")
-        .siblings(".tab-conts") 
-        .removeClass("focusActive")
-    });
-}
+// /* ----- 카드뉴스 ----- */
+// function card_tab(){
+// 	 $('.card-tab li').click(function () { 
+//         $(this).addClass("active")
+//         .attr({
+//             "tabindex": "0",
+//             "aria-selected":"true" 
+//         }) 
+//         .focus()
+//         .siblings()
+//         .removeClass("active")
+//         .attr({
+//             "tabindex": "-1",
+//             "aria-selected":"false" 
+//         }); 
+//         $('#' + $(this).attr('aria-controls')) 
+//         .addClass("focusActive")
+//         .siblings(".tab-conts") 
+//         .removeClass("focusActive")
+//     });
+// }
  
 
 /* ----- 관련사이트 ----- */
@@ -93,4 +91,4 @@ function footer_banner(){
         },
     });
 }
-
+ 
