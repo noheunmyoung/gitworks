@@ -4,6 +4,7 @@ $(function(){
     footer_banner();//하단 슬라이드 배너 
     all_menu();//전체메뉴 
     card_tab();//전체메뉴
+    fole();//파일선택
 });
  
 /* ----- GNB ----- */ 
@@ -74,11 +75,12 @@ function link_menu(){
     })
 }
 
+ 
 /* ----- 푸터배너 ----- */
 function footer_banner(){
      var swiper = new Swiper('.footerbanner', {
-        slidesPerView: 5,
-        spaceBetween: 20,
+        // slidesPerView: 5,
+        // spaceBetween: 20,
         freeMode: true,
         loop: false,
         // autoplay: {
@@ -89,6 +91,64 @@ function footer_banner(){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+				961: {
+					slidesPerView: 2,
+					spaceBetween: 0,
+				},
+				1000: {
+					slidesPerView: 3,
+					spaceBetween: 0,
+				},
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 0,
+				},
+				1400: {
+					slidesPerView: 5,
+					spaceBetween: 0,
+				},
+			}
     });
 }
+
+ 
+/* ----- 파일선택----- */
+(function($){
+  
+  var $fileBox = null;
+  
+  $(function() {
+    init();
+  })
+  
+  function init() {
+    $fileBox = $('.file');
+    fileLoad();
+  }
+  
+  function fileLoad() {
+    $.each($fileBox, function(idx){
+      var $this = $fileBox.eq(idx),
+          $btnUpload = $this.find('[type="file"]'),
+          $label = $this.find('.file-label');
+      
+      $btnUpload.on('change', function() {
+        var $target = $(this),
+            fileName = $target.val(),
+            $fileText = $target.siblings('.file-name');
+        $fileText.val(fileName);
+      })
+      
+      $btnUpload.on('focusin focusout', function(e) {
+        e.type == 'focusin' ?
+          $label.addClass('file-focus') : $label.removeClass('file-focus');
+      })
+      
+    })
+  }
+  
+  
+})(jQuery);
+
  
