@@ -5,6 +5,7 @@ $(function(){
     all_menu();//전체메뉴 
     card_tab();//전체메뉴
     fole();//파일선택
+    search_mob();//모바일검색
 });
  
 /* ----- GNB ----- */ 
@@ -29,7 +30,7 @@ function gnb(){
 	});
     
 }
-
+/* ----- 전체메뉴----- */ 
 function all_menu(){
 	$(".btn-allmenu").click(function () {
         $('.allmenu-wrap').addClass("focusActive");
@@ -37,6 +38,18 @@ function all_menu(){
     });
     $(".all-close").click(function () {
         $('.allmenu-wrap').removeClass("focusActive");
+        $('.logo').removeClass("all");
+    });  
+}
+
+/* ----- 모바일 검색 ----- */ 
+function search_mob(){
+	$(".btn-search").click(function () {
+        $('.search-mwrap').addClass("focusActive");
+        $('.logo').addClass("all");
+    });
+    $(".all-close").click(function () {
+        $('.search-mwrap').removeClass("focusActive");
         $('.logo').removeClass("all");
     });  
 }

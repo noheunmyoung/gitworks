@@ -90,6 +90,22 @@
 				<a href="#none" class="btn-allmenu">전체메뉴 열기</a>  
 			</div>
 
+			<!--검색-->
+			<div class="search-mwrap"> 
+				<div class="inner">
+					<a href="#none" class="btn-home-m">홈</a><!-- [모바일]-->
+					<div class="logo-m"><span>제주시소통협력센터</span></div>
+					<div class="search-m-area">
+						<div class="search-form"> 
+							<p><input type="text" id="search-inp" placeholder="무엇을 찾아 드릴까요?"></p>
+							<button type="button"><i class="hidden">검색</i></button>
+						</div>
+					</div>
+					<button type="button" class="all-close"><i class="hidden">전체메뉴 닫기</i></button>
+				</div> 
+			</div>
+			<!--// 검색 -->
+
 			<!-- 전체메뉴 -->
 			<div class="allmenu-wrap">
 				<h2 class="hidden">전체메뉴</h2>
@@ -334,18 +350,25 @@
 					<h2><strong>뜻밖의, 발견</strong></h2>
 					<div class="inner">
 						<div class="card-swiper">
+							<div class="scroll">
+								<div class="item"><a href="#none"><img src="../resource/img/@img15.png" alt=""></a></div>
+								<div class="item"><a href="#none"><img src="../resource/img/@img16.png" alt=""></a></div>
+								<div class="item"><a href="#none"><img src="../resource/img/@img17.png" alt=""></a></div>
+							</div> 
+						</div>
+
+						<!-- <div class="card-swiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide"><div class="swiper-wrap"><img src="../resource/img/@img15.png" alt=""></div></div>
 								<div class="swiper-slide"><div class="swiper-wrap"><img src="../resource/img/@img16.png" alt=""></div></div>
 								<div class="swiper-slide"><div class="swiper-wrap"><img src="../resource/img/@img17.png" alt=""></div></div>
 							</div>
-
-							<!-- Add Arrows -->
+ 
 							<div class="btn-w">
 								<div class="swiper-button-prev"><i>다음</i></div>
 								<div class="swiper-button-next"><i>이전</i></div>
 							</div> 
-						</div>
+						</div> -->
 						 
 						<div class="btn-area">
 							<button type="button">카드 다시 뽑기</button>
@@ -504,7 +527,7 @@
 					spaceBetween: 20,
 				},
 				1000: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 					spaceBetween: 20,
 				},
 				1200: {
@@ -517,42 +540,7 @@
 				},
 			}
 			 
-		}); 
-
-		//혁신카드
-		var swiper = new Swiper('.card-swiper', {
-			// slidesPerView: 4,
-			// spaceBetween: 20, 
-			loop: false,
-			// autoplay: {
-			// 	delay: 2500,
-			// 	disableOnInteraction: false,
-			// },
-			navigation: {
-				nextEl: '.card-swiper .swiper-button-next',
-				prevEl: '.card-swiper .swiper-button-prev',
-			},
-			breakpoints: {
-				961: {
-					slidesPerView: 3,
-					spaceBetween: 0,
-				},
-				1000: {
-					slidesPerView: 3,
-					spaceBetween: 0,
-				},
-				1200: {
-					slidesPerView: 3,
-					spaceBetween: 0,
-				},
-				1400: {
-					slidesPerView: 3,
-					spaceBetween: 0,
-				},
-			}
-
-		}); 
-
+		});  
 		 
 	</script>
 </body>
