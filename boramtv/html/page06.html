@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Boram TV</title> 
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/ui.js"></script>
+</head>
+
+<body>
+	<div class="wrapper"> 
+		<div class="container">
+			<div class="inner">  
+				<button type="button" class="mob-btn btn-back"><i class="fa fa-chevron-left"></i><em class="hidden">이전</em></button> 
+
+				<div class="mob-wrap">
+					<!-- header -->
+					<div class="header">
+						<div class="inner">
+							<h1>Boram TV</h1>
+							<div class="head_info">
+								<p>김아름님</p>
+								<span class="side_menu">
+									<button type="button">로그아웃</button>
+								</span>
+							</div> 
+						</div> 
+					</div><!--  // header -->
+
+					<!-- left Menu -->
+					<div class="left_menu">
+						<div class="left_top">
+							<p>방송 관리</p>
+						</div>
+
+						<div class="lnb_wrap">
+							<ul>
+								<li><a href="#">방송 리스트 <i class="fa fa-angle-right"></i></a></li>
+								<li><a href="#;">방송 등록 <i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!--// left Menu -->
+
+					<button type="button" class="menu-close"><i class="fa fa-times"></i><em class="hidden">닫기</em></button>
+				</div> 
+				 
+				<!-- contents -->
+				<div class="contents"> 
+					<h2>내 정보수정</h2> 
+					<div class="conts-in">
+						<div class="h3-wrap">
+							<h3>기본정보</h3>
+							<p>*는 필수항목 입니다.</p>
+						</div>
+						<div class="table-row">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col style="width:17%;">
+									<col style="width:83%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">아이디</th>
+										<td>
+											<input type="text" value="jdldldldld" disabled>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">닉네임 <strong>*</strong></th>
+										<td>
+											<div class="nick-name">
+												<input type="text">
+												<button type="button" class="btn-comm tdbtn"><i>중복확인</i></button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">비밀번호 <strong>*</strong></th>
+										<td>
+											<div class="pass-wrap">
+												<input type="password">
+												<button type="button"><i class="fa fa-eye"></i><em class="hidden">비밀번호 표시</em></button>
+											</div>
+											<p class="info-text">※ 8자 이상 문자, 숫자, 기호 입력가능</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">비밀번호 확인 <strong>*</strong></th>
+										<td>
+											<div class="pass-wrap">
+												<input type="password">
+												<button type="button"><i class="fa fa-eye"></i><em class="hidden">비밀번호 표시</em></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="h3-wrap">
+							<h3>방송 진행자 정보</h3>
+							<p>*는 필수항목 입니다.</p>
+						</div>
+						<div class="table-row">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col style="width:17%;">
+									<col style="width:83%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">방송 진행자 이름</th>
+										<td>
+											<input type="text" value="김아정" disabled>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">방송 진행자 연락처</th>
+										<td>
+											<input type="text" value="01012345678" disabled>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">방송 진행자 주소 <strong>*</strong></th>
+										<td>
+											<div class="zip-code">
+												<input type="text">
+												<button type="button" class="btn-comm tdbtn"><i>우편번호 찾기</i></button>
+											</div>
+											<div class="address-wrap">
+												<input type="text">
+												<input type="text">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">카카오채널 사용여부 <strong>*</strong></th>
+										<td>
+											<div class="radio-wrap">
+												<input type="radio" id="radio1" name="radio" checked><label for="radio1">사용함</label>
+												<input type="radio" id="radio2" name="radio"><label for="radio2">사용 안함</label>
+											</div>
+											<input type="text">
+											<p class="info-text">※ 사용 안함으로 선택 시, 상품 상세정보에서 카카오톡이 노출되지 않습니다.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="btn-wrap">
+							<button type="button" class="btn-comm blue mob-none"><i>목록</i></button><!-- 클래스 mob-none(모바일에서 감춤) -->
+							<button type="button" class="btn-comm blue"><i>정보수정 완료</i></button>
+						</div>
+					</div> 
+
+				</div>
+				<!-- contents --> 
+			</div>
+		</div><!--  // container --> 
+	</div>
+
+</body>
+</html>

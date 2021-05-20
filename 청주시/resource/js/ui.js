@@ -75,17 +75,30 @@ function quick_menu(){
     });
 }
  
-/* ----- 대민포털 GNB ----- */
+
+/* ----- 대민포털 GNB (2020.12.17 수정) ----- */
 function potal_gnb(){
-	 $(".depth01 li").mouseover(function () {
-        $(this).children(".depth-warp").show();
-        $(this).addClass("on");
+	$(".depth01 > li > a").hover(function () {
+        $(this).parent().addClass("on");
+        $(this).parent().find(".depth-warp").addClass("focusActive"); 
+        $(this).parent().hover(function() {
+        }, function(){
+            $(this).find(".depth-warp").removeClass("focusActive"); 
+            $(this).removeClass("on");
+        });
     });
-    $(".depth01 li").mouseout(function () {
-        $(this).children(".depth-warp").hide();
-        $(this).removeClass("on");
-    });
-}
+
+    $(".depth01 > li > a").focusin(function(){
+    $(".depth01 .depth-warp").removeClass("focusActive");
+        $(this).parent().find(".depth-warp").addClass("focusActive"); 
+    }); 
+
+    $(".btn-allmenu").focusin(function(){
+		$(".depth01 .depth-warp").removeClass("focusActive");
+	});
+    
+} 
+
 
 /* ----- link_menu ----- */
 function link_menu(){

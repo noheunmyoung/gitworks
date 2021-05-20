@@ -1,6 +1,6 @@
 // 공지사항
 $(function () {
-    $('.notice_tab li').click(function () {
+    $('.notice_tab li').hover(function () {
         var activeTab = $(this).attr('data-tab');
         $('.notice_tab li').removeClass('current');
         $('.notice').removeClass('current');

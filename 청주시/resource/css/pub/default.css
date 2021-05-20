@@ -245,7 +245,9 @@ textarea {padding:10px; border:1px solid #d5d5d5; width:100%;}
 .potal .header nav .depth01 > li:nth-of-type(2) > div .depth02 { width:320px;} 
 .potal .header nav .depth01 > li:nth-of-type(3) > div .depth02 { width:162px;} 
 .potal .header nav .depth01 > li:nth-of-type(4) > div .depth02 { width:162px;} 
-.potal .header nav .depth01 > li:nth-of-type(5) > div .depth02 { width:162px;}  
+.potal .header nav .depth01 > li:nth-of-type(5) > div .depth02 { width:162px;} 
+
+.focusActive {display:block!important;} /* 2020.12.17  추가 */
 
 
 /* .potal .header nav .depth01 > li:nth-of-type(1) > div .depth02 { width:1010px; left:0; } 

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>제주시 소통협력센터 | 지역혁신 사례제보</title>
+	<title>제주시 소통협력센터 | 공모사업</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="subject" content="[제주시 소통협력센터]">
@@ -28,7 +28,7 @@
 					<a href="#none">로그인</a>
 					<a href="#none">회원가입</a>
 					<a href="#none">마이페이지</a>
-					<a href="#none" class="btn-news">뉴스레터</a>
+					
 				</span>
 				<span class="sns-wrap">
 					<a href="#none" class="btn-facebook">페이스북</a>
@@ -90,6 +90,22 @@
 				<a href="#" class="btn-search"><i>검색</i></a><!-- [모바일]-->
 				<a href="#none" class="btn-allmenu">전체메뉴 열기</a>
 			</div>
+
+			<!--검색-->
+			<div class="search-mwrap">
+				<div class="inner">
+					<a href="#none" class="btn-home-m">홈</a><!-- [모바일]-->
+					<div class="logo-m"><span>제주시소통협력센터</span></div>
+					<div class="search-m-area">
+						<div class="search-form">
+							<p><input type="text" id="search-inp" placeholder="무엇을 찾아 드릴까요?"></p>
+							<button type="button"><i class="hidden">검색</i></button>
+						</div>
+					</div>
+					<button type="button" class="all-close"><i class="hidden">전체메뉴 닫기</i></button>
+				</div>
+			</div>
+			<!--// 검색 --> 
 		
 			<!-- 전체메뉴 -->
 			<div class="allmenu-wrap">
@@ -136,7 +152,7 @@
 					<div class="btm-menu-wrap">
 						<!-- [모바일]-->
 						<span class="comm-menu">
-							<a href="#none" class="btn-news">뉴스레터</a>
+							<a href="#none" class="btn-news">ENG</a>
 						</span>
 						<span class="sns-wrap">
 							<a href="#none" class="btn-facebook">페이스북</a>
@@ -184,14 +200,75 @@
 				</div>  
 				
 				<div class="contents">
-					<div class="inner-write">  
-
+					<div class="inner-write">   
 						<h3>2단계 계획안 작성</h3>
-						 
+
+						<div class="accordion-list">
+							<ul>
+								<li class="questions">
+									<a href="#none">
+										<mark>01.</mark>
+										<p>관리자가 입력한 질문</p>
+									</a> 
+								</li>
+								<li class="answer">
+									<p>관리자가 직접 입력한 안내문구</p> 
+								</li>
+								<li class="questions">
+									<a href="#none">
+										<mark>02.</mark>
+										<p>관리자가 입력한 질문</p>
+									</a>
+								</li>
+								<li class="answer">
+									<p>관리자가 직접 입력한 안내문구</p>
+								</li>
+								<li class="questions">
+									<a href="#none">
+										<mark>03.</mark>
+										<p>관리자가 입력한 질문</p>
+									</a>
+								</li>
+								<li class="answer">
+									<p>관리자가 직접 입력한 안내문구</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="report-write business02"><!--2020.12.12 클래스명 변경-->
+							<dl> 
+								<dt><span>예산계획서<br> 양식 다운로드</span></dt>
+								<dd>
+									<button type="button" class="btn-download"><i>사업신청 예산계획서 다운로드</i></button>
+									<p>- 예산계획서 양식 다운로드를 클릭하여 다운로드 후 내용을 작성하여 첨부해주세요.</p>
+									<p>- 사업의 예산계획서 첨부 예시, <button type="button" class="btn-guide">상세 안내보기</button></p>
+								</dd> 
+								<dt class="file"><label for="file"">예산계획서<br>첨부하기</label></dt>
+								<dd class="file">  
+									<input type="text" class="file-name" title="선택파일" readonly>
+									<label for="upload" class="file-label">파일 첨부하기</label>
+									<input type="file" id="upload" class="file-upload"> 
+								 
+									<p class="mt2">- 엑셀파일 (.xlsx)만 첨부하실 수 있습니다.</p>
+								</dd>
+							</dl> 
+						</div>
+						
+						<div class="report-write business01">  
+							<dl>  
+								<dt class="file"><label for="file"">파일첨부하기</label></dt>
+								<dd class="file">
+									<strong>계획하고 계신 활동의 원활한 소개를 위해 첨부하고자 하는 문서 또는 이미지 파일이 있다면 첨부해주세요.<br>(선택입력사항)</strong>
+									<input type="text" class="file-name" title="선택파일" readonly>
+									<label for="upload" class="file-label">파일 첨부하기</label>
+									<input type="file" id="upload" class="file-upload">  
+								</dd>
+							</dl>
+						</div>  
 
 						<div class="btn-wrap">
-							<button type="button" class="btn-comm"><i>이전으로</i></button>
-							<button type="button" class="btn-comm red"><i>임시저장</i></button>
+							<button type="button" class="btn-comm red"><i>이전으로</i></button>
+							<button type="button" class="btn-comm redline"><i>임시저장</i></button>
 							<button type="button" class="btn-comm redline"><i>다음으로</i></button> 
 						</div>  
 					</div>
@@ -244,7 +321,7 @@
 		</footer>
 		<!--// footer -->
 	</div>
-
+ 
 	<script src="../../resource/js/lib/jquery-3.4.1.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<!--[if gte IE 11]><!-->
