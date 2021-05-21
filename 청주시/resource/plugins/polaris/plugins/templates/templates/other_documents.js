@@ -1,1 +1,0 @@
-﻿POLARIS.addTemplates("other_documents",{name:"기타 문서",imagesPath:POLARIS.getUrl(POLARIS.plugins.getPath("templates")+"templates/images/"),templates:[{title:"주간업무보고서",filename:"week_report.js",templatename:"week_report"}]});

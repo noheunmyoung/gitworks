@@ -1,1 +1,0 @@
-﻿POLARIS.addTemplates("draft_documents",{name:"기안서",imagesPath:POLARIS.getUrl(POLARIS.plugins.getPath("templates")+"templates/images/"),templates:[]});

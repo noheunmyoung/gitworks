@@ -1,1 +1,0 @@
-﻿POLARIS.plugins.setLang("specialchar","ko",{symbolTab:"기호",mathTab:"수학기호",unitTab:"단위",HangulTab1:"원문자",HangulTab2:"괄호문자",latinTab:"라틴문자",inputWindow:"입력창"});

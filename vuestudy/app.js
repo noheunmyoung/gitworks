@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 // 실습1
 Vue.component('todo-footer', {
     template: '<p>This is another global child component</p>'
