@@ -1,0 +1,160 @@
+@charset 'UTF-8';
+
+/* ------------------------------
+ * Description:
+ * Modified-date: 2016.02.
+ * ------------------------------ */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,
+em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {margin:0;padding:0;border:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;} /* HTML5 display-role reset for older browsers */
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+h1,h2,h3,h4,h5,h6 {letter-spacing:-1px; line-height:1;}
+hr{display:none;}
+em,i {font-style:normal;}
+ol,ul{list-style:none;}
+
+body { font-family:'Segoe UI','맑은 고딕','Malgun Gothic','Nanum Gothic', 돋움, Dotum,'Sans-Serif' /* 나눔바른고딕,'Nanum Barun Gothic' */; background:#fff;}
+table{width:100%;border-spacing:0;border-collapse:collapse;};
+thead tr > th { border-top:0; text-align:center;}
+td, th {font-size:11px; line-height:100%; text-align:left; border-top:1px dashed #ccc; border-left:1px solid #ddd;}
+tr > td:first-child { border-left:0}
+select { padding:2px;}
+
+body.htmlList { min-width:1024px;}
+#gateGuide .notice { font-size:11px; color:#666; font-family:dotum,돋움,'Nanum Gothic'}
+
+/* 헤더영역 */
+#materialHeader .hGroupBg { position:absolute; top:0; left:0; min-width:1024px; width:100%; height:179px; z-index:-1; background:#5f4b8b; box-sizing:border-box; padding:0 30px 0; color:#f3f3f3;}
+#materialHeader .hGroup { min-height:90px;}
+#materialHeader .hGroup h1 { margin:30px 20px 0; color:#fff; font-weight:200; font-size:48px; letter-spacing:-.05em; word-spacing:.05em; }
+#materialHeader .hGroup h1>span {color:#ffe400;}
+#materialHeader .utilGroup { position:absolute; top:30px; right:20px;}
+
+/* 상황판 */
+#materialHeader .currentState { height:56px; border:4px solid #f3f2f5; font-size:13px;}
+#materialHeader .currentState>li {float:left; width:62px; height:56px; color:#fff; border-left:1px solid #f3f2f5;}
+#materialHeader .currentState>li>div {margin-top:5px;}
+#materialHeader .currentState>li>div em,
+#materialHeader .currentState>li>div span {display:block; padding-left:6px; font-family:courier new; line-height:1.2;font-size:12px;}
+#materialHeader .currentState>li>strong{display:block; margin:3px 0 0 5px;}
+#materialHeader .currentState>li:first-child {border-left:0;}
+#materialHeader .currentState>li.total {background-color:#000;}
+#materialHeader .currentState>li.done {background-color:#007ae6}
+#materialHeader .currentState>li.edit {background-color:#ff2d49}
+#materialHeader .currentState>li.ing {background-color:#6e9f15}
+#materialHeader .currentState>li.none {background-color:#7f7f7f;}
+#materialHeader .currentState>li.prdt {background-color:#999; border-left:4px solid #fff;}
+
+/* 텝메뉴 */
+.tbMenu { overflow:hidden; line-height:100%; height:50px; border-bottom:0px solid #373737; font-size:18px; background:#565656;}
+.tbMenu a { display:block; float:left; width:190px; height:50px; box-sizing:border-box; padding:14px 0 13px;  text-decoration:none; color:#fff; text-align:center; background:#565656; border:solid #6c6c6c; border-width:0 1px 0 0;}
+.tbMenu a>span {font-size:14px}
+.tbMenu a>span>em {display:inline-block; padding-left:3px; padding-right:3px;}
+.tbMenu .on a { border-color:#373737; background:#454545;}
+.tbMenu a:hover {color:#f5d09b}
+.tbMenuContent {display:none; font-family:돋움, Dotum,'Sans-Serif';}
+
+/* 레이아웃 */
+.fileListWrapper {position:relative; margin:0 20px 70px; background:#fff; border:3px solid #000;}
+
+span.ico { display:inline-block; background:#b3b3b3; text-transform:uppercase; font-size:10px; line-height:1; font-family:Myriad,Verdana,Tahoma,'맑은 고딕','Malgun Gothic',"Sans-serif"; border-radius:1px; color:#FFF; min-width:30px; height:14px;*height:13px; padding:2px 5px 0 5px; *padding:3px 7px 0 7px; margin:0 3px 0 0; text-align:center; vertical-align:middle;}
+.ico.guide { background:#757575;}
+.ico.ing   { background:#5d9b1a;}
+.ico.done { background:#005ce6;}
+.ico.edit { background:#ff2d2d;}
+.ico.finish { background:#4e4e4e;}
+.ico.rollback { background:#ff03f6;}
+
+.iconGuide { padding:5px 0 0;}
+.iconGuide strong { display:inline-block; min-width:50px; margin-right:8px; font-size:12px; color:#444; font-weight:bold}
+.iconGuide strong .ico { margin-right:6px}
+.iconGuide strong:last-child { margin-right:0;}
+
+/* 처음으로 */
+#toTop { position:fixed; bottom:0; left:0; right:0; padding:10px 0; font-size:1em; text-align:center; background:#222;}
+#toTop a {color:#fff;text-decoration:none;}
+
+/* table */
+col.thDep1 {width:12%;}
+col.thDep2 {width:14%;}
+col.thFile {width:16%;}
+col.thOwner {width:70px;}
+col.thFinish {width:84px;}
+col.thEdit {width:84px;}
+col.thMemo {width:12%;}
+
+
+.tblList { width:100%; table-layout:fixed;/*  margin-bottom:45px; border-bottom:1px solid #888; */}
+.tblList th	{ color:#fff; text-align:center; font-weight:bold;}
+.tblList td	{ overflow:hidden; padding:8px 8px 6px 10px; border-left:1px solid #ccc; border-top:1px solid #e5e5e5; font-size:11px; line-height:140%;}
+.tblList thead th { height:40px; padding:9px 0 5px 0; line-height:120%; border:1px solid #373737; border-width:1px 0 1px 1px; background:#454545;}
+.tblList thead th > span { display:block; margin-bottom:3px}
+.tblList thead select { font-size:12px; color:#666; border:1px solid #222; margin:5px 0 0;}
+.tblList th:first-child,
+.tblList td:first-child { border-left:0;}
+.tblList a { display:inline-block; color:#454545;}
+.tblList .no, .tblList .owner, .tblList .finishD, .tblList .editD { text-align:center; padding:8px 0 6px;}
+.tblList .finishD, .tblList .editD { padding:0;}
+.tblList .finishD .ico, .tblList .editD .ico { font:10px Myriad,Verdana,Tahoma;}
+.tblList .flie { color:#777}
+.tblList .file a { color:#454545; text-decoration:none; font-family:Myriad,Tahoma,Sans-serif; /*font-size:12px; font-weight:bold; */}
+.tblList .file a:hover { text-decoration:underline;}
+.tblList .file a > em { color:#eb0bff;}
+.tblList .link a {font-weight:bold; text-decoration:none;}
+.tblList .link i {color:#888; display:block; padding-bottom:3px; font-weight:bold;}
+.tblList .link.notLink { color:#888}
+.tblList .memo {font-size:11px;}
+.tblList .memo > ul li { padding-top:3px; border-top:1px solid #888;}
+.tblList .memo > ul li > strong { padding-right:3px}
+.tblList .memo > ul li:first-child { padding-top:0; border:0;}
+.tblList .memo ul+dl { margin-top:8px;}
+.tblList .memo dl>dt:first-child {margin-top:0}
+.tblList .memo dt { margin-top:4px; color:#ff2d2d; font-weight:bold;/*  text-decoration:line-through; */}
+.tblList .memo dt.currentState { color:#ff2d2d; text-decoration:none;}
+
+.tblList .depth1Tr td { font-weight:bold; color:#454545; border:1px solid #9d9d9d; border-width:1px 0 1px 0px; background:#e4e4e4;}
+.tblList .depth1Tr:first-child td { border-top:0}
+.tblList .depth1Tr .no,
+.tblList .depth1Tr .no + td { color:#454545;}
+.tblList .depth1Tr:hover td { background:#fbfce8; color:#222}
+.tblList .depth1Tr:hover .no,
+.tblList .depth1Tr:hover .no + td { color:#222;}
+.tblList .depth2Tr td { border-top:1px solid #aeaeae;}
+.tblList .depth3Tr td { border-top:1px solid #c3cbdb;}
+.tblList .commonLayer td { background:#f5ecfd;}
+.tblList .commonLayer:hover td { background:#f0e0fe;}
+.tblList.prdtList .link {text-align:center;}
+
+/* 작업범위 아님 */
+.tblList .excludePart td { color:#b7a8bd; background:#f7eefb;}
+.tblList .excludePart.academy td { color:#b7a8bd; background:#e8fcf9;}
+/* 오버시 색상변화 */
+.tblList .excludePart.academy:hover td,
+.tblList tr:hover td { background:#fbfce8;}
+
+/* 목록 */
+ol.upper { list-style-type: upper-roman;}
+ol.lower { list-style-type: lower-alpha;}
+ul.cir { list-style-type: circle;}
+ul.squ { list-style-type: square;}
+ul.icoDot {list-style: square inside url();}
+ol.upper li, ol.lower li, ul.cir li, ul.squ li, ul.icoDot li { margin-bottom:5px}
+
+.memo .notice {color:#ff8400;}
+.deleted td {background:#f3f3f3; color:#999; text-decoration:line-through;}
+.deleted td.link a{text-decoration:line-through; color:#999}
+.tblList .deleted .file a { color:#b5b5b5;}
+.tblList .deleted .memo {color:#555}
+
+.htmlList.index {display:table; width:50%; margin:50px auto 0;}
+.htmlList.index > div {display:table-cell; vertical-align:middle; text-align:center;}
+.htmlList.index a {display:inline-block; text-align:center; padding:20px;}
+.htmlList.index a + a {margin-left:30px;}
+
+@media only screen and (max-device-width : 800px){
+	.htmlList.index a + a {margin-left:0;}
+}
+
+
