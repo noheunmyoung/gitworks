@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="[DX Portal]">
+	<meta name="keywords" content="DX Portal">
+	<meta name="description" content="[DX Portal]">
+    <title>DX Portal</title>
+    <link rel="stylesheet" href="../js/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../js/lib/swiper.min.css"> 
+	<link rel="stylesheet" href="../css/ui.css">
+     <!-- Common Library -->
+	<script src="../js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../js/lib/jquery-ui.min.js"></script> 
+	<script src="../js/lib/swiper.min.js"></script> 
+	<script src="../js/ui.js"></script> 
+</head>
+<body>
+    <div class="wrapper">
+		<!-- header -->
+		<header class="header" id="gnbNavi">
+            <div class="head-info"> 
+                <div class="inner">
+                    <span class="family-menu">
+                        <a href="#none">AIB Platform</a>
+                        <a href="#none">RPA 과제관리 시스템</a>
+                        <a href="#none">DX Community</a>  
+                    </span> 
+                    <span class="admin-menu">
+                        <a href="#none"><strong>ADMIN</strong></a>
+                    </span>
+                </div> 
+            </div>
+            <div class="after"></div>
+			<div class="inner">  
+                <h1><a href="#none"><em>DX</em> POTAL</a></h1>
+				<nav> 
+					<ul class="depth01">
+						<li>
+							<a href="#none">About</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>About</strong></a>
+								<ul>
+									<li><a href="#none">DX 전문가 제도 소개</a></li>
+									<li><a href="#none">DX 전문가 인증 안내</a></li>
+								</ul> 
+							</div> 
+						</li> 
+						<li>
+							<a href="#none">DX 현황</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>DX 현황</strong></a>
+								<ul>
+									<li><a href="#none">DX 과제 현황</a></li>
+									<li><a href="#none">DX 전문가 현황</a></li>
+								</ul>
+							</div> 
+						</li> 
+						<li>
+							<a href="#none">과제관리</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>과제관리</strong></a>
+								<ul>
+									<li><a href="#none">과제 문의</a></li>
+                                    <li><a href="#none">과제 등록</a></li>
+									<li><a href="#none"></a>과제 조회</a></li>
+									<li><a href="#none"></a>RPA 과제요청</a></li>
+									<li><a href="#none"></a>RPA 과제 조회</a></li> 
+								</ul>
+							</div> 
+						</li>
+						<li>
+							<a href="#none">DX 콘텐츠</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>DX 콘텐츠</strong></a>
+								<ul>
+									<li><a href="#none">BP 사례</a></li>
+									<li><a href="#none">교육 자료</a></li>
+								</ul>
+							</div> 
+						</li>
+                        <li>
+							<a href="#none">커뮤니티</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>커뮤니티</strong></a>
+								<ul>
+									<li><a href="#none">공지사항</a></li>
+									<li><a href="#none">FAQ</a></li>
+									<li><a href="#none">자료실</a></li>
+								</ul>
+							</div> 
+						</li>
+                        <li>
+							<a href="#none">권한신청</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>권한신청</strong></a>
+								<ul>
+									<li><a href="#none">권한신청</a></li>
+								</ul>
+							</div> 
+						</li>
+					</ul>
+				</nav>
+			 
+				 <div class="side-wrap">
+                    <div class="search-box"> 
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button type="button" class="btn-delete ico">삭제</button>
+                        <button type="button" class="btn-search">검색</button>
+                    </div>
+                    <button type="button" class="btn-notice">알림</button>
+                    <p class="name-wrap"><span>김엘지</span>님</p>
+                </div>
+			</div> 
+		</header>
+		<!--  // header -->
+
+        <!-- container -->
+        <section class="container sub"> 
+			<div class="search-wrap"><!--검색결과 : 'search-wrap' 사용--> 
+				<div class="conts-in-box">
+					<h2>통합 검색결과</h2>
+					<div class="search-form"> 
+						<span class="inner">
+							<input type="text" value="품질예측" placeholder="">
+							<button type="button" class="btn-delete ico">삭제</button>
+							<button type="button" class="btn-search">검색</button>
+						</span>
+						<button type="button" class="btn-search-detail">상세검색</button>
+					</div>
+
+					<p class="search-result">
+						"<strong>품질예측</strong>" 태그에 대한 검색결과가 총 <strong>3</strong>건이 검색되었습니다.
+					</p>
+ 
+					<ul class="tab-wrap">
+						<li class="current" data-tab="tab1"><span>전체</span></li>
+						<li data-tab="tab2"><span>과제관리</span></li>
+						<li data-tab="tab3"><span>DX 콘텐츠</span></li>
+						<li data-tab="tab4"><span>커뮤니티</span></li>
+						<li data-tab="tab5"><span>동영상</span></li>
+						<li data-tab="tab6"><span>첨부파일</span></li>
+					</ul>
+
+					<!--목록 검색결과-->
+					<div class="num-search-result"> 
+						<select class="select">
+							<option value="">10개씩 보기</option>
+							<option value="">20개씩 보기</option>
+							<option value="">30개씩 보기</option> 
+						</select>
+						<span>총 <strong>3</strong>건</span>
+					</div>
+
+					<div class="tab_conts">
+						<div id="tab1" class="result current">
+							<ul class="result-list"> 
+								<li>
+									<a href="#">
+										<p>기초<strong>소재</strong> 공장 효율성 분석 모델 개발 (2020 진행)</p>
+										<div class="word-warp">
+											<span>과제문의</span>
+											<span>기타DX</span>
+											<span>석유화학사업본부</span>
+											<span>연구개발</span>
+											<span>태그, <strong>품질예측</strong></span>
+											<span>심경민</span>
+											<span>2021-04-21</span>
+										</div> 
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>기초<strong>소재</strong> 공장 효율성 분석 모델 개발 (2020 진행)</p>
+										<div class="word-warp">
+											<span>과제문의</span>
+											<span>기타DX</span>
+											<span>석유화학사업본부</span>
+											<span>연구개발</span>
+											<span>태그, <strong>품질예측</strong></span>
+											<span>심경민</span>
+											<span>2021-04-21</span>
+										</div> 
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<p>기초<strong>소재</strong> 공장 효율성 분석 모델 개발 (2020 진행)</p>
+										<div class="word-warp">
+											<span>과제문의</span>
+											<span>기타DX</span>
+											<span>석유화학사업본부</span>
+											<span>연구개발</span>
+											<span>태그, <strong>품질예측</strong></span>
+											<span>심경민</span>
+											<span>2021-04-21</span>
+										</div> 
+									</a>
+								</li>  
+								<li class="video">
+									<a href="#">
+										<p class="img-area">
+											<img src="../images/img_01.png" alt="">
+											<span>교육자료</span>
+											<b>기타DX</b>
+										</p>
+										<div class="text-area"> 
+											<div class="lv-wrap">
+												<em>AIB</em>
+												<span>Lv3</span>
+												<span>영상자료</span>
+											</div>
+											<p>기초<strong>소재</strong> 공장 효율성 분석 모델 개발 (2020 진행)</p>
+											<div class="word-warp">
+												<span>BP사례</span> 
+												<span>2021-04-21</span>
+											</div> 
+										</div> 
+									</a>
+								</li> 
+								<li class="video">
+									<a href="#">
+										<p class="img-area">
+											<img src="../images/img_02.png" alt="">
+											<span>교육자료</span>
+											<b>기타DX</b>
+										</p>
+										<div class="text-area"> 
+											<div class="lv-wrap">
+												<em>AIB</em>
+												<span>Lv3</span>
+												<span>영상자료</span>
+											</div>
+											<p>기초<strong>소재</strong> 공장 효율성 분석 모델 개발 (2020 진행)</p>
+											<div class="word-warp">
+												<span>BP사례</span> 
+												<span>2021-04-21</span>
+											</div> 
+										</div> 
+									</a>
+								</li>
+								<li class="video">
+									<a href="#">
+										<p class="img-area">
+											<img src="../images/img_03.png" alt="">
+											<span>교육자료</span>
+											<b>기타DX</b>
+										</p>
+										<div class="text-area"> 
+											<div class="lv-wrap">
+												<em>AIB</em>
+												<span>Lv3</span>
+												<span>영상자료</span>
+											</div>
+											<p>기초<strong>소재</strong> 공장 효율성 분석 모델 개발 (2020 진행)</p>
+											<div class="word-warp">
+												<span>BP사례</span> 
+												<span>2021-04-21</span>
+											</div> 
+										</div> 
+									</a>
+								</li>
+							</ul>
+
+							<div class="pagination">
+								<a href="#none" class="btn-page btn-first"><i class="icon-nav-first">처음</i></a>
+								<a href="#none" class="btn-page btn-prev"><i class="icon-nav-prev">이전</i></a>
+								<span class="num">
+									<a href="#none" class="active"><span>1</span></a>
+									<a href="#none"><span>2</span></a>
+									<a href="#none"><span>3</span></a>
+									<a href="#none"><span>4</span></a>
+									<a href="#none"><span>5</span></a>
+								</span>
+								<a href="#none" class="btn-page btn-next"><i class="icon-nav-next">다음</i></a>
+								<a href="#none" class="btn-page btn-last"><i class="icon-nav-last">마지막</i></a>
+							</div>  
+						</div>  
+					</div>
+				</div>
+			</div>
+             
+        </section>
+        <!--  // container -->
+
+        <!-- footer -->
+        <footer> 
+            Ⓒ LG Chem. All Rights Reserved.
+        </footer>
+        <!--// footer -->
+		 
+	</div>  
+    
+</body>
+</html>

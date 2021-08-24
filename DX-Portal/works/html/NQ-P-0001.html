@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="[DX Portal]">
+	<meta name="keywords" content="DX Portal">
+	<meta name="description" content="[DX Portal]">
+    <title>DX Portal</title>
+    <link rel="stylesheet" href="../js/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../js/lib/swiper.min.css"> 
+	<link rel="stylesheet" href="../css/ui.css">
+     <!-- Common Library -->
+	<script src="../js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../js/lib/jquery-ui.min.js"></script> 
+	<script src="../js/lib/swiper.min.js"></script> 
+	<script src="../js/ui.js"></script> 
+</head>
+<body>
+    <div class="wrapper"> 
+	</div>
+	
+	<!--협의부서 내 담당자 정보 추가 팝업-->
+	<div class="modal">
+		<div class="modal-in">
+			<div class="menu-head">
+				<h2>협의부서 내 담당자 정보 추가</h2>
+			</div>
+			<div class="modal-body"> 
+				<div class="rowtable">
+					<table>
+						<colgroup> 
+							<col style="width:15%">
+							<col style="width:*">
+							<col style="width:15%">
+							<col style="width:*"> 
+						</colgroup>
+						<tbody>
+							<tr> 
+								<th>협의부서 <strong class="required">*</strong></th>
+								<td>
+									<div class="select-wrap">
+										<select class="select"> 
+											<option value="">김기석 책임 (kimkiseck) DX 추진팀</option> 
+											<option value="">박기종 팀장 (pkjcool) CPO.제조혁신.혁신기획팀</option>
+											<option value="">박도현 책임 (dohyunpark) CPO.공정.지능화.제도DX.빅데이터분석P</option>
+											<option value="">이름 직급 (ID) 소속</option> 
+										</select>
+									</div> 
+								</td>
+								<th>담당자 정보 <strong class="required">*</strong></th>
+								<td>
+									<div class="td-search">
+										<input type="text" placeholder="이름">	 
+										<button type="button" class="search">검색</button>
+									</div>
+								</td> 
+							</tr> 
+						</tbody>
+					</table>
+				</div>
+					
+				<h3>담당자 정보 목록</h3> 
+				<div class="tableList"> 
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col style="width:20%">
+							<col style="width:15%">
+							<col style="width:50%">
+							<col style="width:15%"> 
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">이름(아이디)</th>
+								<th scope="col">직책</th>
+								<th scope="col">소속</th>
+								<th scope="col">삭제</th> 
+							</tr>
+						</thead>
+						<tbody>
+							<tr> 
+								<td>김기석 (kimkiseck)</td>
+								<td>책임</td>
+								<td class="left">DX 추진팀</td>
+								<td><button type="button" class="btn-redline delete">삭제</button></td> 
+							</tr> 
+							<tr> 
+								<td>김기석 (kimkiseck)</td>
+								<td>책임</td>
+								<td class="left">CPO.공정.지능화.제조DX.빅데이터분석P</td>
+								<td><button type="button" class="btn-redline delete">삭제</button></td> 
+							</tr> 
+							<tr> 
+								<td>김기석 (kimkiseck)</td>
+								<td>책임</td>
+								<td class="left">CPO.공정.지능화.제조DX.빅데이터분석P</td>
+								<td><button type="button" class="btn-redline delete">삭제</button></td> 
+							</tr> 
+							<tr> 
+								<td>김기석 (kimkiseck)</td>
+								<td>책임</td>
+								<td class="left">DX 추진팀</td>
+								<td><button type="button" class="btn-redline delete">삭제</button></td> 
+							</tr>  
+						</tbody>
+					</table>
+				</div>
+				<div class="pagination">
+					<a href="#none" class="btn-page btn-first"><i class="icon-nav-first">처음</i></a>
+					<a href="#none" class="btn-page btn-prev"><i class="icon-nav-prev">이전</i></a>
+					<span class="num">
+						<a href="#none" class="active"><span>1</span></a>
+						<a href="#none"><span>2</span></a>
+						<a href="#none"><span>3</span></a>
+						<a href="#none"><span>4</span></a>
+						<a href="#none"><span>5</span></a>
+					</span>
+					<a href="#none" class="btn-page btn-next"><i class="icon-nav-next">다음</i></a>
+					<a href="#none" class="btn-page btn-last"><i class="icon-nav-last">마지막</i></a>
+				</div> 
+				<div class="btn-wrap list-foot"> 
+					<div class="right"> 
+						<a href="#none" class="btn-common">닫기</a>
+					</div>
+				</div>   
+			</div>	 
+			 
+			<button type="button" class="close"><i>닫기</i></button>
+		</div>
+	</div>
+    
+</body>
+</html>
