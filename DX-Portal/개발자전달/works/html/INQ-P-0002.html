@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="[DX Portal]">
+	<meta name="keywords" content="DX Portal">
+	<meta name="description" content="[DX Portal]">
+    <title>DX Portal</title>
+    <link rel="stylesheet" href="../js/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../js/lib/swiper.min.css"> 
+	<link rel="stylesheet" href="../css/ui.css">
+     <!-- Common Library -->
+	<script src="../js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../js/lib/jquery-ui.min.js"></script> 
+	<script src="../js/lib/swiper.min.js"></script> 
+	<script src="../js/ui.js"></script> 
+</head>
+<body>
+    <div class="wrapper"> 
+	</div>
+	
+	<!--인터뷰 등록-->
+	<div class="modal">
+		<div class="modal-in x-small">
+			<div class="menu-head">
+				<h2>인터뷰 등록</h2>
+			</div>
+			<div class="modal-body">
+				<div class="td-search type02">
+					<input type="text" placeholder="검색하실 이름을 입력하세요.">	 
+					<button type="button" class="search">검색</button>
+				</div>
+					 
+					  
+				<div class="rowtable">
+					<table>
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:70%"> 
+						</colgroup>
+						<tbody>
+							<tr> 
+								<th>인터뷰 날짜</th>
+								<td>
+									<div class="date-calendar type02"> 
+										<span>
+											<input type="text">	
+											<button type="button" class="btn-calendar">날짜선택</button>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr> 
+								<th>인터뷰 장소</th>
+								<td>
+									<div class="input-wrap">
+										<input type="text">
+									</div>
+								</td>
+							</tr>   
+							<tr> 
+								<th>인터뷰 참석자</th>
+								<td>
+									<div class="input-wrap">
+										<input type="text">
+									</div>
+								</td>
+							</tr> 
+							<tr> 
+								<th>데이터 샘플 첨부파일</th>
+								<td> 
+									<div class="file-upload">
+										<input type="text">
+										<button type="button" class="btn-common">찾아보기</button>
+										<button type="button" class="btn-common">등록</button>	
+									</div> 
+									<div class="process-wrap">
+										<p>
+											<span>업로드 대기중</span>
+											<em>80%</em>
+										</p>
+										<div class="process-bar"> 
+											<span style="width:60%;"></span>
+										</div>
+									</div> 
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="req-text">※ <em>“커뮤니티-자료실＂</em>에서 interview 양식 다운로드</p>
+				<div class="btn-wrap list-foot"> 
+					<div class="right"> 
+						<button type="button" class="btn-red">등록</button>
+						<button type="button" class="btn-common">목록</button> 
+					</div>
+				</div>   
+			</div>	 
+			 
+			<button type="button" class="close"><i>닫기</i></button>
+		</div>
+	</div>
+    
+</body>
+</html>
