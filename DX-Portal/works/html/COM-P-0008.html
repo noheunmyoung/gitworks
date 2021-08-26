@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="[DX Portal]">
+	<meta name="keywords" content="DX Portal">
+	<meta name="description" content="[DX Portal]">
+    <title>DX Portal</title>
+    <link rel="stylesheet" href="../js/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../js/lib/swiper.min.css"> 
+	<link rel="stylesheet" href="../css/ui.css">
+     <!-- Common Library -->
+	<script src="../js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../js/lib/jquery-ui.min.js"></script> 
+	<script src="../js/lib/swiper.min.js"></script> 
+	<script src="../js/ui.js"></script> 
+</head>
+<body>
+    <div class="wrapper"> 
+	</div>
+	
+	<!--태그 선택 팝업-->
+	<div class="modal">
+		<div class="modal-in type02">
+			<div class="menu-head">
+				<h2>태그 선택</h2>
+			</div>
+			<div class="modal-body"> 
+				<div class="scroll"> 
+					<div class="tableList"> 
+						<table>
+							<caption></caption>
+							<colgroup>
+								<col style="width:25%" span="4">  
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="4">기술적 분류</th> 
+								</tr>
+							</thead>
+							<tbody>
+								<tr> 
+									<td><input type="checkbox" id="check1" name="check"><label for="check1">회귀(Regression)</label></td>
+									<td><input type="checkbox" id="check2" name="check" name="check"><label for="check2">분류(Classification)</label></td>
+									<td><input type="checkbox" id="check3" name="check"><label for="check3">이상탐지(Anomaly Detection)</label></td>
+									<td><input type="checkbox" id="check4" name="check"><label for="check4">이미지처리(Image Processing)</label></td> 
+								</tr> 
+								<tr> 
+									<td><input type="checkbox" id="check11" name="check"><label for="check11">텍스트마이닝 (Textmining)</label></td>
+									<td><input type="checkbox" id="check12" name="check"><label for="check12">음성인식(Speech Recognition)</label></td>
+									<td colspan="2"><input type="checkbox" id="check13" name="check"><label for="check13">자연어처리(Natural Language Processing)</label></td> 
+								</tr> 
+								<tr> 
+									<td><input type="checkbox" id="check21" name="check"><label for="check21">추천시스템(Recommendation)</label></td>
+									<td><input type="checkbox" id="check22" name="check"><label for="check22">시각화(Visualization)</label></td>
+									<td><input type="checkbox" id="check23" name="check"><label for="check23">군집화(Clustering)</label></td>
+									<td><input type="checkbox" id="check24" name="check"><label for="check24">연관분석(Association)</label></td> 
+								</tr>
+								<tr> 
+									<td><input type="checkbox" id="check31" name="check"><label for="check31">변환(Transform)</label></td> 
+									<td><input type="checkbox" id="check32" name="check"><label for="check32">강화학습(Reinforcement Learning)</label></td>
+									<td><input type="checkbox" id="check33" name="check"><label for="check33">기타</label></td>
+									<td></td> 
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="tableList"> 
+						<table>
+							<caption></caption>
+							<colgroup> 
+								<col style="width:20%" span="5"> 
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="5">과제 유형별 분류</th> 
+								</tr>
+							</thead>
+							<tbody>
+								<tr> 
+									<th rowspan="2">연구 개발</th>
+									<td><input type="checkbox" id="check1" name="check2"><label for="check1">성능예측모델 개발</label></td>
+									<td><input type="checkbox" id="check2" name="check2"><label for="check2">신물질/재료발굴 및 설계</label></td>
+									<td><input type="checkbox" id="check3" name="check2"><label for="check3">문서/논문/특허분석</label></td>
+									<td><input type="checkbox" id="check4" name="check2"><label for="check4">연구 동향 파악</label></td> 
+								</tr> 
+								<tr>  
+									<td><input type="checkbox" id="check5" name="check2"><label for="check5">공정 개발</label></td>
+									<td><input type="checkbox" id="check6" name="check2"><label for="check6">평가/분석법 최적화</label></td>
+									<td></td>
+									<td></td> 
+								</tr> 
+								<tr> 
+									<th>영업 마케팅</th>
+									<td><input type="checkbox" id="check11" name="check2"><label for="check11">고객/시장 분석</label></td>
+									<td><input type="checkbox" id="check12" name="check2"><label for="check12">판가예측/최적화</label></td>
+									<td><input type="checkbox" id="check13" name="check2"><label for="check13">CRM 구축</label></td> 
+									<td></td>
+								</tr> 
+								<tr> 
+									<th>구매</th>
+									<td><input type="checkbox" id="check21" name="check2"><label for="check21">원/부재료 가격예측</label></td>
+									<td><input type="checkbox" id="check22" name="check2"><label for="check22">이상물량/단가 최적화</label></td>
+									<td></td> 
+									<td></td>
+								</tr>
+								<tr> 
+									<th>SCM</th>
+									<td><input type="checkbox" id="check31" name="check2"><label for="check31">생산계획 최적화</label></td>
+									<td><input type="checkbox" id="check32" name="check2"><label for="check32">재고 최적화</label></td>
+									<td><input type="checkbox" id="check32" name="check2"><label for="check33">제품 수요 예측</label></td>
+									<td></td>
+								</tr>
+								<tr> 
+									<th>생산</th>
+									<td><input type="checkbox" id="check41" name="check2"><label for="check41">생산/공정조건 최적화</label></td>
+									<td><input type="checkbox" id="check42" name="check2"><label for="check42">불량 원인/인자 도출</label></td>
+									<td><input type="checkbox" id="check43" name="check2"><label for="check43">생산 수율 향상</label></td>
+									<td></td>
+								</tr>
+								<tr> 
+									<th>품질</th>
+									<td><input type="checkbox" id="check51" name="check2"><label for="check51">품질 영향인자 도출</label></td>
+									<td><input type="checkbox" id="check52" name="check2"><label for="check52">품질 예측모델 개발</label></td>
+									<td><input type="checkbox" id="check53" name="check2"><label for="check53">검사 자동화/최적화</label></td>
+									<td><input type="checkbox" id="check54" name="check2"><label for="check54">고객 Complain 관리</label></td>
+								</tr> 
+								<tr> 
+									<th>설비</th>
+									<td><input type="checkbox" id="check61" name="check2"><label for="check61">설비예지보전</label></td>
+									<td><input type="checkbox" id="check62" name="check2"><label for="check62">설비운전최적화</label></td>
+									<td></td> 
+									<td></td>
+								</tr>
+								<tr> 
+									<th>물류</th>
+									<td><input type="checkbox" id="check71" name="check2"><label for="check71">물류 자동화</label></td>
+									<td><input type="checkbox" id="check72" name="check2"><label for="check72">물동계획 예측</label></td>
+									<td></td> 
+									<td></td>
+								</tr>
+								<tr> 
+									<th>안전환경</th>
+									<td><input type="checkbox" id="check81" name="check2"><label for="check81">안전사고 방지</label></td>
+									<td><input type="checkbox" id="check82" name="check2"><label for="check82">오염물질 누출 예방 </label></td>
+									<td><input type="checkbox" id="check83" name="check2"><label for="check83">오염물질 배출관리 지능화</label></td>
+									<td><input type="checkbox" id="check84" name="check2"><label for="check84">에너지 최적화</label></td>
+								</tr> 
+								<tr> 
+									<th>금융회계</th>
+									<td><input type="checkbox" id="check91" name="check2"><label for="check91">환율예측</label></td>
+									<td><input type="checkbox" id="check92" name="check2"><label for="check92">재무 위험 관리</label></td>
+									<td></td> 
+									<td></td>
+								</tr>
+								<tr> 
+									<th>인사</th>
+									<td><input type="checkbox" id="check101" name="check2"><label for="check101">채용/인재 관리</label></td>
+									<td><input type="checkbox" id="check102" name="check2"><label for="check102">HR정보분석</label></td>
+									<td></td> 
+									<td></td>
+								</tr>
+								<tr> 
+									<th>경영관리</th>
+									<td><input type="checkbox" id="check111" name="check2"><label for="check111">사업성과 예측</label></td>
+									<td></td>
+									<td></td> 
+									<td></td>
+								</tr>
+								<tr> 
+									<th>경영일반</th>
+									<td><input type="checkbox" id="check121" name="check2"><label for="check121">프로세스 마이닝</label></td>
+									<td><input type="checkbox" id="check122" name="check2"><label for="check122">RPA</label></td>
+									<td><input type="checkbox" id="check123" name="check2"><label for="check123">보안 Risk 최소화</label></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div> 
+
+				<div class="button-wrap list-foot"> 
+					<div class="right"> 
+						<a href="#none" class="bt-common">닫기</a>
+					</div>
+				</div>   
+			</div>	 
+			 
+			<button type="button" class="close"><i>닫기</i></button>
+		</div>
+	</div>
+    
+</body>
+</html>
