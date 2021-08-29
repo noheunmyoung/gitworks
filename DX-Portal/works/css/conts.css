@@ -55,7 +55,7 @@
 .search-wrap .search-form .inner input {height:2.2rem; font-size:2rem; width:70rem; border:0; box-shadow: none;}
 .search-wrap .search-form .inner .bt-delete {width:2.6rem; height:2.6rem; text-indent:-999px; overflow:hidden; padding:0!important; background:url('../images/icon_delete.png') no-repeat 50% 50%; background-size:2.6rem auto;}
 .search-wrap .search-form .inner .bt-search {width:3.2rem; height:3.2rem; margin-left:2rem; text-indent:-999px; padding:0!important; overflow:hidden; background:url('../images/icon_search3.png') no-repeat 50% 50%;}
-.search-wrap .search-form .bt-search-detail {vertical-align: bottom; font-size:1.4rem; width:9rem; height:4.6rem; border-radius:.6rem; border: solid 1px #222;}
+.search-wrap .search-form .bt-search-detail {vertical-align: bottom; font-size:1.4rem; min-width:9rem; height:4.6rem; border-radius:.6rem; border: solid 1px #222;}
 .search-wrap .search-result {text-align:center; font-size:1.8rem; margin-bottom:5.9rem;}
 .search-wrap .search-result strong {color:#a50034;}  
 
