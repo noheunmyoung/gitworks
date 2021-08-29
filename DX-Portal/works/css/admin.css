@@ -12,6 +12,6 @@
 .left-nav .depth02 > li.on > a span:after,
 .left-nav .depth02 > li > a:hover span:after {content:""; position:absolute; right:-2rem; top:.4rem; width:.7rem; height:.7rem; border-radius:3.6rem; background-color:#a50034;}
 .container.admin {position:relative; margin-left:26rem;  height: calc(100% - (0rem + 3.8rem)); background-color: #fafafc;}
-.container.admin .contents-wrap {padding: 2.8rem 3.3rem; height:auto; margin:0; width:100%; min-width:120rem; max-width:100%;}
-.container.admin .conts-in-box {margin:0;}
+.container.admin .contents-wrap {padding: 2.8rem 3.3rem; height:100%; margin:0; width:100%; min-width:120rem; max-width:100%;}
+.container.admin .conts-in-box {margin:0; min-height: 86rem;}
  
