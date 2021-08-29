@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="[DX Portal]">
+	<meta name="keywords" content="DX Portal">
+	<meta name="description" content="[DX Portal]">
+    <title>DX Portal</title>
+    <link rel="stylesheet" href="../js/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../js/lib/swiper.min.css"> 
+    <link rel="stylesheet" href="../js/lib/owl.carousel.min.css">
+	<link rel="stylesheet" href="../js/lib/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="../js/lib/sumoselect.min.css">
+	<link rel="stylesheet" href="../css/ui.css">
+     <!-- Common Library -->
+	<script type="text/javascript" src="../js/lib/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/lib/jquery-ui.min.js"></script> 
+	<script type="text/javascript" src="../js/lib/swiper.min.js"></script> 
+    <script type="text/javascript" src="../js/lib/owl.carousel.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.sumoselect.min.js"></script> 
+	<script type="text/javascript" src="../js/ui.js"></script> 
+</head>
+<body>
+    <div class="wrapper">
+		<!-- header -->
+		<header class="header" id="gnbNavi">
+            <div class="head-info"> 
+                <div class="inner">
+                    <span class="family-menu">
+                        <a href="#none">AIB Platform</a>
+                        <a href="#none">RPA 과제관리 시스템</a>
+                        <a href="#none">DX Community</a>  
+                    </span> 
+                    <span class="admin-menu">
+                        <a href="#none"><strong>ADMIN</strong></a>
+                    </span>
+                </div> 
+            </div>
+            <div class="after"></div>
+			<div class="inner">  
+                <h1><a href="#none"><em>DX</em> POTAL</a></h1>
+				<nav> 
+					<ul class="depth01">
+						<li>
+							<a href="#none">About</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>About</strong></a>
+								<ul>
+									<li><a href="#none">DX 전문가 제도 소개</a></li>
+									<li><a href="#none">DX 전문가 인증 안내</a></li>
+								</ul> 
+							</div> 
+						</li> 
+						<li>
+							<a href="#none">DX 현황</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>DX 현황</strong></a>
+								<ul>
+									<li><a href="#none">DX 과제 현황</a></li>
+									<li><a href="#none">DX 전문가 현황</a></li>
+								</ul>
+							</div> 
+						</li> 
+						<li>
+							<a href="#none">과제관리</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>과제관리</strong></a>
+								<ul>
+									<li><a href="#none">과제 문의</a></li>
+                                    <li><a href="#none">과제 등록</a></li>
+									<li><a href="#none">과제 조회</a></li>
+									<li><a href="#none">RPA 과제요청</a></li>
+									<li><a href="#none">RPA 과제 조회</a></li> 
+								</ul>
+							</div> 
+						</li>
+						<li>
+							<a href="#none">DX 콘텐츠</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>DX 콘텐츠</strong></a>
+								<ul>
+									<li><a href="#none">BP 사례</a></li>
+									<li><a href="#none">교육 자료</a></li>
+								</ul>
+							</div> 
+						</li>
+                        <li>
+							<a href="#none">커뮤니티</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>커뮤니티</strong></a>
+								<ul>
+									<li><a href="#none">공지사항</a></li>
+									<li><a href="#none">FAQ</a></li>
+									<li><a href="#none">자료실</a></li>
+								</ul>
+							</div> 
+						</li>
+                        <li>
+							<a href="#none">권한신청</a>
+							<div class="depth02">
+                                <a href="#none" class="depth01-m"><strong>권한신청</strong></a>
+								<ul>
+									<li><a href="#none">권한신청</a></li>
+								</ul>
+							</div> 
+						</li>
+					</ul>
+				</nav>
+			 
+				 <div class="side-wrap">
+                    <div class="search-box"> 
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button type="button" class="bt-delete ico">삭제</button>
+                        <button type="button" class="bt-search">검색</button>
+                    </div>
+                    <button type="button" class="bt-notice">알림</button>
+                    <p class="name-wrap"><span>김엘지</span>님</p>
+                </div>
+			</div> 
+		</header>
+		<!--  // header -->
+
+        <!-- container -->
+        <section class="container sub"> 
+			<div class="contents-wrap">  
+				<div class="conts-in-box">
+					<h3>기본정보</h3>
+					<p class="required-text">
+						<strong>*</strong>항목은 필수입력 항목입니다. 
+					</p> 
+					<div class="rowtable">
+						<table>
+							<colgroup>
+								<col style="width:15%">
+								<col style="width:35%"> 
+								<col style="width:15%">
+								<col style="width:35%">    
+							</colgroup>
+							<tbody>
+								<tr> 
+									<th>과제등록 번호</th>
+									<td>1234545656</td>
+									<th>과제 등록일</th>
+									<td>2021-07-27</td>
+								</tr>
+								<tr> 
+									<th>과제명<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="input-wrap">
+											<input type="text">	  
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>현업담당자<strong class="required">*</strong></th>
+									<td>
+										<div class="td-search">
+											<input type="text">	 
+											<button type="button" class="search">검색</button>
+										</div>
+									</td>
+									<th>현업 조직정보<strong class="required">*</strong></th>
+									<td>
+										<div class="td-search">
+											<input type="text">	 
+											<button type="button" class="search">검색</button>
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>과제유형<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid31">
+											<select class="select"> 
+												<option value="">AIB</option> 
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>사업장 정보<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid31">
+											<select class="select"> 
+												<option value="">본사</option> 
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>과제 영역<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid31">
+											<select class="select"> 
+												<option value="">없음</option> 
+											</select>
+										</div>
+										<div class="select-wrap wid31">
+											<select class="select"> 
+												<option value="">없음</option> 
+											</select>
+										</div>  
+									</td>
+								</tr>
+								<tr> 
+									<th>과제 태그<strong class="required">*</strong></th>
+									<td colspan="3"> 
+										<div class="td-search">
+											<input type="text">	 
+											<button type="button" class="search">검색</button>
+										</div>
+										<p class="info-txt">태그를 선택해 주세요.</p>
+										<div class="tag-area">
+											<span class="tag">
+												<em>태그</em> 
+												<button type="button">삭제</button>				
+											</span>
+											<span class="tag">
+												<em>태그</em> 
+												<button type="button">삭제</button>				
+											</span>
+											<span class="tag">
+												<em>태그</em> 
+												<button type="button">삭제</button>				
+											</span>
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>과제 구분<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="radio-area">
+											<input type="radio" id="radio7" name="radio3"><label for="radio7">직접 수행 과제</label>
+											<input type="radio" id="radio8" name="radio3"><label for="radio8">의뢰 과제</label>
+										</div> 
+									</td>
+								</tr> 
+								<tr> 
+									<th>과제 배경<strong class="required">*</strong></th>
+									<td colspan="3">
+										<textarea></textarea>
+									</td>
+								</tr>
+								<tr> 
+									<th>과제 개요<strong class="required">*</strong></th>
+									<td colspan="3">
+										<textarea></textarea>
+									</td>
+								</tr>
+								<tr> 
+									<th>연관 과제<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="radio-area">
+											<input type="radio" id="radio5" name="radio4"><label for="radio5">유</label>
+											<input type="radio" id="radio6" name="radio4"><label for="radio6">무</label>
+											<button type="button" class="bt-common">찾아보기</button>
+										</div> 
+										<p class="info-txt">연관과제를 선택해 주세요.</p>
+										<div class="assign-area"> 
+											<span class="assign">
+												<em>연관과제</em> 
+												<button type="button">삭제</button>				
+											</span>
+											<span class="assign">
+												<em>연관과제</em> 
+												<button type="button">삭제</button>				
+											</span>
+											<span class="assign">
+												<em>연관과제</em> 
+												<button type="button">삭제</button>				
+											</span> 
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>예상 기간<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="date-calendar wid31">
+											<span>
+												<input type="text">	
+												<button type="button" class="bt-calendar">날짜선택</button>
+											</span>
+											/
+											<span>
+												<input type="text">	
+												<button type="button" class="bt-calendar">날짜선택</button>
+											</span>
+										</div>
+									</td> 
+								</tr>
+								<tr> 
+									<th>과제문의 번호 입력</th>
+									<td colspan="3"> 
+										<div class="input-wrap">
+											<input type="text" placeholder="과제를 선택 해 주세요." class="wid65">
+											<button type="button" class="bt-common">초기화</button>
+											<button type="button" class="bt-common">등록</button>	
+										</div> 
+									</td>
+								</tr> 
+								<tr> 
+									<th>협의 부서/담당자 정보<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid31">
+											<select class="select"> 
+												<option value="">없음</option> 
+											</select>
+										</div>
+										<div class="select-wrap wid65">
+											<select class="select"> 
+												<option value="">없음</option> 
+											</select>
+										</div>  
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h3>데이터</h3> 
+					<div class="rowtable">
+						<table>
+							<colgroup>
+								<col style="width:15%">
+								<col style="width:85%">  
+							</colgroup>
+							<tbody> 
+								<tr> 
+									<th>활용 솔루션</th>
+									<td>
+										<div class="input-wrap">
+											<input type="text">	  
+										</div>
+									</td>
+								</tr> 
+								<tr> 
+									<th>활용 데이터</th>
+									<td>
+										<div class="input-wrap">
+											<input type="text">
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>데이터 수집 방법</th>
+									<td>
+										<div class="radio-area">
+											<input type="radio" id="radio1" name="radio2"><label for="radio1">엑셀</label>
+											<input type="radio" id="radio2" name="radio2"><label for="radio2">CSR요청</label>
+											<input type="radio" id="radio3" name="radio2"><label for="radio3">Datalake 수집</label>
+											<input type="radio" id="radio4" name="radio2"><label for="radio4">기타</label>
+										</div>
+										<input type="text" placeholder="기타 수집 방법 입력"> 
+									</td>
+								</tr> 
+							</tbody>
+						</table>
+					</div>
+
+					<h3>기대성과</h3> 
+					<div class="rowtable">
+						<table>
+							<colgroup>
+								<col style="width:15%">
+								<col style="width:85%">  
+							</colgroup>
+							<tbody> 
+								<tr> 
+									<th>정량적<strong class="required">*</strong></th>
+									<td>
+										<textarea placeholder="ex. 수율 지표 향상 – 기포 부적합 감소로 인한 수율 지표 1.5% 향상(87.8% → 89.3%) (금액환산)"></textarea>
+									</td>
+								</tr> 
+								<tr> 
+									<th>정성적<strong class="required">*</strong></th>
+									<td>
+										<textarea placeholder="ex. 공정 Process 개선 – 불필요한 공정을 감소시켜 전체 공정 효율화"></textarea>
+									</td>
+								</tr>
+								<tr> 
+									<th>제무성과<strong class="required">*</strong></th>
+									<td>
+										<div class="radio-area">
+											<input type="radio" id="yes" name="radio"><label for="yes">Y</label>
+											<input type="radio" id="no" name="radio"><label for="no">N</label>
+										</div>
+										<input type="text" class="wid31">
+										<span>원/년</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h3>기타</h3> 
+					<div class="rowtable">
+						<table>
+							<colgroup>
+								<col style="width:15%">
+								<col style="width:85%">  
+							</colgroup>
+							<tbody> 
+								<tr> 
+									<th>참고사항</th>
+									<td>
+										<div class="input-wrap">
+											<input type="text" placeholder="ex. 계측기 정보, Tag명 등">
+										</div>
+									</td>
+								</tr> 
+								<tr> 
+									<th>참고파일 업로드</th>
+									<td> 
+										<div class="file-upload">
+											<input type="text" placeholder="파일을 선택하세요.">
+											<button type="button" class="bt-common">찾아보기</button>
+											<button type="button" class="bt-common">등록</button>	
+										</div> 
+										<div class="process-wrap">
+											<p>
+												<span>업로드 대기중</span>
+												<em>80%</em>
+											</p>
+											<div class="process-bar"> 
+												<span style="width:60%;"></span>
+											</div> 
+										</div> 
+										<ul class="file-add-list">
+											<li>
+												<a href="#none">1.데이터분석_R_소개_설치.pptx</a>
+												<button type="button">삭제</button>
+											</li>
+											<li>
+												<a href="#none">1.데이터분석_R_소개_설치.pptx</a>
+												<button type="button">삭제</button>
+											</li> 
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="button-wrap"> 
+						<div class="right">
+							<button type="button" class="bt-red">통합결재 요청</button> 
+							<button type="button" class="bt-red">수정</button> 
+							<button type="button" class="bt-redline">삭제</button> 
+							<a href="#none" class="bt-common">목록</a>
+						</div>
+					</div>  
+				</div> 
+			</div> 
+        </section>
+        <!--  // container -->
+
+        <!-- footer -->
+        <footer> 
+            Ⓒ LG Chem. All Rights Reserved.
+        </footer>
+        <!--// footer -->
+		 
+	</div>  
+    
+</body>
+</html>

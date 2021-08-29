@@ -10,236 +10,162 @@
     <title>DX Portal</title>
     <link rel="stylesheet" href="../js/lib/jquery-ui.min.css">
 	<link rel="stylesheet" href="../js/lib/swiper.min.css"> 
+    <link rel="stylesheet" href="../js/lib/owl.carousel.min.css">
+	<link rel="stylesheet" href="../js/lib/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="../js/lib/sumoselect.min.css">
 	<link rel="stylesheet" href="../css/ui.css">
      <!-- Common Library -->
-	<script src="../js/lib/jquery-3.4.1.min.js"></script>
-	<script src="../js/lib/jquery-ui.min.js"></script> 
-	<script src="../js/lib/swiper.min.js"></script> 
-	<script src="../js/ui.js"></script> 
+	<script type="text/javascript" src="../js/lib/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/lib/jquery-ui.min.js"></script> 
+	<script type="text/javascript" src="../js/lib/swiper.min.js"></script> 
+    <script type="text/javascript" src="../js/lib/owl.carousel.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.sumoselect.min.js"></script> 
+	<script type="text/javascript" src="../js/ui.js"></script> 
+    <style>
+        h2 {margin-bottom:2rem;padding:2rem; background-color: black; color:#fff; font-size:3rem;}
+        h3 {margin-bottom:2rem; border-bottom:1px solid #ccc; padding:2rem ; font-size:2.5rem;}
+        .comt-warp {padding:3rem;}
+    </style>
 </head>
 <body>
-    <div class="wrapper" style="padding:5rem;">
+    <div class="wrapper">
 		 
         <!-- container -->
         <section class="container"> 
-            <h2 style="margin-bottom:2rem">버튼</h2>
-            <div> 
-                <!--AIB-->
-                <div class="thumb-case-aib"><!--AIB : thumb-case-aib -->
-                    <div class="img-area">
-                        <span>BP 사례</span>
-                        <b>RPA</b>
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>RPA</em>
-                            <span>Lv2</span>
-                            <span>일반자료</span>
-                        </div>
-                        <p>RPA 타이틀</p>
-                        <div class="tag">
-                            <button type="button">AIB</button>
-                            <button type="button">기초교육</button>
-                            <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-                <!--RPA-->
-                <div class="thumb-case-rpa"><!--RPA : thumb-case-order -->
-                    <div class="img-area">
-                        <span>BP 사례</span>
-                        <b>기타DX</b>
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>기타DX</em>
-                            <span>Lv3,4,5</span>
-                            <span>일반자료</span>
-                        </div>
-                        <p>기타DX 타이틀</p>
-                        <div class="tag">
-                            <button type="button">AIB</button>
-                            <button type="button">기초교육</button>
-                            <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-                <!--기타DX-->
-                <div class="thumb-case-order"><!--기타DX : thumb-case-order -->
-                    <div class="img-area">
-                        <span>BP 사례</span>
-                        <b>RPA</b>
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>RPA</em>
-                            <span>Lv2</span>
-                            <span>일반자료</span>
-                        </div>
-                        <p>RPA 타이틀</p>
-                        <div class="tag">
-                            <button type="button">AIB</button>
-                            <button type="button">기초교육</button>
-                            <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-                <!--process bar-->
-                <div class="thumb-case"> 
-                    <div class="img-area">
-                         
-
-                         <!--process-bar -->
-                        <div class="process-bar"> 
-                            <span style="width:60%;"></span>
-                        </div>
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>RPA</em>
-                            <span>Lv2</span>
-                            <span>일반자료</span>
-                        </div>
-                        <p>RPA 타이틀</p>
-                        <div class="tag">
-                            <button type="button">AIB</button>
-                            <button type="button">기초교육</button>
-                            <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-
-                <!--자료 없는 경우-->
-                <div class="thumb-case"><!--자료 없는 경우 : thumb-case -->
-                    <div class="img-area">
-                        <!-- 컨텐츠 -->
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>RPA</em>
-                            <span>Lv2</span>
-                            <span>일반자료</span>
-                        </div>
-                        <p>RPA 타이틀</p>
-                        <div class="tag">
-                            <button type="button">AIB</button>
-                            <button type="button">기초교육</button>
-                            <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
+            <h2 style="margin-bottom:2rem;padding:2rem; background-color: black;">Button</h2> 
+            <h3>A link (라운드 : rounded)</h3>
+            <div class="comt-warp">
+                <a href="#none" class="bt-common">Link</a> 
+                <a href="#none" class="bt-red">Link</a> 
+                <a href="#none" class="bt-redline">Link</a> 
+                <a href="#none" class="bt-common rounded">Round Link </a> 
+                <a href="#none" class="bt-red rounded">Round  Link</a> 
+                <a href="#none" class="bt-redline rounded">Round Link</a> 
             </div>
+            <h3>Button (라운드 : rounded)</h3>
+            <div class="comt-warp">
+                <button type="button" class="bt-common">Button</button> 
+                <button type="button" class="bt-red">Button</button> 
+                <button type="button" class="bt-redline">Button</button> 
+                <button type="button" class="bt-common rounded">Round Button</button> 
+                <button type="button" class="bt-red rounded">Round Button</button> 
+                <button type="button" class="bt-redline rounded">Round Button</button> <br><br>
+                <button type="button" class="bt-sort">양방향</button>
+                <button type="button" class="bt-sort up">상향</button>
+                <button type="button" class="bt-sort down">하향</button>
+                <button type="button" class="bt-add">+</button>
+                <button type="button" class="bt-up">▲</button>
+                <button type="button" class="bt-down">▼</button> 
+                <button type="button" class="bt-file">파일</button><br><br>
+                <button type="button" class="bt-common microsoftexcel">엑셀 다운로드</button>
+                <button type="button" class="bt-common arrowup">Button</button>
+                <button type="button" class="bt-redline delete">삭제</button>
+                 
+                <button type="button" class="bt-except">제외</button>
+                <button type="button" class="bt-input">투입</button>
+            </div>
+
+             <h2 style="margin-bottom:2rem;padding:2rem; background-color: black;">Form</h2>
+            <!--form-->
+            <h3>Check (label 없는 경우)</h3>
+            <div class="comt-warp" style="width:60rem;"> 
+                 <span class="checkbox-warp"><input type="checkbox"></span>
+                 <span class="checkbox-warp"><input type="checkbox" checked></span>
+                 <span class="checkbox-warp"><input type="checkbox" disabled></span>
+            </div>
+            <h3>Check</h3>
+            <div class="comt-warp" style="width:60rem;"> 
+                 <input type="checkbox" id="check1" name="check2" checked><label for="check1">checked</label>
+				 <input type="checkbox" id="check2" name="check2"><label for="check2">기본상태</label>
+                 <input type="checkbox" id="check2" name="check2" disabled><label for="check2">disabled</label>
+            </div>
+            <h3>Radio</h3>
+            <div class="comt-warp" style="width:60rem;"> 
+                <input type="radio" id="radio7" name="radio3" checked><label for="radio7">checked</label>
+				<input type="radio" id="radio8" name="radio3"><label for="radio8">기본상태</label>
+                <input type="radio" id="radio8" name="radio3" disabled><label for="radio8">disabled</label>
+            </div>
+
+            <h3>Select</h3>
+            <div class="comt-warp" style="width:60rem;"> 
+                <div class="select-wrap">
+                    <select class="select"> 
+                        <option value="">-- 전체전체전체전체 --</option> 
+                    </select>
+                </div>   
+            </div>
+            <h3>Multiple-select</h3>
+            <div class="comt-warp" style="width:60rem;"> 
+                <div class="multiple-select-wrap">
+                    <select multiple="multiple" name="somename" class="select2">
+                        <option selected="selected" value="volvo">CEO</option>
+                        <option value="saab">CFO</option> 
+                        <option value="audi">CHO</option>
+                        <option value="bmw">CTO</option> 
+                        <option value="bmw">LG 에너지솔루션</option>
+                        <option value="bmw">LG화학(해외현지사원)</option>
+                        <option value="bmw">대산공장</option>
+                        <option value="bmw">법인Staff</option>
+                        <option value="bmw">생명과학본부</option>
+                    </select>
+                </div>  
+            </div> 
+
+            <h3>Input</h3>
+            <div class="comt-warp" style="width:60rem;"> 
+                <div class="input-wrap">
+                    <input type="text" placeholder="기본">
+                </div> 
+
+                <br><br>
+
+                <div class="input-wrap">
+                    <input type="text" placeholder="disabled" disabled>
+                </div> 
+
+                <br><br>
+
+                <div class="input-wrap">
+                    <input type="text" class="error" placeholder="error">
+                    <div class="tooltip">
+                        필수입력 항목입니다.
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="td-search">
+                    <input type="text" placeholder="검색">	
+                    <button type="button" class="delete">휴지통</button>
+                    <button type="button" class="search">검색</button>
+                </div> 
+            </div> 
+
+            <h3>Date</h3>
+            <div class="comt-warp" style="width:40rem;">  
+                <div class="date-calendar">
+                    <span>
+                        <input type="text">	
+                        <button type="button" class="bt-calendar">날짜선택</button>
+                    </span>
+                    /
+                    <span>
+                        <input type="text">	
+                        <button type="button" class="bt-calendar">날짜선택</button>
+                    </span>
+                </div>
+
+                <br><br>
+
+                <div class="date-calendar">
+                    <span>
+                        <input type="text">	
+                        <button type="button" class="bt-calendar">날짜선택</button>
+                    </span>
+                </div> 
+            </div>
+
             
-            <h2 style="margin:3rem 0 2rem">교육자료</h2>
-            <div style="display: flex;"> 
-                <!--AIB-->
-                <div class="thumb-case-edu-aib"><!--AIB : thumb-case-edu-aib -->
-                    <div class="img-area">
-                        <span>BP 사례</span>
-                        <b>RPA</b>
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>RPA</em>
-                            <span>Lv2</span>
-                            <span>일반자료</span>
-                        </div>
-                        <p>RPA 타이틀</p>
-                        <div class="tag">
-                            <button type="button">AIB</button>
-                            <button type="button">기초교육</button>
-                            <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-                <!--RPA-->
-                <div class="thumb-case-edu-rpa"><!--AIB : thumb-case-edu-rpa -->
-                    <div class="img-area">
-                        <span>BP 사례</span>
-                        <b>기타DX</b>
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>기타DX</em>
-                            <span>Lv3,4,5</span>
-                            <span>일반자료</span>
-                        </div>
-                        <p>기타DX 타이틀</p>
-                        <div class="tag">
-                            <button type="button">AIB</button>
-                            <button type="button">기초교육</button>
-                            <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-                <!--기타DX-->
-                <div class="thumb-case-edu-order"><!--AIB : thumb-case-edu-order -->
-                    <div class="img-area">
-                        <span>교육자료</span>
-                        <b>RPA</b>
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>RPA</em>
-                            <span>Lv2</span>
-                            <span>일반자료</span>
-                        </div>
-                        <p>RPA 타이틀</p>
-                        <div class="tag">
-                            <button type="button">AIB</button>
-                            <button type="button">기초교육</button>
-                            <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <h2 style="margin:3rem 0 2rem">새로올라온 콘텐츠</h2>
-            <div>
-                <div class="thumb-img-case"><!-- thumb-img-case -->
-                    <img src="../images/thum_01.png" alt="">
-                    <mark class="label-aib">AIB</mark>
-                </div>
-            </div>
-
-            <h2 style="margin:3rem 0 2rem">DX 과제를 소개합니다</h2>
-            <div style="display: flex;"> 
-                <div class="thumb-case-col01"><!-- 본부 : thumb-case-col01 -->
-                    <div class="assign-area">
-                        <p><b>DX </b>POTAL</p>
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>AIB</em>
-                            <span>본부</span> 
-                        </div>
-                        <p>KAIST AIB(AI-Big data)고급과정</p>
-                        <div class="tag">
-                        <button type="button">AIB</button>
-                        <button type="button">기초교육</button>
-                        <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="thumb-case-col02"><!-- 본부 외 : thumb-case-col02 -->
-                    <div class="assign-area">
-                            <p><b>DX </b>POTAL</p> 
-                    </div>
-                    <div class="cont-area">
-                        <div class="lv-wrap">
-                            <em>AIB</em>
-                            <span>석유화학본부</span> 
-                        </div>
-                        <p>DX 과제 폐기물 처리를 위한 자동화 프로세스 정립</p>
-                        <div class="tag">
-                        <button type="button">AIB</button>
-                        <button type="button">기초교육</button>
-                        <button type="button">교육자료</button> 
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
     </div>
     

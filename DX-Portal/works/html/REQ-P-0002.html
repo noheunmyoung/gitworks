@@ -23,120 +23,27 @@
 	<script type="text/javascript" src="../js/ui.js"></script> 
 </head>
 <body>
-    <div class="wrapper">
-		<!-- header -->
-		<header class="header" id="gnbNavi">
-            <div class="head-info"> 
-                <div class="inner">
-                    <span class="family-menu">
-                        <a href="#none">AIB Platform</a>
-                        <a href="#none">RPA 과제관리 시스템</a>
-                        <a href="#none">DX Community</a>  
-                    </span> 
-                    <span class="admin-menu">
-                        <a href="#none"><strong>ADMIN</strong></a>
-                    </span>
-                </div> 
-            </div>
-            <div class="after"></div>
-			<div class="inner">  
-                <h1><a href="#none"><em>DX</em> POTAL</a></h1>
-				<nav> 
-					<ul class="depth01">
-						<li>
-							<a href="#none">About</a>
-							<div class="depth02">
-                                <a href="#none" class="depth01-m"><strong>About</strong></a>
-								<ul>
-									<li><a href="#none">DX 전문가 제도 소개</a></li>
-									<li><a href="#none">DX 전문가 인증 안내</a></li>
-								</ul> 
-							</div> 
-						</li> 
-						<li>
-							<a href="#none">DX 현황</a>
-							<div class="depth02">
-                                <a href="#none" class="depth01-m"><strong>DX 현황</strong></a>
-								<ul>
-									<li><a href="#none">DX 과제 현황</a></li>
-									<li><a href="#none">DX 전문가 현황</a></li>
-								</ul>
-							</div> 
-						</li> 
-						<li>
-							<a href="#none">과제관리</a>
-							<div class="depth02">
-                                <a href="#none" class="depth01-m"><strong>과제관리</strong></a>
-								<ul>
-									<li><a href="#none">과제 문의</a></li>
-                                    <li><a href="#none">과제 등록</a></li>
-									<li><a href="#none">과제 조회</a></li>
-									<li><a href="#none">RPA 과제요청</a></li>
-									<li><a href="#none">RPA 과제 조회</a></li> 
-								</ul>
-							</div> 
-						</li>
-						<li>
-							<a href="#none">DX 콘텐츠</a>
-							<div class="depth02">
-                                <a href="#none" class="depth01-m"><strong>DX 콘텐츠</strong></a>
-								<ul>
-									<li><a href="#none">BP 사례</a></li>
-									<li><a href="#none">교육 자료</a></li>
-								</ul>
-							</div> 
-						</li>
-                        <li>
-							<a href="#none">커뮤니티</a>
-							<div class="depth02">
-                                <a href="#none" class="depth01-m"><strong>커뮤니티</strong></a>
-								<ul>
-									<li><a href="#none">공지사항</a></li>
-									<li><a href="#none">FAQ</a></li>
-									<li><a href="#none">자료실</a></li>
-								</ul>
-							</div> 
-						</li>
-                        <li>
-							<a href="#none">권한신청</a>
-							<div class="depth02">
-                                <a href="#none" class="depth01-m"><strong>권한신청</strong></a>
-								<ul>
-									<li><a href="#none">권한신청</a></li>
-								</ul>
-							</div> 
-						</li>
-					</ul>
-				</nav>
-			 
-				 <div class="side-wrap">
-                    <div class="search-box"> 
-                        <input type="text" placeholder="검색어를 입력하세요">
-                        <button type="button" class="bt-delete ico">삭제</button>
-                        <button type="button" class="bt-search">검색</button>
-                    </div>
-                    <button type="button" class="bt-notice">알림</button>
-                    <p class="name-wrap"><span>김엘지</span>님</p>
-                </div>
-			</div> 
-		</header>
-		<!--  // header -->
-
-        <!-- container -->
-        <section class="container sub"> 
-			<div class="contents-wrap">  
-				<div class="conts-in-box">
-					<h3>과제문의</h3>  
+    <div class="wrapper"> 
+	</div>
+	
+	<!--연관과제 리스트 선택 팝업-->
+	<div class="modal">
+		<div class="modal-in type02 large">
+			<div class="menu-head">
+				<h2>과제등록 문의 승인리스트</h2>
+			</div>
+			<div class="modal-body"> 
+				<div class="scroll">  
 					<div class="rowtable">
 						<table>
 							<colgroup>
+								<col style="width:9%">
 								<col style="width:8%">
+								<col style="width:15%">
+								<col style="width:6%">
+								<col style="width:20%">
 								<col style="width:7%">
-								<col style="width:17%">
-								<col style="width:7%">
-								<col style="width:18%">
-								<col style="width:7%">
-								<col style="width:18%"> 
+								<col style="width:17%"> 
 							</colgroup>
 							<tbody>
 								<tr>
@@ -152,10 +59,7 @@
 									<th>제목</th>
 									<td>
 										<div class="input-wrap">
-											<input type="text" class="error">
-											<div class="tooltip">
-												필수입력 항목입니다.
-											</div>
+											<input type="text"> 
 										</div>
 									</td>
 									<th>문의번호</th>
@@ -283,16 +187,16 @@
 						<table>
 							<caption></caption>
 							<colgroup>
+								<col style="width:90px">
+								<col style="width:130px">
 								<col style="width:100px">
-								<col style="width:150px">
-								<col style="width:150px">
 								<col style="width:*">
-								<col style="width:150px">
-								<col style="width:150px">
-								<col style="width:120px">
-								<col style="width:120px">
-								<col style="width:110px">
+								<col style="width:140px">
+								<col style="width:140px">
+								<col style="width:130px">
 								<col style="width:100px">
+								<col style="width:80px">
+								<col style="width:70px">
 							</colgroup>
 							<thead>
 								<tr>
@@ -337,24 +241,19 @@
 						</span>
 						<a href="#none" class="button-page button-next"><i class="icon-nav-next">다음</i></a>
 						<a href="#none" class="button-page button-last"><i class="icon-nav-last">마지막</i></a>
-					</div> 
-					<div class="button-wrap list-foot"> 
-						<div class="right"> 
-							<a href="#none" class="bt-red">문의 등록</a>
-						</div>
-					</div> 
+					</div>  
 				</div> 
-			</div> 
-        </section>
-        <!--  // container -->
 
-        <!-- footer -->
-        <footer> 
-            Ⓒ LG Chem. All Rights Reserved.
-        </footer>
-        <!--// footer -->
-		 
-	</div>  
-     
+				<div class="button-wrap list-foot"> 
+					<div class="right"> 
+						<a href="#none" class="bt-common">닫기</a>
+					</div>
+				</div>   
+			</div>	 
+			 
+			<button type="button" class="close"><i>닫기</i></button>
+		</div>
+	</div>
+    
 </body>
 </html>

@@ -26,58 +26,72 @@
     <div class="wrapper"> 
 	</div>
 	
-	<!--인터뷰 등록 팝업-->
+	<!--수상 및 자격증 추가 팝업-->
 	<div class="modal">
 		<div class="modal-in x-small">
 			<div class="menu-head">
-				<h2>인터뷰 등록</h2>
+				<h2>수상 및 자격증 추가</h2>
 			</div>
 			<div class="modal-body">
-				<div class="td-search type02">
-					<input type="text" placeholder="검색하실 이름을 입력하세요.">	 
-					<button type="button" class="search">검색</button>
-				</div>
-					 
-					  
+				<p class="required-text">
+					<strong>*</strong>항목은 필수입력 항목입니다. 
+				</p>   
 				<div class="rowtable">
 					<table>
 						<colgroup>
-							<col style="width:25%">
-							<col style="width:75%"> 
+							<col style="width:20%">
+							<col style="width:80%">  
 						</colgroup>
 						<tbody>
 							<tr> 
-								<th>인터뷰 날짜</th>
+								<th>구분<strong class="required">*</strong></th>
 								<td>
-									<div class="date-calendar type02"> 
-										<span>
-											<input type="text">	
-											<button type="button" class="bt-calendar">날짜선택</button>
-										</span>
-									</div>
+									<div class="radio-area">
+										<input type="radio" id="radio1" name="radio1"><label for="radio1">수상</label>
+										<input type="radio" id="radio2" name="radio1"><label for="radio2">자격증</label> 
+									</div> 
 								</td>
 							</tr>
 							<tr> 
-								<th>인터뷰 장소</th>
+								<th>내용<strong class="required">*</strong></th>
 								<td>
 									<div class="input-wrap">
 										<input type="text">
 									</div>
 								</td>
-							</tr>   
+							</tr>  
 							<tr> 
-								<th>인터뷰 참석자</th>
+								<th>등급</th>
+								<td>
+									<div class="input-wrap">
+										<input type="text" disabled>
+									</div>
+								</td>
+							</tr>  
+							<tr> 
+								<th>주최<strong class="required">*</strong></th>
 								<td>
 									<div class="input-wrap">
 										<input type="text">
 									</div>
 								</td>
-							</tr> 
+							</tr>  
 							<tr> 
-								<th>데이터 샘플 첨부파일</th>
+								<th>일자<strong class="required">*</strong></th>
+								<td colspan="3">
+									<div class="date-calendar wid40">
+										<span>
+											<input type="text">	
+											<button type="button" class="bt-calendar">날짜선택</button>
+										</span> 
+									</div>
+								</td> 
+							</tr>
+							<tr> 
+								<th>첨부파일</th>
 								<td> 
 									<div class="file-upload">
-										<input type="text">
+										<input type="text" placeholder="파일을 선택하세요.">
 										<button type="button" class="bt-common">찾아보기</button>
 										<button type="button" class="bt-common">등록</button>	
 									</div> 
@@ -88,7 +102,7 @@
 										</p>
 										<div class="process-bar"> 
 											<span style="width:60%;"></span>
-										</div>
+										</div> 
 									</div> 
 									<ul class="file-add-list">
 										<li>
@@ -101,15 +115,15 @@
 										</li> 
 									</ul>
 								</td>
-							</tr>
+							</tr>	 
 						</tbody>
 					</table>
-				</div>
-				<p class="req-text">※ <a href="#none">"커뮤니티-자료실"</a></em>에서 interview 양식 다운로드</p>
-				<div class="button-wrap list-foot"> 
+				</div> 
+				 
+				<div class="button-wrap"> 
 					<div class="right"> 
-						<button type="button" class="bt-red">등록</button>
-						<button type="button" class="bt-common">목록</button> 
+						<a href="#none" class="bt-red">저장</a>
+						<a href="#none" class="bt-common">닫기</a>
 					</div>
 				</div>   
 			</div>	 

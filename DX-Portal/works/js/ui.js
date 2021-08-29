@@ -10,6 +10,9 @@ $(function(){
     
     //select 
     select(); 
+
+	//left_nav 
+    left_nav(); 
 });
 
 /* ----- GNB ----- */
@@ -31,10 +34,10 @@ function gnb_megamenu(){
 		}
 	}).height(biggestHeight);
 
-	//1depth 클릭 시 서브메뉴 열림
+	//1depth 클릭 시 서브메뉴 열림 mouseenter
 	_depth1Anchor.each(function(){
 		if( _depthBG.is(':hidden')){
-			$(this).on('mouseenter',function(){
+			$(this).on('click',function(){
 				$(this).parent().addClass('on');
 				$(this).parent().siblings().removeClass('on');
 			});
@@ -43,7 +46,7 @@ function gnb_megamenu(){
 			});
 		}
 
-		$(this).on('mouseenter',function(){
+		$(this).on('click',function(){
 			if( _depthBG.is(':hidden')){
 				_depth1Box.removeClass('off');
 				_depthBG
@@ -84,7 +87,7 @@ function gnb_megamenu(){
 		clearTimeout(setTimeout_showDepth3);
 		clearTimeout(setTimeout_hideDepth3);
 
-		$(this).on('mouseenter',function(){
+		$(this).on('click',function(){
 			if( $depth3.length && $depth3.is(':hidden')){
 
 				height_depth3 = $depth3.outerHeight(true);
@@ -117,7 +120,7 @@ function gnb_megamenu(){
 	});
 
 	//depth2 마우스 오버시 해당 depth1 활성화
-	_depth2Box.off().on('mouseenter',function(){
+	_depth2Box.off().on('click',function(){
 		$(this).parents('.depth01 > li').addClass('on').siblings().removeClass('on');
 	}).on('mouseleave',function(){
 		$(this).parents('.depth01 > li').removeClass('on');
@@ -127,7 +130,7 @@ function gnb_megamenu(){
 	var _GNB = $('#gnbNavi');
 	$( _GNB, _depthBG).on('mouseleave',function(){
 		_depth3Box.hide();
-		_depth2Box.hide().css('height',biggestHeight+10);
+		_depth2Box.hide().css('height',biggestHeight);
 		_depthBG.hide().css('height',biggestHeight+35);
 		_depth1Box.addClass('off');
 	});
@@ -136,7 +139,7 @@ function gnb_megamenu(){
 
 /* ----- tab ----- */
 function tab(){
-	 $('.tab-wrap li').mouseenter(function () {
+	 $('.tab-wrap li').click(function () {
         var activeTab = $(this).attr('data-tab');
         $('.tab-wrap li').removeClass('current');
         $('.result').removeClass('current');
@@ -155,5 +158,12 @@ function select() {
 /* ----- multiple selectmenu ----- */
 function multiple() {
 	$('.select2').SumoSelect({selectAll: false});
+}  
+
+function left_nav() {
+	$(".left-nav .depth01 li button").click(function() { 
+		$(this).next().slideDown(200); 
+		$(".left-nav .depth01 li button").not(this).next().slideUp(200);
+	}); 
 }  
  

@@ -126,17 +126,17 @@
         <section class="container sub"> 
 			<div class="contents-wrap">  
 				<div class="conts-in-box">
-					<h3>과제문의</h3>  
+					<h3>과제조회</h3>
 					<div class="rowtable">
 						<table>
 							<colgroup>
-								<col style="width:8%">
+								<col style="width:9%">
+								<col style="width:10%">
+								<col style="width:16%">
 								<col style="width:7%">
 								<col style="width:17%">
-								<col style="width:7%">
-								<col style="width:18%">
-								<col style="width:7%">
-								<col style="width:18%"> 
+								<col style="width:8%">
+								<col style="width:15%"> 
 							</colgroup>
 							<tbody>
 								<tr>
@@ -149,16 +149,13 @@
 											</select>
 										</div> 
 									</td>
-									<th>제목</th>
+									<th>과제명</th>
 									<td>
 										<div class="input-wrap">
-											<input type="text" class="error">
-											<div class="tooltip">
-												필수입력 항목입니다.
-											</div>
+											<input type="text"> 
 										</div>
 									</td>
-									<th>문의번호</th>
+									<th>과제번호</th>
 									<td>
 										<div class="input-wrap">
 											<input type="text">
@@ -182,11 +179,17 @@
 											</select>
 										</div> 
 									</td>
-									<th></th>
-									<td></td>
+									<th>태그</th>
+									<td>
+										<div class="td-search">
+											<input type="text">	
+											<button type="button" class="delete">휴지통</button>
+											<button type="button" class="search">검색</button>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<th class="first">수혜조직</th>
+									<th class="first">수혜조직 정보</th>
 									<th>사업본부</th>
 									<td> 
 										<div class="multiple-select-wrap">
@@ -221,28 +224,84 @@
 									</td> 
 								</tr>
 								<tr>
-									<th class="first">등록관련 정보</th>
-									<th>문의자</th>
+									<th class="first">수행조직 정보</th>
+									<th>사업본부</th>
+									<td> 
+										<div class="multiple-select-wrap">
+											<select multiple="multiple" name="somename" class="select2">
+												<option selected="selected" value="volvo">CEO</option>
+												<option value="saab">CFO</option> 
+												<option value="audi">CHO</option>
+												<option value="bmw">CTO</option> 
+												<option value="bmw">LG 에너지솔루션</option>
+												<option value="bmw">LG화학(해외현지사원)</option>
+												<option value="bmw">대산공장</option>
+												<option value="bmw">법인Staff</option>
+												<option value="bmw">생명과학본부</option>
+											</select>
+										</div> 
+									</td>
+									<th>사업부</th>
+									<td>
+										<div class="td-search">
+											<input type="text">	
+											<button type="button" class="delete">휴지통</button>
+											<button type="button" class="search">검색</button>
+										</div>
+									</td> 
+									<th>팀</th>
+									<td>
+										<div class="td-search">
+											<input type="text">	
+											<button type="button" class="delete">휴지통</button>
+											<button type="button" class="search">검색</button>
+										</div>
+									</td> 
+								</tr> 
+								<tr>
+									<th class="first">담당자 정보</th>
+									<th>현업담당자</th>
+									<td>
+										<div class="input-wrap">
+											<input type="text"> 
+										</div>
+									</td>
+									<th>분석가</th>
 									<td>
 										<div class="input-wrap">
 											<input type="text">
 										</div>
-									</td>
-									<th>등록일자</th>
-									<td>
-										<div class="date-calendar">
-											<span>
-												<input type="text">	
-												<button type="button" class="bt-calendar">날짜선택</button>
-											</span>
-											/
-											<span>
-												<input type="text">	
-												<button type="button" class="bt-calendar">날짜선택</button>
-											</span>
-										</div>
 									</td> 
+									<th></th>
+									<td></td> 
+								</tr>
+								<tr>
+									<th class="first">진행관련 정보</th>
+									<th>착수년도/종료년도</th>
+									<td>
+										<div class="select-conts">
+											<div class="select-wrap">
+												<select class="select"> 
+													<option value="">-- 전체 --</option> 
+												</select>
+											</div> 
+											/
+											<div class="select-wrap">
+												<select class="select"> 
+													<option value="">-- 전체 --</option> 
+												</select>
+											</div> 
+										</div> 
+									</td>
 									<th>진행상태</th>
+									<td>
+										<div class="select-wrap">
+											<select class="select"> 
+												<option value="">-- 전체 --</option> 
+											</select>
+										</div> 
+									</td>
+									<th>진행상세</th>
 									<td>
 										<div class="select-wrap">
 											<select class="select"> 
@@ -253,9 +312,22 @@
 								</tr>
 								<tr>
 									<th class="first">기타</th>
+									<th>BP 사례</th>
+									<td>
+										<span class="checkbox-warp">
+											<input type="checkbox" name="check">
+										</span> 
+									</td>
+									<th>BP 사례</th>
+									<td>
+										<input type="checkbox" id="check1" name="check2"><label for="check1">중점추진과제</label>
+										<input type="checkbox" id="check2" name="check2"><label for="check2">챔피언과제</label>
+									</td>
 									<th>본인 권한만</th>
-									<td colspan="5">
-										<span class="checkbox-warp"><input type="checkbox"></span> 
+									<td>
+										<span class="checkbox-warp">
+											<input type="checkbox">
+										</span> 
 									</td>  
 								</tr> 
 							</tbody>
@@ -283,43 +355,63 @@
 						<table>
 							<caption></caption>
 							<colgroup>
+								<col style="width:80px">
+								<col style="width:120px">
 								<col style="width:100px">
-								<col style="width:150px">
-								<col style="width:150px">
+								<col style="width:120px">
 								<col style="width:*">
-								<col style="width:150px">
-								<col style="width:150px">
-								<col style="width:120px">
-								<col style="width:120px">
-								<col style="width:110px">
+								<col style="width:140px">
+								<col style="width:140px">
+								<col style="width:140px">
+								<col style="width:100px">
+								<col style="width:80px">
+								<col style="width:100px">
 								<col style="width:100px">
 							</colgroup>
 							<thead>
 								<tr>
-									<th scope="col">과제유형<button type="button" class="bt-sort">정렬</button></th>
-									<th scope="col">문의번호<button type="button" class="bt-sort">정렬</button></th>
+									<th scope="col">BP 사례<button type="button" class="bt-sort">정렬</button></th>
+									<th scope="col">과제번호<button type="button" class="bt-sort">정렬</button></th> 
+									<th scope="col">과제유형<button type="button" class="bt-sort">정렬</button></th> 
 									<th scope="col">과제영역<button type="button" class="bt-sort">정렬</button></th>
 									<th scope="col">과제 명<button type="button" class="bt-sort">정렬</button></th>
-									<th scope="col">사업본부<button type="button" class="bt-sort">정렬</button></th>
-									<th scope="col">팀<button type="button" class="bt-sort">정렬</button></th>
-									<th scope="col">사업장<button type="button" class="bt-sort">정렬</button></th>
-									<th scope="col">등록일자<button type="button" class="bt-sort">정렬</button></th> 
-									<th scope="col">문의자<button type="button" class="bt-sort">정렬</button></th>
+									<th scope="col">태그<button type="button" class="bt-sort">정렬</button></th>
+									<th scope="col">수혜조직<button type="button" class="bt-sort">정렬</button></th>
+									<th scope="col">수행조직<button type="button" class="bt-sort">정렬</button></th>
+									<th scope="col">사업장<button type="button" class="bt-sort">정렬</button></th> 
+									<th scope="col">현업<button type="button" class="bt-sort">정렬</button></th>
 									<th scope="col">상태<button type="button" class="bt-sort">정렬</button> </th>
+									<th scope="col">추천추진과제<button type="button" class="bt-sort">정렬</button> </th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td><span>AIB</span></td>
+									<td><button type="button" class="bookmark check">BP 사례</button></td>
 									<td><span>INQ2021110019</span></td>
-									<td><span>설비</span></td>
+									<td><span>AIB</span></td>
+									<td><span>연구개발</span></td>
 									<td class="left"><a href="#none">투자관리 시스템 데이터를 활용한 설비 변경 이력관리 System 구축투자관리 시스템 데이터를 활용한 설비 변경 이력관리 System 구축</a></td>
-									<td><span>석유화학사업본부</span></td>
-									<td class="left"><p class="term">PVC / 가소제. 기획팀</p></td>
-									<td><span>해외법인</span></td>
-									<td><span>2021-07-26</span></td>
-									<td><span>채민석</span></td>
-									<td><span>요청</span></td>
+									<td><p class="tag">태그,태그,태그</p></td>
+									<td><p class="term">수혜조직수혜조직수혜조직</p></td>
+									<td><p class="term">수행조직수행조직수행조직</p></td>
+									<td><span>사이언스파크</span></td>
+									<td><span>박용민</span></td>
+									<td><span>과제착수 필요</span></td>
+									<td><span>중점, 챔피언</span></td>
+								</tr>
+								<tr>
+									<td><button type="button" class="bookmark check">BP 사례</button></td>
+									<td><span>INQ2021110019</span></td>
+									<td><span>AIB</span></td>
+									<td><span>연구개발</span></td>
+									<td class="left"><a href="#none">투자관리 시스템 데이터를 활용한 설비 변경 이력관리 System 구축투자관리 시스템 데이터를 활용한 설비 변경 이력관리 System 구축</a></td>
+									<td><p class="tag">태그,태그,태그</p></td>
+									<td><p class="term">수혜조직수혜조직수혜조직</p></td>
+									<td><p class="term">수행조직수행조직수행조직</p></td>
+									<td><span>사이언스파크</span></td>
+									<td><span>박용민</span></td>
+									<td><span>과제착수 필요</span></td>
+									<td><span>중점, 챔피언</span></td>
 								</tr> 
 							</tbody>
 						</table>
@@ -338,9 +430,10 @@
 						<a href="#none" class="button-page button-next"><i class="icon-nav-next">다음</i></a>
 						<a href="#none" class="button-page button-last"><i class="icon-nav-last">마지막</i></a>
 					</div> 
+
 					<div class="button-wrap list-foot"> 
 						<div class="right"> 
-							<a href="#none" class="bt-red">문의 등록</a>
+							<a href="#none" class="bt-common microsoftexcel">엑셀다운로드</a>
 						</div>
 					</div> 
 				</div> 

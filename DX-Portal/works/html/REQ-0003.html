@@ -134,80 +134,43 @@
 						<table>
 							<colgroup>
 								<col style="width:15%">
-								<col style="width:85%">  
+								<col style="width:35%"> 
+								<col style="width:15%">
+								<col style="width:35%">    
 							</colgroup>
 							<tbody>
 								<tr> 
-									<th>과제유형<strong class="required">*</strong></th>
+									<th>통합결재 요청번호</th>
 									<td>
-										<div class="select-wrap wid31">
-											<select class="select"> 
-												<option value="">AIB</option> 
-											</select>
-										</div> 
+										<div class="input-wrap">
+											<input type="text" placeholder="과제등록번호" readonly>
+										</div>
 									</td>
-								</tr>
-								<tr> 
-									<th>대상 본부/사업부/팀<strong class="required">*</strong></th>
+									<th>결재 상신일</th>
 									<td>
-										<div class="td-search wid65">
-											<input type="text">	 
-											<button type="button" class="search">검색</button>
+										<div class="input-wrap">
+											<input type="text" placeholder="(시스템 날짜 자동 표시) 2021-07-29" readonly>	  
 										</div>
 									</td>
 								</tr>
 								<tr> 
-									<th>사업장<strong class="required">*</strong></th>
-									<td>
-										<div class="select-wrap wid31">
-											<select class="select"> 
-												<option value="">본사</option> 
-											</select>
-										</div> 
-									</td>
-								</tr>
-								<tr> 
-									<th>제목<strong class="required">*</strong></th>
-									<td>
-										<div class="input-wrap wid65">
-											<input type="text">
+									<th>결재 요청자</th>
+									<td colspan="3">
+										<div class="input-wrap">
+											<input type="text" placeholder="작성자 이름 자동 표시" readonly> 
 										</div>
 									</td>
 								</tr>
 								<tr> 
-									<th>과제 문의영역<strong class="required">*</strong></th>
-									<td>
-										<div class="select-wrap wid31">
-											<select class="select"> 
-												<option value="">없음</option> 
-											</select>
+									<th>결재 요청제목</th>
+									<td colspan="3">
+										<div class="input-wrap">
+											<input type="text">	  
 										</div>
-										<div class="select-wrap wid31">
-											<select class="select"> 
-												<option value="">없음</option> 
-											</select>
-										</div>  
 									</td>
 								</tr>
 								<tr> 
-									<th>협의 부서/담당자 정보<strong class="required">*</strong></th>
-									<td>
-										<div class="select-wrap wid31">
-											<select class="select"> 
-												<option value="">없음</option> 
-											</select>
-										</div> 
-										<div class="select-wrap wid31">
-											<select class="select"> 
-												<option value="">없음</option> 
-											</select>
-										</div> 
-										<button type="button" class="bt-common">담당자 추가</button>
-									</td>
-								</tr>
-								<tr> 
-									<th>과제 문의 내용<strong class="required">*</strong></th>
-									<td class="editer">
+									<td colspan="4" class="editer">
 										<!--임시 적용 : 개발 시 삭제-->
 										<div style="border:1px solid #d6d6e3; padding:3rem; height:50rem;">
 											에디터
@@ -215,8 +178,83 @@
 									</td>
 								</tr>
 								<tr> 
+									<th>결재라인 #1<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid20">
+											<select class="select"> 
+												<option value="">결제</option> 
+											</select> 
+										</div>
+										<button type="button" class="bt-add mrl">+</button> 
+										<div class="td-search wid65 inline">
+											<input type="text">	 
+											<button type="button" class="search">검색</button>
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>결재라인 #2<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid20">
+											<select class="select"> 
+												<option value="">결제</option> 
+											</select> 
+										</div>
+										<button type="button" class="bt-add mrl">+</button> 
+										<div class="td-search wid65 inline">
+											<input type="text">	 
+											<button type="button" class="search">검색</button>
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>결재라인 #3<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid20">
+											<select class="select"> 
+												<option value="">통보</option> 
+											</select> 
+										</div>
+										<button type="button" class="bt-add mrl">+</button> 
+										<div class="td-search wid65 inline">
+											<input type="text">	 
+											<button type="button" class="search">검색</button>
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>결재라인 #4<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid20">
+											<select class="select"> 
+												<option value="">통보</option> 
+											</select> 
+										</div>
+										<button type="button" class="bt-add mrl">+</button> 
+										<div class="td-search wid65 inline">
+											<input type="text">	 
+											<button type="button" class="search">검색</button>
+										</div>
+									</td>
+								</tr>
+								<tr> 
+									<th>결재라인 #5<strong class="required">*</strong></th>
+									<td colspan="3">
+										<div class="select-wrap wid20">
+											<select class="select"> 
+												<option value="">통보</option> 
+											</select> 
+										</div>
+										<button type="button" class="bt-add mrl">+</button> 
+										<div class="td-search wid65 inline">
+											<input type="text">	 
+											<button type="button" class="search">검색</button>
+										</div>
+									</td>
+								</tr>
+								<tr> 
 									<th>데이터 샘플 첨부파일</th>
-									<td> 
+									<td colspan="3"> 
 										<div class="file-upload">
 											<input type="text" placeholder="파일을 선택하세요.">
 											<button type="button" class="bt-common">찾아보기</button>
@@ -245,11 +283,12 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
-					<div class="button-wrap"> 
+					</div> 
+					<p class="req-text">※ 결재라인 지정은<em> <a href="#none">"커뮤니티-FAQ-결재라인 가이드"</a></em>를 참고하시기 바랍니다.</p>
+					<div class="button-wrap list-foot"> 
 						<div class="right">
-							<button type="button" class="bt-red">등록</button> 
-							<a href="#none" class="bt-common">목록</a>
+							<button type="button" class="bt-red">통합결재 요청</button>  
+							<a href="#none" class="bt-common">이전페이지</a>
 						</div>
 					</div>  
 				</div> 
