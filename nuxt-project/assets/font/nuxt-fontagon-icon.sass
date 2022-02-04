@@ -1,0 +1,75 @@
+@mixin fontagon-contents($value)
+  content: $value
+
+@font-face
+  font-family: "nuxt-fontagon-icon"
+  src: url("nuxt-fontagon-icon.eot?6e4eebb079c869f199d2c7860c554eae?#iefix") format("embedded-opentype")
+  src: url("nuxt-fontagon-icon.woff2?6e4eebb079c869f199d2c7860c554eae") format("woff2")
+  src: url("nuxt-fontagon-icon.woff?6e4eebb079c869f199d2c7860c554eae") format("woff")
+
+.nf-icons, .nft-icons
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  vertical-align: middle
+
+
+.nft-icons
+  width: 1em
+  height: 1em
+  position: relative
+  fill: currentColor
+
+
+.nf-icons
+  font-family: 'nuxt-fontagon-icon'
+  font-weight: normal
+  font-style: normal
+  display: inline-block
+  line-height: 1
+  text-transform: none
+  letter-spacing: normal
+  word-wrap: normal
+  white-space: nowrap
+  direction: ltr
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale
+
+  /* Support for IE. */
+  font-feature-settings: 'liga'
+
+
+.nft-fact_check_black_24dp
+  &:before
+    @include fontagon-contents("\f101")
+.nft-free-icon-photoshop-552220
+  &:before
+    @include fontagon-contents("\f102")
+.nft-history_black_24dp
+  &:before
+    @include fontagon-contents("\f103")
+.nft-Roboto-Black
+  &:before
+    @include fontagon-contents("\f104")
+.nft-Roboto-Bold
+  &:before
+    @include fontagon-contents("\f105")
+.nft-Roboto-Light
+  &:before
+    @include fontagon-contents("\f106")
+.nft-Roboto-Medium
+  &:before
+    @include fontagon-contents("\f107")
+.nft-Roboto-Thin
+  &:before
+    @include fontagon-contents("\f108")
