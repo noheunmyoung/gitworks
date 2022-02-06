@@ -55,7 +55,7 @@
         title="스터디8"
         icon="arrange-bring-to-front"
       > 
-          <router-link v-bind:to="'/vuestudy/data8'">스터디8</router-link>
+          <router-link v-bind:to="'/vuestudy/data8'">스터디88</router-link>
       </card>
     </div>
   </section>
