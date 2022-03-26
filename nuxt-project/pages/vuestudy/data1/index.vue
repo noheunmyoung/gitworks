@@ -1,17 +1,38 @@
 <template>
   <div class="main-content">   
     <div class="conts">
-      <!-- 인덱스 찾아서 클래스 넣기 -->
+      <!-- 목록 -->
+
       <ul class="test-list">
-        <li v-for="item in items"> 
-          {{ item.title }}
+        <li v-for="(item, index) in lists" :key="index"> 
+          {{ item.text1 }}
+        </li> 
+      </ul>
+      <br><br>
+
+       <!--  목록 안에 목록 -->
+      <ul class="test-list2">
+        <li v-for="(item, index) in lists" :key="index"> 
+        <p v-bind:class="errorTextColor">{{ item.text1 }}</p>
+          <ul class="list-in-list">
+            <li v-for="(initem, j) in item.inLists" :key="j"> 
+              {{ initem.text2 }}
+            </li> 
+          </ul>
         </li> 
       </ul>
 
-       <!-- 인덱스 찾아서 클래스 넣기 -->
+      <br><br>
+      
+       <!--  목록 안에 목록 -->
       <ul class="test-list2">
-        <li v-for="item in items"> 
-          {{ item.title }}
+        <li v-for="(item, index) in lists" :key="index"> 
+          <p v-bind:class="errorTextColor">{{ item.text1 }}</p>
+          <ul class="list-in-list">
+            <li v-for="(initem, j) in item.inLists" :key="j"> 
+              {{ initem.text2 }}
+            </li> 
+          </ul>
         </li> 
       </ul>
     </div>  
@@ -26,50 +47,36 @@ import { Vue, Component } from 'nuxt-property-decorator'
 }) 
 export default class extends Vue { 
   
-  items:any[] = [
-    {title:'어서오세요 열심히 합시다'},
-    {title:'네네네네'}
-  ] 
+  lists:any[] = [ 
+    {text1:'목록1'},
+    {text1:'목록2'},
+    {
+      text1:'목록3',
+      inLists: [
+        {text2:'목록안에 목록1'},
+        {text2:'목록안에 목록2'}, 
+      ]
+    }
+  ]  
 
-  //1. 인덱스 찾아서 클래스 넣기 
-	// get item() : string  {
-  //   return this.title.split('\n')
-  // } 
-  selected:any = null
-  choose(index:string) {
-    this.selected = index
-  } 
- 
-
- 
-   //2.스크롤시 상단 픽스 하기
-
-  // laptopPrice: number = 1400
-  // quantity: number = 0
-  // calculateTotal(): number {
-  //   return this.laptopPrice * this.quantity
-      //alert("handleScroll")
-  // } 
- 
-  limitPosition: number = 58
-  //lastPosition: number = 0 
-  scrolled: boolean = false 
-
-  handleScroll() { 
-    // if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
-    //   this.scrolled = true;  //move up 
-    // }
-    // if (this.lastPosition > window.scrollY) {
-    //   this.scrolled = false;  // move down 
-    // } 
-    this.scrolled = window.scrollY > this.limitPosition;  
+  listType3: any = {
+    name:'타이틀',
+    opition: [],
+    choiceOption: [
+      {text1:'네네네', text2:'1111', text3:'222222'},
+      {text1:'네네네', text2:'null', text3:'222222'},
+    ]
   }
 
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  }  
-  destroyed() { 
-    window.removeEventListener('scroll', this.handleScroll);
+  isError : boolean = false
+  get errorTextColor(): string {
+    // if (this.isError) {
+    //   return 'warning'
+    // } else {
+    //   return null
+    // }
+
+     return this.isError ? 'warning': null  
   }
 }
 </script>
@@ -99,6 +106,10 @@ export default class extends Vue {
           color: red;
         }
       }
+    }
+
+    .warning {
+      color: red;
     }
   } 
  
