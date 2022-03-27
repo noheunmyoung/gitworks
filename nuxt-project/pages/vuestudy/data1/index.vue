@@ -63,8 +63,8 @@ export default class extends Vue {
     name:'타이틀',
     opition: [],
     choiceOption: [
-      {text1:'네네네', text2:'1111', text3:'222222'},
-      {text1:'네네네', text2:'null', text3:'222222'},
+      {text1:'네네네', text2:'1111', text3:'222222333'},
+      {text1:'네네네', text2:'null', text3:'222222333'},
     ]
   }
 
