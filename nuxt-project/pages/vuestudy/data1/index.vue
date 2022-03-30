@@ -4,7 +4,7 @@
       <!-- 목록 -->
 
       <ul class="test-list">
-        <li v-for="(item, index) in lists" :key="index"> 
+        <li v-for="(item, index) in lists" :key="index" :class="classObject"> 
           {{ item.text1 }}
         </li> 
       </ul>
@@ -13,7 +13,7 @@
        <!--  목록 안에 목록 -->
       <ul class="test-list2">
         <li v-for="(item, index) in lists" :key="index"> 
-        <p v-bind:class="errorTextColor">{{ item.text1 }}</p>
+          <p v-bind:class="errorTextColor">{{ item.text1 }}</p>
           <ul class="list-in-list">
             <li v-for="(initem, j) in item.inLists" :key="j"> 
               {{ initem.text2 }}
@@ -46,7 +46,7 @@ import { Vue, Component } from 'nuxt-property-decorator'
   layout: 'nohead', 
 }) 
 export default class extends Vue { 
-  
+   
   lists:any[] = [ 
     {text1:'목록1'},
     {text1:'목록2'},
@@ -69,7 +69,7 @@ export default class extends Vue {
   }
 
   isError : boolean = false
-  get errorTextColor(): string {
+  get errorTextColor(): any {
     // if (this.isError) {
     //   return 'warning'
     // } else {
@@ -78,7 +78,23 @@ export default class extends Vue {
 
      return this.isError ? 'warning': null  
   }
+
+  // classObject:any = {
+  //   active: true,
+  //   'text-danger': true
+  // }
+
+
+  isActive : boolean = true
+  error : any = null
+  get classObject (): any {
+    return {
+      active: this.isActive && !this.error,
+      'text-danger': this.error && this.error.type === 'fatal'
+    }
+  }
 }
+ 
 </script>
 
 <style lang="scss"> 
